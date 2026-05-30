@@ -367,6 +367,96 @@ REFERENCES: dict[str, dict[str, object]] = {
             },
         ],
     },
+    "healthy-habits-remote-workers": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "About Ergonomics and Work-Related Musculoskeletal Disorders",
+                "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Office Ergonomics: Your How-to Guide",
+                "url": "https://www.mayoclinic.org/health/office-ergonomics/MY01460",
+                "publisher": "Mayo Clinic",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "simple-breathing-exercises": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Relaxation Techniques: What You Need To Know",
+                "url": "https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Stress",
+                "url": "https://www.nccih.nih.gov/health/stress",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "sleep-hygiene-checklist": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Sleep Deprivation and Deficiency - Healthy Sleep Habits",
+                "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits",
+                "publisher": "National Heart, Lung, and Blood Institute",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "About Sleep",
+                "url": "https://www.cdc.gov/sleep/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "walking-for-weight-management": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Adult Activity: An Overview",
+                "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Steps for Getting Started With Physical Activity",
+                "url": "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "high-protein-vegetarian-meals": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Vegetarian Diet",
+                "url": "https://medlineplus.gov/vegetariandiet.html",
+                "publisher": "MedlinePlus",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Protein",
+                "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/",
+                "publisher": "The Nutrition Source, Harvard T.H. Chan School of Public Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
 }
 
 
