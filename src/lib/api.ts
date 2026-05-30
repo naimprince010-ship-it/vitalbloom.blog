@@ -103,7 +103,7 @@ const mapWpCategory = (category: WpCategoryNode): Category | null => {
   const slug = category.slug?.trim();
   const name = category.name?.trim();
 
-  if (!slug || !name || category.count === 0) {
+  if (!slug || !name || slug === "uncategorized" || category.count === 0) {
     return null;
   }
 
