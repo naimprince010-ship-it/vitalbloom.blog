@@ -128,6 +128,36 @@ IMAGES = [
         "subtitle": "Balanced habits through changing seasons",
         "palette": ("#f3f8ef", "#d4e6c5", "#6f914a", "#2d3b1f"),
     },
+    {
+        "filename": "low-sugar-snack-ideas.png",
+        "title": "Low-Sugar Snack Ideas",
+        "subtitle": "Satisfying options for steady energy",
+        "palette": ("#fff7ed", "#f2d6aa", "#b97935", "#3d2818"),
+    },
+    {
+        "filename": "post-workout-recovery-tips.png",
+        "title": "Post-Workout Recovery Tips",
+        "subtitle": "Rest, hydration, and smarter progress",
+        "palette": ("#eef7f8", "#b9dde2", "#3b8290", "#1b3940"),
+    },
+    {
+        "filename": "screen-time-and-sleep-quality.png",
+        "title": "Screen Time and Sleep Quality",
+        "subtitle": "Calmer evenings with less stimulation",
+        "palette": ("#f1f1f8", "#c9cae8", "#555c96", "#252840"),
+    },
+    {
+        "filename": "mindful-morning-routine.png",
+        "title": "Mindful Morning Routine",
+        "subtitle": "Start the day with calm and focus",
+        "palette": ("#f2f8ef", "#d5e7c7", "#6a914d", "#29391e"),
+    },
+    {
+        "filename": "small-healthy-habits.png",
+        "title": "Small Healthy Habits",
+        "subtitle": "Simple actions that improve your day",
+        "palette": ("#f6f4ef", "#ded4bd", "#7b6b4a", "#312b20"),
+    },
 ]
 
 

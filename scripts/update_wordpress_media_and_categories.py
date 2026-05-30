@@ -27,6 +27,11 @@ POST_IMAGES = {
     "foods-drinks-affect-sleep": "foods-drinks-affect-sleep.png",
     "journaling-mental-clarity": "journaling-mental-clarity.png",
     "seasonal-wellness-tips": "seasonal-wellness-tips.png",
+    "low-sugar-snack-ideas": "low-sugar-snack-ideas.png",
+    "post-workout-recovery-tips": "post-workout-recovery-tips.png",
+    "screen-time-and-sleep-quality": "screen-time-and-sleep-quality.png",
+    "mindful-morning-routine": "mindful-morning-routine.png",
+    "small-healthy-habits": "small-healthy-habits.png",
 }
 
 CATEGORY_DESCRIPTIONS = {

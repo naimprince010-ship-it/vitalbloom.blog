@@ -85,6 +85,26 @@ LINKS = {
         ("Hydration", "/simple-hydration-guide"),
         ("morning light", "/sleep-hygiene-checklist"),
     ],
+    "low-sugar-snack-ideas": [
+        ("protein", "/high-protein-vegetarian-meals"),
+        ("hydration", "/simple-hydration-guide"),
+    ],
+    "post-workout-recovery-tips": [
+        ("Sleep", "/better-sleep-routine"),
+        ("Hydrate", "/simple-hydration-guide"),
+    ],
+    "screen-time-and-sleep-quality": [
+        ("wind-down", "/evening-habits-better-rest"),
+        ("sleep", "/sleep-hygiene-checklist"),
+    ],
+    "mindful-morning-routine": [
+        ("Morning light", "/seasonal-wellness-tips"),
+        ("slow breaths", "/simple-breathing-exercises"),
+    ],
+    "small-healthy-habits": [
+        ("short walk", "/walking-for-weight-management"),
+        ("wind-down", "/evening-habits-better-rest"),
+    ],
 }
 
 
