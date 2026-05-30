@@ -28,6 +28,7 @@ type WpCategoryNode = {
   name?: string | null;
   slug?: string | null;
   description?: string | null;
+  count?: number | null;
 };
 
 type WpTagNode = {
@@ -102,7 +103,7 @@ const mapWpCategory = (category: WpCategoryNode): Category | null => {
   const slug = category.slug?.trim();
   const name = category.name?.trim();
 
-  if (!slug || !name) {
+  if (!slug || !name || category.count === 0) {
     return null;
   }
 

@@ -176,6 +176,7 @@ export const WP_CATEGORIES_QUERY = /* GraphQL */ `
         name
         slug
         description
+        count
       }
     }
   }
