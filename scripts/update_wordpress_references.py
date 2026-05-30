@@ -97,6 +97,96 @@ REFERENCES: dict[str, dict[str, object]] = {
             },
         ],
     },
+    "small-healthy-habits": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Healthy Habits: Enhancing Immunity",
+                "url": "https://www.cdc.gov/healthy-weight-growth/about/enhancing-immunity.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Preventing Chronic Diseases: What You Can Do Now",
+                "url": "https://www.cdc.gov/chronic-disease/prevention/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "mindful-morning-routine": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Emotional Wellness Toolkit",
+                "url": "https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits/emotional-wellness-toolkit",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Meditation and Mindfulness: Effectiveness and Safety",
+                "url": "https://www.nccih.nih.gov/health/meditation/overview.htm",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "screen-time-and-sleep-quality": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "About Sleep",
+                "url": "https://www.cdc.gov/sleep/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Sleep and Your Heart Health",
+                "url": "https://www.cdc.gov/heart-disease/about/sleep-and-heart-health.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "post-workout-recovery-tips": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "These 5 Things May Help Improve Recovery After a Tough Workout",
+                "url": "https://mcpress.mayoclinic.org/nutrition-fitness/these-5-things-may-help-improve-recovery-after-a-tough-workout/",
+                "publisher": "Mayo Clinic Press",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Aerobic Exercise: How to Warm Up and Cool Down",
+                "url": "https://www.mayoclinic.org/exercise/art-20045517",
+                "publisher": "Mayo Clinic",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "low-sugar-snack-ideas": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Get the Facts: Added Sugars",
+                "url": "https://www.cdc.gov/nutrition/php/data-research/added-sugars.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Spotting Hidden Sugars in Everyday Foods",
+                "url": "https://www.cdc.gov/diabetes/healthy-eating/spotting-hidden-sugars-in-everyday-foods.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
 }
 
 
