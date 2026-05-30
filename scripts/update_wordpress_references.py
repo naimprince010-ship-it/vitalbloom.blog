@@ -457,6 +457,96 @@ REFERENCES: dict[str, dict[str, object]] = {
             },
         ],
     },
+    "better-sleep-routine": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Sleep Deprivation and Deficiency - Healthy Sleep Habits",
+                "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits",
+                "publisher": "National Heart, Lung, and Blood Institute",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "About Sleep",
+                "url": "https://www.cdc.gov/sleep/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "beginner-home-workout-plan": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Steps for Getting Started With Physical Activity",
+                "url": "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Physical Activity and Your Heart - Getting Started and Staying Active",
+                "url": "https://www.nhlbi.nih.gov/health/heart/physical-activity/stay-active",
+                "publisher": "National Heart, Lung, and Blood Institute",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "healthy-breakfast-ideas": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "MyPlate Plan",
+                "url": "https://www.myplate.gov/myplate-plan",
+                "publisher": "U.S. Department of Agriculture",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Healthy Eating Tips",
+                "url": "https://www.cdc.gov/nutrition/features/healthy-eating-tips.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "sustainable-wellness-routine": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Your Healthiest Self: Wellness Toolkits",
+                "url": "https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Health Tips for Adults",
+                "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults",
+                "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "daily-wellness-checklist": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Physical Wellness Toolkit",
+                "url": "https://www.nih.gov/health-information/physical-wellness-toolkit",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Emotional Wellness Toolkit",
+                "url": "https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits/emotional-wellness-toolkit",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
 }
 
 
