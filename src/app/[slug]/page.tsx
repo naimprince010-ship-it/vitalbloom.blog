@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import PostImage from "@/components/PostImage";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
 import { siteConfig } from "@/config/site";
 
@@ -103,6 +104,12 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
         </header>
 
+        <PostImage
+          imageUrl={post.featuredImage}
+          alt={post.title}
+          className="mt-6 aspect-[16/9] w-full rounded-lg object-cover"
+        />
+
         <section
           className="article-content mt-6 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
@@ -132,19 +139,26 @@ export default async function PostPage({ params }: PostPageProps) {
             {relatedPosts.map((relatedPost) => (
               <article
                 key={relatedPost.id}
-                className="rounded-lg border border-zinc-200 bg-white p-5"
+                className="overflow-hidden rounded-lg border border-zinc-200 bg-white"
               >
-                <h3 className="text-lg font-semibold text-zinc-900">
-                  <Link
-                    href={`/${relatedPost.slug}`}
-                    className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
-                  >
-                    {relatedPost.title}
-                  </Link>
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600">
-                  {relatedPost.excerpt}
-                </p>
+                <PostImage
+                  imageUrl={relatedPost.featuredImage}
+                  alt={relatedPost.title}
+                  className="aspect-[16/9] w-full object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-zinc-900">
+                    <Link
+                      href={`/${relatedPost.slug}`}
+                      className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+                    >
+                      {relatedPost.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    {relatedPost.excerpt}
+                  </p>
+                </div>
               </article>
             ))}
           </div>

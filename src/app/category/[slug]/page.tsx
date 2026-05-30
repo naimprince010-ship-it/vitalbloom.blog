@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import PostImage from "@/components/PostImage";
 import { getCategoryBySlug, getPostsByCategorySlug } from "@/lib/api";
 import { siteConfig } from "@/config/site";
 
@@ -96,22 +97,29 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             {posts.map((post) => (
               <article
                 key={post.id}
-                className="rounded-lg border border-zinc-200 bg-white p-5"
+                className="grid overflow-hidden rounded-lg border border-zinc-200 bg-white sm:grid-cols-[220px_1fr]"
               >
-                <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
-                  <span>{post.readingTime} min read</span>
-                  <span aria-hidden="true">•</span>
-                  <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+                <PostImage
+                  imageUrl={post.featuredImage}
+                  alt={post.title}
+                  className="aspect-[16/9] h-full w-full object-cover"
+                />
+                <div className="p-5">
+                  <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
+                    <span>{post.readingTime} min read</span>
+                    <span aria-hidden="true">•</span>
+                    <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+                  </div>
+                  <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
+                    <Link
+                      href={`/${post.slug}`}
+                      className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+                    >
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-base leading-7 text-zinc-600">{post.excerpt}</p>
                 </div>
-                <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
-                  <Link
-                    href={`/${post.slug}`}
-                    className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
-                  >
-                    {post.title}
-                  </Link>
-                </h3>
-                <p className="mt-2 text-base leading-7 text-zinc-600">{post.excerpt}</p>
               </article>
             ))}
           </div>
