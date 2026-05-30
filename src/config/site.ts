@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Evidence-informed wellness, nutrition, and healthy living guides",
   description:
     "VitalBloom.blog publishes practical wellness, nutrition, fitness, and mindful living guidance for everyday readers.",
-  url: "https://vitalbloom.blog",
+  url: "https://www.vitalbloom.blog",
   locale: "en_US",
   contactEmail: "hello@vitalbloom.blog",
   defaultOgImage: "/globe.svg",
@@ -38,6 +38,8 @@ export const mainNavigation = [
 export const footerNavigation = {
   company: [
     { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms", href: "/terms" }
   ],

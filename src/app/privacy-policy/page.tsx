@@ -19,8 +19,9 @@ export default function PrivacyPolicyPage() {
             improve content quality and site performance. We do not sell personal data.
           </p>
           <p>
-            If advertising services are enabled, third-party vendors may use cookies to deliver relevant
-            ads. Users can manage cookie preferences through browser settings and our consent controls.
+            If advertising services are enabled, third-party vendors may use cookies for ad delivery,
+            measurement, and fraud prevention. Users can manage cookie preferences through browser
+            settings and any consent tools shown on the website.
           </p>
           <p>
             For data access, correction, or deletion requests, contact us at {siteConfig.contactEmail}.

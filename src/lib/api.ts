@@ -244,7 +244,7 @@ export const getPosts = async (): Promise<Post[]> => {
   try {
     const data = await fetchFromCms<WpPostsQueryData, { first: number }>(
       WP_POSTS_QUERY,
-      { first: 24 }
+      { first: 100 }
     );
     const mappedPosts = (data?.posts?.nodes || [])
       .map(mapWpPost)
@@ -330,7 +330,7 @@ export const getPostsByCategorySlug = async (slug: string): Promise<Post[]> => {
         { categorySlug: string; first: number }
       >(WP_POSTS_BY_CATEGORY_QUERY, {
         categorySlug: slug,
-        first: 24
+        first: 100
       });
       const cmsPosts = (data?.posts?.nodes || [])
         .map(mapWpPost)

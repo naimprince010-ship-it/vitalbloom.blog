@@ -15,8 +15,8 @@ export default function CookiePolicyPage() {
             understand traffic patterns, and support advertising measurement.
           </p>
           <p>
-            Essential cookies are required for basic site operation. Optional analytics and ad cookies may
-            be enabled based on user consent and regional legal requirements.
+            Essential cookies may be required for basic site operation. Optional analytics or advertising
+            cookies may be introduced when those services are enabled and configured.
           </p>
           <p>
             Users can adjust cookie choices at any time through browser controls. Blocking some cookies may
