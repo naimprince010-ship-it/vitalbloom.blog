@@ -158,6 +158,36 @@ IMAGES = [
         "subtitle": "Simple actions that improve your day",
         "palette": ("#f6f4ef", "#ded4bd", "#7b6b4a", "#312b20"),
     },
+    {
+        "filename": "balanced-plate-method.png",
+        "title": "Balanced Plate Method",
+        "subtitle": "Simple meals without counting calories",
+        "palette": ("#f6f8ef", "#d8e8bd", "#789447", "#303b1f"),
+    },
+    {
+        "filename": "exercise-sustainable-habit.png",
+        "title": "Exercise as a Sustainable Habit",
+        "subtitle": "Movement that fits real life",
+        "palette": ("#eef6f7", "#c0dfe3", "#447f8a", "#1f3940"),
+    },
+    {
+        "filename": "stress-affects-sleep.png",
+        "title": "Stress and Sleep",
+        "subtitle": "Gentle ways to calm the night",
+        "palette": ("#f2f1f8", "#cac8e4", "#5d5a91", "#282641"),
+    },
+    {
+        "filename": "practice-mindfulness-simply.png",
+        "title": "Practice Mindfulness Simply",
+        "subtitle": "Awareness in ordinary moments",
+        "palette": ("#eff8f4", "#c7e5d5", "#4f8a68", "#203729"),
+    },
+    {
+        "filename": "daily-wellness-routine-beginners.png",
+        "title": "Daily Wellness Routine for Beginners",
+        "subtitle": "Simple habits for a steady start",
+        "palette": ("#f8f5ef", "#e4d7bf", "#8d744d", "#352b1f"),
+    },
 ]
 
 

@@ -105,6 +105,26 @@ LINKS = {
         ("short walk", "/walking-for-weight-management"),
         ("wind-down", "/evening-habits-better-rest"),
     ],
+    "balanced-plate-method": [
+        ("protein", "/high-protein-vegetarian-meals"),
+        ("vegetables", "/foods-support-better-digestion"),
+    ],
+    "exercise-sustainable-habit": [
+        ("Walking", "/walking-for-weight-management"),
+        ("recovery", "/post-workout-recovery-tips"),
+    ],
+    "stress-affects-sleep": [
+        ("Slow breathing", "/simple-breathing-exercises"),
+        ("Evening", "/evening-habits-better-rest"),
+    ],
+    "practice-mindfulness-simply": [
+        ("mindful breathing", "/simple-breathing-exercises"),
+        ("walking", "/walking-for-weight-management"),
+    ],
+    "daily-wellness-routine-beginners": [
+        ("Drink water", "/simple-hydration-guide"),
+        ("balanced meal", "/balanced-plate-method"),
+    ],
 }
 
 

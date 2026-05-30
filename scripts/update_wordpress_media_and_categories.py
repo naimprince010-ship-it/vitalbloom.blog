@@ -32,6 +32,11 @@ POST_IMAGES = {
     "screen-time-and-sleep-quality": "screen-time-and-sleep-quality.png",
     "mindful-morning-routine": "mindful-morning-routine.png",
     "small-healthy-habits": "small-healthy-habits.png",
+    "balanced-plate-method": "balanced-plate-method.png",
+    "exercise-sustainable-habit": "exercise-sustainable-habit.png",
+    "stress-affects-sleep": "stress-affects-sleep.png",
+    "practice-mindfulness-simply": "practice-mindfulness-simply.png",
+    "daily-wellness-routine-beginners": "daily-wellness-routine-beginners.png",
 }
 
 CATEGORY_DESCRIPTIONS = {
