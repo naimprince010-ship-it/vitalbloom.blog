@@ -187,6 +187,96 @@ REFERENCES: dict[str, dict[str, object]] = {
             },
         ],
     },
+    "seasonal-wellness-tips": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Healthy Habits to Prevent Flu",
+                "url": "https://www.cdc.gov/flu/prevention/actions-prevent-flu.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Safety Guidelines: During and After a Winter Storm",
+                "url": "https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "journaling-mental-clarity": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Emotional Wellness Toolkit",
+                "url": "https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits/emotional-wellness-toolkit",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Emotional Wellness Toolkit - More Resources",
+                "url": "https://www.nih.gov/health-information/emotional-wellness-toolkit-more-resources",
+                "publisher": "National Institutes of Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "foods-drinks-affect-sleep": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "About Sleep",
+                "url": "https://www.cdc.gov/sleep/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "About Sleep and Your Heart Health",
+                "url": "https://www.cdc.gov/heart-disease/about/sleep-and-heart-health.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "strength-training-basics": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Adult Activity: An Overview",
+                "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Physical Activity Guidelines for Americans, 2nd Edition",
+                "url": "https://www.cdc.gov/physical-activity/media/pdfs/Physical_Activity_Guidelines_2nd_edition.pdf",
+                "publisher": "U.S. Department of Health and Human Services",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "simple-hydration-guide": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "About Water and Healthier Drinks",
+                "url": "https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Water: How Much Should You Drink Every Day?",
+                "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256",
+                "publisher": "Mayo Clinic",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
 }
 
 
