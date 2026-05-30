@@ -1,4 +1,5 @@
 import subprocess
+import json
 from pathlib import Path
 
 
@@ -47,19 +48,43 @@ def post_id(slug: str) -> str:
     return found.splitlines()[0]
 
 
+def existing_attachment_id(slug: str) -> str | None:
+    title = slug.replace("-", " ").title()
+    attachments_json = run_wp(
+        "post",
+        "list",
+        "--post_type=attachment",
+        "--post_mime_type=image",
+        "--fields=ID,post_title,post_name",
+        "--format=json",
+    )
+    attachments = json.loads(attachments_json or "[]")
+    for attachment in attachments:
+        post_name = str(attachment.get("post_name", ""))
+        post_title = str(attachment.get("post_title", ""))
+        if post_name == slug or post_name.startswith(f"{slug}-") or post_title == title:
+            return str(attachment["ID"])
+    return None
+
+
 def set_featured_images() -> None:
     for slug, filename in POST_IMAGES.items():
         image_path = IMAGE_DIR / filename
-        attachment_id = run_wp(
-            "media",
-            "import",
-            str(image_path),
-            f"--title={slug.replace('-', ' ').title()}",
-            f"--alt={slug.replace('-', ' ')}",
-            "--porcelain",
-        )
+        attachment_id = existing_attachment_id(slug)
+        if attachment_id:
+            action = "reused"
+        else:
+            attachment_id = run_wp(
+                "media",
+                "import",
+                str(image_path),
+                f"--title={slug.replace('-', ' ').title()}",
+                f"--alt={slug.replace('-', ' ')}",
+                "--porcelain",
+            )
+            action = "uploaded"
         run_wp("post", "meta", "update", post_id(slug), "_thumbnail_id", attachment_id)
-        print(f"featured-image: {slug} -> {attachment_id}")
+        print(f"featured-image-{action}: {slug} -> {attachment_id}")
 
 
 def update_categories() -> None:

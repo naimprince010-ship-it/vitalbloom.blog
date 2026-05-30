@@ -66,6 +66,18 @@ body {
   margin: 0;
 }
 
+.article-content a {
+  color: rgb(22 101 52);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.article-content a:hover {
+  color: rgb(20 83 45);
+}
+
 .ad-slot {
   min-height: 1px;
 }
