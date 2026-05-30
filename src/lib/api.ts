@@ -154,7 +154,8 @@ const mapWpPost = (post: WpPostNode): Post | null => {
     })
     .filter((tag): tag is string => Boolean(tag));
 
-  const cleanedContent = stripHtml(post.content);
+  const rawContent = post.content?.trim() || "";
+  const cleanedContent = stripHtml(rawContent);
   const cleanedExcerpt = stripHtml(post.excerpt) || cleanedContent.slice(0, 180);
   const canonicalUrl = post.seo?.canonical?.trim();
   const derivedCanonicalUrl =
@@ -165,7 +166,7 @@ const mapWpPost = (post: WpPostNode): Post | null => {
     title,
     slug,
     excerpt: cleanedExcerpt,
-    content: cleanedContent,
+    content: rawContent,
     featuredImage: post.featuredImage?.node?.sourceUrl?.trim() || "",
     readingTime: estimateReadingTime(cleanedContent),
     status: "published",

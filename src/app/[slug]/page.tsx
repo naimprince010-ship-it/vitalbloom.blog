@@ -105,9 +105,10 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
         </header>
 
-        <section className="prose prose-zinc mt-6 max-w-none">
-          <p>{post.content}</p>
-        </section>
+        <section
+          className="prose prose-zinc mt-6 max-w-none"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
 
         <aside
           aria-label="Advertising placeholder mid article"
