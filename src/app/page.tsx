@@ -23,10 +23,8 @@ export default async function Home() {
 
       <aside
         aria-label="Advertising placeholder top banner"
-        className="flex min-h-[120px] items-center justify-center rounded-lg border-2 border-dashed border-zinc-300 bg-zinc-100 px-4 text-center text-sm font-medium text-zinc-600"
-      >
-        [AdSense Placement - Top Banner]
-      </aside>
+        className="ad-slot"
+      />
 
       <section aria-labelledby="hero-featured-post" className="space-y-5">
         <h2 id="hero-featured-post" className="text-2xl font-semibold text-zinc-900">
@@ -83,10 +81,8 @@ export default async function Home() {
       <section aria-labelledby="latest-posts" className="space-y-5">
         <aside
           aria-label="Advertising placeholder mid page"
-          className="mb-2 flex min-h-[120px] items-center justify-center rounded-lg border-2 border-dashed border-zinc-300 bg-zinc-100 px-4 text-center text-sm font-medium text-zinc-600"
-        >
-          [AdSense Placement - Mid Content]
-        </aside>
+          className="ad-slot mb-2"
+        />
         <h2 id="latest-posts" className="text-2xl font-semibold text-zinc-900">
           Latest Posts
         </h2>

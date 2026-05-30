@@ -79,12 +79,10 @@ export default async function PostPage({ params }: PostPageProps) {
     <main className="flex flex-1 flex-col gap-10 py-10 sm:py-12">
       <aside
         aria-label="Advertising placeholder top banner"
-        className="flex min-h-[120px] items-center justify-center rounded-lg border-2 border-dashed border-zinc-300 bg-zinc-100 px-4 text-center text-sm font-medium text-zinc-600"
-      >
-        [AdSense Placement - Top Banner]
-      </aside>
+        className="ad-slot"
+      />
 
-      <article className="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8">
+      <article className="rounded-lg border border-zinc-200 bg-white p-5 sm:p-8">
         <header className="space-y-4 border-b border-zinc-200 pb-6">
           <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
             {category?.name ?? "Wellness"}
@@ -106,16 +104,14 @@ export default async function PostPage({ params }: PostPageProps) {
         </header>
 
         <section
-          className="prose prose-zinc mt-6 max-w-none"
+          className="article-content mt-6 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         <aside
           aria-label="Advertising placeholder mid article"
-          className="mt-8 flex min-h-[120px] items-center justify-center rounded-lg border-2 border-dashed border-zinc-300 bg-zinc-100 px-4 text-center text-sm font-medium text-zinc-600"
-        >
-          [AdSense Placement - Mid Article]
-        </aside>
+          className="ad-slot mt-8"
+        />
       </article>
 
       {author ? (
