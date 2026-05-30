@@ -68,6 +68,36 @@ IMAGES = [
         "subtitle": "Better breaks, boundaries, and workday energy",
         "palette": ("#f5f6f2", "#d8dfc8", "#68764d", "#2d3324"),
     },
+    {
+        "filename": "foods-support-better-digestion.png",
+        "title": "Foods for Better Digestion",
+        "subtitle": "Gentle everyday choices for gut comfort",
+        "palette": ("#f7f5ee", "#d8e6c6", "#6f8f4e", "#29351e"),
+    },
+    {
+        "filename": "stretching-routine-desk-workers.png",
+        "title": "Desk Worker Stretching Routine",
+        "subtitle": "Simple movement for long sitting days",
+        "palette": ("#eef6fa", "#c3dce8", "#417993", "#1d3641"),
+    },
+    {
+        "filename": "evening-habits-better-rest.png",
+        "title": "Evening Habits for Better Rest",
+        "subtitle": "A calmer transition into the night",
+        "palette": ("#f5f2fa", "#d6c8eb", "#755aa0", "#302640"),
+    },
+    {
+        "filename": "beginner-meditation-guide.png",
+        "title": "Beginner Meditation Guide",
+        "subtitle": "Simple practice for a calmer mind",
+        "palette": ("#f0f8f4", "#c6e3d2", "#4b8a63", "#1f3527"),
+    },
+    {
+        "filename": "how-to-avoid-burnout.png",
+        "title": "How to Avoid Burnout",
+        "subtitle": "Daily boundaries for sustainable energy",
+        "palette": ("#f8f4ef", "#ead1bc", "#a25f3b", "#3d281d"),
+    },
 ]
 
 

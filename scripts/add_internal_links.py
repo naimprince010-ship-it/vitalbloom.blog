@@ -45,6 +45,26 @@ LINKS = {
         ("movement breaks", "/walking-for-weight-management"),
         ("breathing", "/simple-breathing-exercises"),
     ],
+    "foods-support-better-digestion": [
+        ("hydration", "/daily-wellness-checklist"),
+        ("fiber-rich foods", "/high-protein-vegetarian-meals"),
+    ],
+    "stretching-routine-desk-workers": [
+        ("walking", "/walking-for-weight-management"),
+        ("home workout", "/beginner-home-workout-plan"),
+    ],
+    "evening-habits-better-rest": [
+        ("Slow breathing", "/simple-breathing-exercises"),
+        ("bedroom", "/sleep-hygiene-checklist"),
+    ],
+    "beginner-meditation-guide": [
+        ("breath meditation", "/simple-breathing-exercises"),
+        ("stress", "/how-to-avoid-burnout"),
+    ],
+    "how-to-avoid-burnout": [
+        ("remote workers", "/healthy-habits-remote-workers"),
+        ("sleep routine", "/better-sleep-routine"),
+    ],
 }
 
 

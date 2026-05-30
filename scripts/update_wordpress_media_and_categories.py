@@ -17,6 +17,11 @@ POST_IMAGES = {
     "sleep-hygiene-checklist": "sleep-hygiene-checklist.png",
     "simple-breathing-exercises": "simple-breathing-exercises.png",
     "healthy-habits-remote-workers": "healthy-habits-remote-workers.png",
+    "foods-support-better-digestion": "foods-support-better-digestion.png",
+    "stretching-routine-desk-workers": "stretching-routine-desk-workers.png",
+    "evening-habits-better-rest": "evening-habits-better-rest.png",
+    "beginner-meditation-guide": "beginner-meditation-guide.png",
+    "how-to-avoid-burnout": "how-to-avoid-burnout.png",
 }
 
 CATEGORY_DESCRIPTIONS = {
