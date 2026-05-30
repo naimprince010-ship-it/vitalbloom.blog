@@ -11,6 +11,11 @@ POST_IMAGES = {
     "healthy-breakfast-ideas": "healthy-breakfast-ideas.png",
     "beginner-home-workout-plan": "beginner-home-workout-plan.png",
     "better-sleep-routine": "better-sleep-routine.png",
+    "high-protein-vegetarian-meals": "high-protein-vegetarian-meals.png",
+    "walking-for-weight-management": "walking-for-weight-management.png",
+    "sleep-hygiene-checklist": "sleep-hygiene-checklist.png",
+    "simple-breathing-exercises": "simple-breathing-exercises.png",
+    "healthy-habits-remote-workers": "healthy-habits-remote-workers.png",
 }
 
 CATEGORY_DESCRIPTIONS = {
@@ -18,6 +23,7 @@ CATEGORY_DESCRIPTIONS = {
     "nutrition": "Balanced eating ideas, meal tips, and everyday nutrition guidance for real life.",
     "fitness": "Beginner-friendly movement, home workouts, walking, stretching, and recovery tips.",
     "sleep": "Sleep routines, evening habits, and rest-friendly guidance for better daily energy.",
+    "mindfulness": "Breathing exercises, stress support, journaling, and simple practices for a calmer mind.",
 }
 
 

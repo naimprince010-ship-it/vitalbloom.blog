@@ -38,6 +38,36 @@ IMAGES = [
         "subtitle": "Calmer evenings and more consistent rest",
         "palette": ("#f1f1f8", "#c8c7e3", "#585489", "#25243d"),
     },
+    {
+        "filename": "high-protein-vegetarian-meals.png",
+        "title": "High-Protein Vegetarian Meals",
+        "subtitle": "Balanced meal ideas for everyday eating",
+        "palette": ("#f4f8ef", "#cfe5b8", "#5d8a3f", "#26351f"),
+    },
+    {
+        "filename": "walking-for-weight-management.png",
+        "title": "Walking for Weight Management",
+        "subtitle": "Simple movement for energy and consistency",
+        "palette": ("#eef7f5", "#b7ded8", "#347f77", "#183a37"),
+    },
+    {
+        "filename": "sleep-hygiene-checklist.png",
+        "title": "Sleep Hygiene Checklist",
+        "subtitle": "Everyday habits for a calmer night",
+        "palette": ("#f4f2fb", "#d2c9eb", "#6d5c9e", "#2f2946"),
+    },
+    {
+        "filename": "simple-breathing-exercises.png",
+        "title": "Simple Breathing Exercises",
+        "subtitle": "Gentle resets for everyday stress",
+        "palette": ("#eef8f7", "#bee7e2", "#3f8f86", "#193b38"),
+    },
+    {
+        "filename": "healthy-habits-remote-workers.png",
+        "title": "Healthy Habits for Remote Workers",
+        "subtitle": "Better breaks, boundaries, and workday energy",
+        "palette": ("#f5f6f2", "#d8dfc8", "#68764d", "#2d3324"),
+    },
 ]
 
 
