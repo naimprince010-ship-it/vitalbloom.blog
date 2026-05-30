@@ -29,6 +29,20 @@ export type PostSeo = {
   focusKeyword?: string;
 };
 
+export type PostSource = {
+  title: string;
+  url: string;
+  publisher?: string;
+  accessedAt?: string;
+};
+
+export type EditorialReview = {
+  factCheckedBy?: string;
+  factCheckedAt?: string;
+  reviewedBy?: string;
+  reviewedAt?: string;
+};
+
 export type Post = {
   id: string;
   title: string;
@@ -44,4 +58,6 @@ export type Post = {
   categoryId: string;
   tagIds: string[];
   seo: PostSeo;
+  sources: PostSource[];
+  editorialReview: EditorialReview;
 };

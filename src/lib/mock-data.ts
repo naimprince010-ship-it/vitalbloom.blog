@@ -77,7 +77,9 @@ export const posts: Post[] = [
         "https://vitalbloom.blog/mental-wellness/5-minute-morning-reset-calmer-day",
       ogImage: "/images/og/morning-reset-og.jpg",
       focusKeyword: "morning wellness routine"
-    }
+    },
+    sources: [],
+    editorialReview: {}
   },
   {
     id: "post-balanced-breakfast-us",
@@ -102,7 +104,9 @@ export const posts: Post[] = [
         "https://vitalbloom.blog/nutrition/balanced-breakfast-ideas-busy-mornings",
       ogImage: "/images/og/balanced-breakfast-og.jpg",
       focusKeyword: "balanced breakfast ideas"
-    }
+    },
+    sources: [],
+    editorialReview: {}
   },
   {
     id: "post-better-sleep-habits",
@@ -127,6 +131,8 @@ export const posts: Post[] = [
         "https://vitalbloom.blog/lifestyle/7-evening-habits-improve-sleep-quality",
       ogImage: "/images/og/sleep-habits-og.jpg",
       focusKeyword: "improve sleep quality"
-    }
+    },
+    sources: [],
+    editorialReview: {}
   }
 ];

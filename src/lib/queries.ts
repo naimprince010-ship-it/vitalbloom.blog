@@ -48,6 +48,11 @@ export const WP_POSTS_QUERY = /* GraphQL */ `
             sourceUrl
           }
         }
+        vitalbloomSources
+        vitalbloomFactCheckedBy
+        vitalbloomFactCheckedAt
+        vitalbloomReviewedBy
+        vitalbloomReviewedAt
       }
     }
   }
@@ -102,6 +107,11 @@ export const WP_POST_BY_SLUG_QUERY = /* GraphQL */ `
           sourceUrl
         }
       }
+      vitalbloomSources
+      vitalbloomFactCheckedBy
+      vitalbloomFactCheckedAt
+      vitalbloomReviewedBy
+      vitalbloomReviewedAt
     }
   }
 `;
@@ -163,6 +173,11 @@ export const WP_POSTS_BY_CATEGORY_QUERY = /* GraphQL */ `
             sourceUrl
           }
         }
+        vitalbloomSources
+        vitalbloomFactCheckedBy
+        vitalbloomFactCheckedAt
+        vitalbloomReviewedBy
+        vitalbloomReviewedAt
       }
     }
   }

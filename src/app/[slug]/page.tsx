@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
 import { siteConfig } from "@/config/site";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 type PostPageProps = {
   params: Promise<{
@@ -75,9 +77,17 @@ export default async function PostPage({ params }: PostPageProps) {
   const author = getAuthorById(post.authorId);
   const relatedPosts = await getRelatedPosts(post.id, post.categoryId);
   const category = await getCategoryById(post.categoryId);
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    ...(category
+      ? [{ name: category.name, url: `/category/${category.slug}` }]
+      : []),
+    { name: post.title, url: `/${post.slug}` }
+  ];
 
   return (
     <main className="flex flex-1 flex-col gap-10 py-10 sm:py-12">
+      <JsonLd data={[articleSchema(post, author, category), breadcrumbSchema(breadcrumbs)]} />
       <aside
         aria-label="Advertising placeholder top banner"
         className="ad-slot"
@@ -114,6 +124,58 @@ export default async function PostPage({ params }: PostPageProps) {
           className="article-content mt-6 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {(post.sources.length > 0 ||
+          post.editorialReview.factCheckedBy ||
+          post.editorialReview.reviewedBy) ? (
+          <section
+            aria-labelledby="sources-and-review"
+            className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-5"
+          >
+            <h2 id="sources-and-review" className="text-lg font-semibold text-zinc-900">
+              Sources &amp; Editorial Review
+            </h2>
+            <div className="mt-3 space-y-2 text-sm leading-6 text-zinc-700">
+              {post.editorialReview.factCheckedBy ? (
+                <p>
+                  Fact-checked by {post.editorialReview.factCheckedBy}
+                  {post.editorialReview.factCheckedAt
+                    ? ` on ${formatDate(post.editorialReview.factCheckedAt)}`
+                    : ""}
+                  .
+                </p>
+              ) : null}
+              {post.editorialReview.reviewedBy ? (
+                <p>
+                  Reviewed by {post.editorialReview.reviewedBy}
+                  {post.editorialReview.reviewedAt
+                    ? ` on ${formatDate(post.editorialReview.reviewedAt)}`
+                    : ""}
+                  .
+                </p>
+              ) : null}
+              {post.sources.length > 0 ? (
+                <ol className="list-decimal space-y-2 pl-5">
+                  {post.sources.map((source) => (
+                    <li key={source.url}>
+                      <a
+                        href={source.url}
+                        className="font-medium text-green-700 underline underline-offset-4 hover:text-green-800"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        {source.title}
+                      </a>
+                      {source.publisher ? (
+                        <span className="text-zinc-500"> — {source.publisher}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ol>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
 
         <aside
           aria-label="Advertising placeholder mid article"

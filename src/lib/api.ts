@@ -1,4 +1,4 @@
-import type { Author, Category, Post } from "@/types/blog";
+import type { Author, Category, Post, PostSource } from "@/types/blog";
 import { authors, categories, posts } from "@/lib/mock-data";
 import {
   WP_CATEGORIES_QUERY,
@@ -56,6 +56,11 @@ type WpPostNode = {
     focuskw?: string | null;
     opengraphImage?: { sourceUrl?: string | null } | null;
   } | null;
+  vitalbloomSources?: string | null;
+  vitalbloomFactCheckedBy?: string | null;
+  vitalbloomFactCheckedAt?: string | null;
+  vitalbloomReviewedBy?: string | null;
+  vitalbloomReviewedAt?: string | null;
 };
 
 type WpPostsQueryData = {
@@ -128,6 +133,52 @@ const mapWpAuthor = (author: WpAuthorNode | null | undefined): Author => {
   };
 };
 
+const parseSources = (value: string | undefined | null): PostSource[] => {
+  if (!value) {
+    return [];
+  }
+
+  try {
+    const parsed = JSON.parse(value) as unknown;
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    return parsed
+      .map((source): PostSource | null => {
+        if (!source || typeof source !== "object") {
+          return null;
+        }
+
+        const record = source as Record<string, unknown>;
+        const title = typeof record.title === "string" ? record.title.trim() : "";
+        const url = typeof record.url === "string" ? record.url.trim() : "";
+
+        if (!title || !url || !url.startsWith("http")) {
+          return null;
+        }
+
+        const parsedSource: PostSource = {
+          title,
+          url
+        };
+
+        if (typeof record.publisher === "string" && record.publisher.trim()) {
+          parsedSource.publisher = record.publisher.trim();
+        }
+
+        if (typeof record.accessedAt === "string" && record.accessedAt.trim()) {
+          parsedSource.accessedAt = record.accessedAt.trim();
+        }
+
+        return parsedSource;
+      })
+      .filter((source): source is PostSource => Boolean(source));
+  } catch {
+    return [];
+  }
+};
+
 const mapWpPost = (post: WpPostNode): Post | null => {
   const slug = post.slug?.trim();
   const title = stripHtml(post.title);
@@ -182,6 +233,13 @@ const mapWpPost = (post: WpPostNode): Post | null => {
       canonicalUrl: derivedCanonicalUrl,
       ogImage: post.seo?.opengraphImage?.sourceUrl?.trim() || post.featuredImage?.node?.sourceUrl?.trim() || undefined,
       focusKeyword: post.seo?.focuskw?.trim() || undefined
+    },
+    sources: parseSources(post.vitalbloomSources),
+    editorialReview: {
+      factCheckedBy: post.vitalbloomFactCheckedBy?.trim() || undefined,
+      factCheckedAt: post.vitalbloomFactCheckedAt?.trim() || undefined,
+      reviewedBy: post.vitalbloomReviewedBy?.trim() || undefined,
+      reviewedAt: post.vitalbloomReviewedAt?.trim() || undefined
     }
   };
 };

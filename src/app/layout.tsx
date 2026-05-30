@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import JsonLd from "@/components/JsonLd";
 import { seoDefaults, siteConfig } from "@/config/site";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -64,6 +66,7 @@ export default function RootLayout({
       <body className="min-h-full bg-zinc-50 text-zinc-900">
         <div className="mx-auto flex min-h-full w-full max-w-6xl flex-col px-4 sm:px-6 lg:px-8">
           <Header />
+          <JsonLd data={[organizationSchema(), websiteSchema()]} />
           <div className="flex-1">{children}</div>
           <Footer />
         </div>

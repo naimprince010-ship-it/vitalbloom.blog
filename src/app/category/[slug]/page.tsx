@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
 import { getCategoryBySlug, getPostsByCategorySlug } from "@/lib/api";
 import { siteConfig } from "@/config/site";
+import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 
 type CategoryPageProps = {
   params: Promise<{
@@ -71,9 +73,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const posts = await getPostsByCategorySlug(slug);
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: category.name, url: `/category/${category.slug}` }
+  ];
 
   return (
     <main className="flex flex-1 flex-col gap-8 py-10 sm:py-12">
+      <JsonLd data={[collectionPageSchema(category, posts), breadcrumbSchema(breadcrumbs)]} />
       <header className="space-y-3 border-b border-zinc-200 pb-6">
         <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
           Category
