@@ -277,6 +277,96 @@ REFERENCES: dict[str, dict[str, object]] = {
             },
         ],
     },
+    "how-to-avoid-burnout": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Burn-out an Occupational Phenomenon",
+                "url": "https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon",
+                "publisher": "World Health Organization",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Stress",
+                "url": "https://www.nccih.nih.gov/health/stress",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "beginner-meditation-guide": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Meditation and Mindfulness: Effectiveness and Safety",
+                "url": "https://www.nccih.nih.gov/health/meditation/overview.htm",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Mind and Body Practices",
+                "url": "https://www.nccih.nih.gov/health/mind-and-body-practices",
+                "publisher": "National Center for Complementary and Integrative Health",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "evening-habits-better-rest": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "About Sleep",
+                "url": "https://www.cdc.gov/sleep/about/index.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "About Sleep and Your Heart Health",
+                "url": "https://www.cdc.gov/heart-disease/about/sleep-and-heart-health.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "stretching-routine-desk-workers": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Office Ergonomics: Your How-to Guide",
+                "url": "https://www.mayoclinic.org/health/office-ergonomics/MY01460",
+                "publisher": "Mayo Clinic",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Desk Stretches: Video Collection",
+                "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/office-stretches/art-20046041",
+                "publisher": "Mayo Clinic",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
+    "foods-support-better-digestion": {
+        "fact_checked_by": "VitalBloom Editorial Team",
+        "fact_checked_at": "2026-05-30",
+        "sources": [
+            {
+                "title": "Dietary Fiber",
+                "url": "https://medlineplus.gov/dietaryfiber.html",
+                "publisher": "MedlinePlus",
+                "accessedAt": "2026-05-30",
+            },
+            {
+                "title": "Healthy Eating Tips",
+                "url": "https://www.cdc.gov/nutrition/features/healthy-eating-tips.html",
+                "publisher": "Centers for Disease Control and Prevention",
+                "accessedAt": "2026-05-30",
+            },
+        ],
+    },
 }
 
 
