@@ -65,6 +65,26 @@ LINKS = {
         ("remote workers", "/healthy-habits-remote-workers"),
         ("sleep routine", "/better-sleep-routine"),
     ],
+    "simple-hydration-guide": [
+        ("Water-rich foods", "/foods-support-better-digestion"),
+        ("movement", "/walking-for-weight-management"),
+    ],
+    "strength-training-basics": [
+        ("home workouts", "/beginner-home-workout-plan"),
+        ("recovery", "/better-sleep-routine"),
+    ],
+    "foods-drinks-affect-sleep": [
+        ("Caffeine", "/sleep-hygiene-checklist"),
+        ("evening meal", "/evening-habits-better-rest"),
+    ],
+    "journaling-mental-clarity": [
+        ("Evening journaling", "/evening-habits-better-rest"),
+        ("stress", "/how-to-avoid-burnout"),
+    ],
+    "seasonal-wellness-tips": [
+        ("Hydration", "/simple-hydration-guide"),
+        ("morning light", "/sleep-hygiene-checklist"),
+    ],
 }
 
 

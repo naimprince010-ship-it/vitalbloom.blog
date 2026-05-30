@@ -98,6 +98,36 @@ IMAGES = [
         "subtitle": "Daily boundaries for sustainable energy",
         "palette": ("#f8f4ef", "#ead1bc", "#a25f3b", "#3d281d"),
     },
+    {
+        "filename": "simple-hydration-guide.png",
+        "title": "Simple Hydration Guide",
+        "subtitle": "Steady fluid habits for everyday wellness",
+        "palette": ("#edf8fb", "#bfe3ee", "#3d8aa4", "#1d3b47"),
+    },
+    {
+        "filename": "strength-training-basics.png",
+        "title": "Strength Training Basics",
+        "subtitle": "Beginner movement patterns and progress",
+        "palette": ("#f1f6f1", "#c8dfc8", "#4f8555", "#213424"),
+    },
+    {
+        "filename": "foods-drinks-affect-sleep.png",
+        "title": "Foods and Drinks That Affect Sleep",
+        "subtitle": "Evening choices for better rest",
+        "palette": ("#f3f1f8", "#ccc8e5", "#5b5890", "#272640"),
+    },
+    {
+        "filename": "journaling-mental-clarity.png",
+        "title": "Journaling for Mental Clarity",
+        "subtitle": "Simple reflection prompts for busy minds",
+        "palette": ("#f7f4ee", "#e6d8bd", "#9a7344", "#3b2b1d"),
+    },
+    {
+        "filename": "seasonal-wellness-tips.png",
+        "title": "Seasonal Wellness Tips",
+        "subtitle": "Balanced habits through changing seasons",
+        "palette": ("#f3f8ef", "#d4e6c5", "#6f914a", "#2d3b1f"),
+    },
 ]
 
 

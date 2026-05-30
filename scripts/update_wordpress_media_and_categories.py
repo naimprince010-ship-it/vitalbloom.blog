@@ -22,6 +22,11 @@ POST_IMAGES = {
     "evening-habits-better-rest": "evening-habits-better-rest.png",
     "beginner-meditation-guide": "beginner-meditation-guide.png",
     "how-to-avoid-burnout": "how-to-avoid-burnout.png",
+    "simple-hydration-guide": "simple-hydration-guide.png",
+    "strength-training-basics": "strength-training-basics.png",
+    "foods-drinks-affect-sleep": "foods-drinks-affect-sleep.png",
+    "journaling-mental-clarity": "journaling-mental-clarity.png",
+    "seasonal-wellness-tips": "seasonal-wellness-tips.png",
 }
 
 CATEGORY_DESCRIPTIONS = {
