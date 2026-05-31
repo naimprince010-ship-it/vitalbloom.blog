@@ -9,6 +9,36 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "10-minute-walking-routine.png",
+        "title": "10-Minute Walking Routine",
+        "subtitle": "Short movement for busy days",
+        "palette": ("#eef8f2", "#c7e7d2", "#43835a", "#1f3527"),
+    },
+    {
+        "filename": "simple-meal-prep-healthy-lunches.png",
+        "title": "Simple Healthy Lunch Meal Prep",
+        "subtitle": "Flexible meals for weekday energy",
+        "palette": ("#fff7ed", "#f0d4a7", "#b96f2f", "#3b2618"),
+    },
+    {
+        "filename": "beginner-evening-routine-better-sleep.png",
+        "title": "Beginner Evening Routine",
+        "subtitle": "Gentle cues for better sleep",
+        "palette": ("#f3f1fa", "#d3caea", "#675a9d", "#2b2944"),
+    },
+    {
+        "filename": "better-breaks-remote-work.png",
+        "title": "Better Breaks for Remote Work",
+        "subtitle": "Movement, eyes, and energy resets",
+        "palette": ("#eef6fa", "#c2dce8", "#3f7892", "#1d3540"),
+    },
+    {
+        "filename": "high-fiber-breakfast-ideas.png",
+        "title": "High-Fiber Breakfast Ideas",
+        "subtitle": "Simple mornings with more staying power",
+        "palette": ("#f6f8ef", "#d8e7bd", "#789044", "#303b1f"),
+    },
+    {
         "filename": "daily-wellness-checklist.png",
         "title": "Daily Wellness Checklist",
         "subtitle": "Simple habits for a healthier routine",
