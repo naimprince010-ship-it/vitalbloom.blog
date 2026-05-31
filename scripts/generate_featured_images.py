@@ -9,6 +9,12 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "beginner-home-workout-guide.png",
+        "title": "Beginner Home Workout Guide",
+        "subtitle": "Simple strength and movement without a gym",
+        "palette": ("#eef6f8", "#badde3", "#2f7785", "#18333a"),
+    },
+    {
         "filename": "balanced-plate-guide.png",
         "title": "Balanced Plate Guide",
         "subtitle": "Build simple meals with protein, plants, and fiber",
