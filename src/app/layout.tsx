@@ -63,6 +63,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6080637634246399"
+        />
+      </head>
       <body className="min-h-full bg-zinc-50 text-zinc-900">
         <div className="mx-auto flex min-h-full w-full max-w-6xl flex-col px-4 sm:px-6 lg:px-8">
           <Header />
