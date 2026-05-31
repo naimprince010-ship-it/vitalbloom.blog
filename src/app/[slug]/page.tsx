@@ -118,6 +118,7 @@ export default async function PostPage({ params }: PostPageProps) {
           imageUrl={post.featuredImage}
           alt={post.title}
           className="mt-6 aspect-[16/9] w-full rounded-lg object-cover"
+          priority
         />
 
         <section

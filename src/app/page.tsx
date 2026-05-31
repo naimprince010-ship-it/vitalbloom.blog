@@ -34,6 +34,7 @@ export default async function Home() {
               imageUrl={heroPost.featuredImage}
               alt={heroPost.title}
               className="aspect-[16/7] w-full object-cover"
+              priority
             />
             <div className="p-5 sm:p-6">
               <p className="mb-2 text-sm font-medium text-zinc-500">
@@ -102,7 +103,7 @@ export default async function Home() {
               <div className="p-5">
                 <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                   <span>{post.readingTime} min read</span>
-                  <span aria-hidden="true">•</span>
+                  <span aria-hidden="true">|</span>
                   <time dateTime={post.publishedAt}>
                     {new Date(post.publishedAt).toLocaleDateString("en-US", {
                       month: "short",
