@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
-import { getCategoryBySlug, getPostsByCategorySlug } from "@/lib/api";
+import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { siteConfig } from "@/config/site";
+import { getCategoryBySlug, getPostsByCategorySlug } from "@/lib/api";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 
 type CategoryPageProps = {
@@ -73,6 +74,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const posts = await getPostsByCategorySlug(slug);
+  const pillarSlugs = categoryPillarGuideSlugs[category.slug] || [];
+  const pillarPosts = pillarSlugs
+    .map((pillarSlug) => posts.find((post) => post.slug === pillarSlug))
+    .filter((post): post is NonNullable<typeof post> => Boolean(post));
+  const regularPosts = posts.filter((post) => !pillarSlugs.includes(post.slug));
   const breadcrumbs = [
     { name: "Home", url: "/" },
     { name: category.name, url: `/category/${category.slug}` }
@@ -95,13 +101,57 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         ) : null}
       </header>
 
+      {pillarPosts.length > 0 ? (
+        <section aria-labelledby="category-featured-guides" className="space-y-4">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
+              Essential Guides
+            </p>
+            <h2 id="category-featured-guides" className="text-2xl font-semibold text-zinc-900">
+              Start with These {category.name} Guides
+            </h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {pillarPosts.map((post, index) => (
+              <article
+                key={post.id}
+                className="overflow-hidden rounded-lg border border-zinc-200 bg-white"
+              >
+                <PostImage
+                  imageUrl={post.featuredImage}
+                  alt={post.title}
+                  className="aspect-[16/9] w-full object-cover"
+                  priority={index === 0}
+                />
+                <div className="p-5">
+                  <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
+                    <span>{post.readingTime} min guide</span>
+                    <span aria-hidden="true">|</span>
+                    <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+                  </div>
+                  <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
+                    <Link
+                      href={`/${post.slug}`}
+                      className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+                    >
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-base leading-7 text-zinc-600">{post.excerpt}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section aria-labelledby="category-posts" className="space-y-4">
         <h2 id="category-posts" className="text-2xl font-semibold text-zinc-900">
           Latest in {category.name}
         </h2>
-        {posts.length > 0 ? (
+        {regularPosts.length > 0 ? (
           <div className="space-y-4">
-            {posts.map((post) => (
+            {regularPosts.map((post) => (
               <article
                 key={post.id}
                 className="grid overflow-hidden rounded-lg border border-zinc-200 bg-white sm:grid-cols-[220px_1fr]"
@@ -114,7 +164,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 <div className="p-5">
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                     <span>{post.readingTime} min read</span>
-                    <span aria-hidden="true">•</span>
+                    <span aria-hidden="true">|</span>
                     <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
                   </div>
                   <h3 className="text-xl font-semibold tracking-tight text-zinc-900">

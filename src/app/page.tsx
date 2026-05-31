@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PostImage from "@/components/PostImage";
+import { pillarGuideSlugs } from "@/config/pillar-guides";
 import { siteConfig } from "@/config/site";
 import { getCategories, getPosts } from "@/lib/api";
 
@@ -7,6 +8,9 @@ export default async function Home() {
   const posts = await getPosts();
   const categories = await getCategories();
   const heroPost = posts[0];
+  const pillarGuides = pillarGuideSlugs
+    .map((slug) => posts.find((post) => post.slug === slug))
+    .filter((post): post is NonNullable<typeof post> => Boolean(post));
 
   return (
     <main className="flex flex-1 flex-col gap-12 py-10 sm:py-12">
@@ -57,6 +61,53 @@ export default async function Home() {
           <p className="text-zinc-600">No featured content available yet.</p>
         )}
       </section>
+
+      {pillarGuides.length > 0 ? (
+        <section aria-labelledby="featured-guides" className="space-y-5">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
+                Start Here
+              </p>
+              <h2 id="featured-guides" className="text-2xl font-semibold text-zinc-900">
+                Featured Wellness Guides
+              </h2>
+            </div>
+            <p className="max-w-xl text-sm leading-6 text-zinc-600">
+              Deep, evidence-informed guides for sleep, stress, movement, nutrition, and mindful living.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {pillarGuides.map((post, index) => (
+              <article
+                key={post.id}
+                className="overflow-hidden rounded-lg border border-zinc-200 bg-white"
+              >
+                <PostImage
+                  imageUrl={post.featuredImage}
+                  alt={post.title}
+                  className="aspect-[16/9] w-full object-cover"
+                  priority={index === 0}
+                />
+                <div className="p-5">
+                  <p className="mb-2 text-sm font-medium text-zinc-500">
+                    {post.readingTime} min guide
+                  </p>
+                  <h3 className="text-lg font-semibold tracking-tight text-zinc-900">
+                    <Link
+                      href={`/${post.slug}`}
+                      className="hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+                    >
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">{post.excerpt}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section aria-labelledby="category-grid" className="space-y-5">
         <h2 id="category-grid" className="text-2xl font-semibold text-zinc-900">
