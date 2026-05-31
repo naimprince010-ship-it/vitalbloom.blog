@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID;
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || "G-FNMQBBBZL3";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
