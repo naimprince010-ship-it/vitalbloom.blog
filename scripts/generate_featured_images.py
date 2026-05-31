@@ -9,6 +9,12 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "balanced-plate-guide.png",
+        "title": "Balanced Plate Guide",
+        "subtitle": "Build simple meals with protein, plants, and fiber",
+        "palette": ("#f6f8ef", "#d8e7bd", "#789044", "#303b1f"),
+    },
+    {
         "filename": "journaling-for-mental-clarity.png",
         "title": "Journaling for Mental Clarity",
         "subtitle": "Benefits, prompts, and a simple starter routine",
