@@ -9,6 +9,12 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "better-sleep-routine-guide.png",
+        "title": "Better Sleep Routine Guide",
+        "subtitle": "A complete beginner plan for calmer nights",
+        "palette": ("#f2f1fa", "#c9d8f0", "#596aa4", "#252844"),
+    },
+    {
         "filename": "10-minute-walking-routine.png",
         "title": "10-Minute Walking Routine",
         "subtitle": "Short movement for busy days",
