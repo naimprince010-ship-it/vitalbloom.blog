@@ -26,6 +26,7 @@ export default function PostImage({
       className={className}
       priority={priority}
       sizes="(min-width: 1024px) 768px, (min-width: 640px) 90vw, 100vw"
+      unoptimized
     />
   );
 }
