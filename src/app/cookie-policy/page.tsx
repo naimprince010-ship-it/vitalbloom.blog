@@ -1,4 +1,10 @@
 import { siteConfig } from "@/config/site";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cookie Policy",
+  description: `Learn how ${siteConfig.name} may use cookies for site functionality, analytics, and advertising measurement.`
+};
 
 export default function CookiePolicyPage() {
   return (

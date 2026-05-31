@@ -1,4 +1,10 @@
 import { siteConfig } from "@/config/site";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Disclaimer",
+  description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`
+};
 
 export default function DisclaimerPage() {
   return (

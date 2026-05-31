@@ -103,11 +103,11 @@ export default async function PostPage({ params }: PostPageProps) {
           </h1>
           <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-600">
             <span>{post.readingTime} min read</span>
-            <span aria-hidden="true">•</span>
+            <span aria-hidden="true">|</span>
             <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
             {author ? (
               <>
-                <span aria-hidden="true">•</span>
+                <span aria-hidden="true">|</span>
                 <span>By {author.name}</span>
               </>
             ) : null}
@@ -167,7 +167,7 @@ export default async function PostPage({ params }: PostPageProps) {
                         {source.title}
                       </a>
                       {source.publisher ? (
-                        <span className="text-zinc-500"> — {source.publisher}</span>
+                        <span className="text-zinc-500"> - {source.publisher}</span>
                       ) : null}
                     </li>
                   ))}

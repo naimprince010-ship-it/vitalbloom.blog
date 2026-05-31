@@ -1,4 +1,10 @@
 import { siteConfig } from "@/config/site";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions",
+  description: `Review the website terms for using ${siteConfig.name}.`
+};
 
 export default function TermsPage() {
   return (
