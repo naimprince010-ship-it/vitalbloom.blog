@@ -15,6 +15,7 @@ export const organizationSchema = () => ({
   "@id": `${siteConfig.url}/#organization`,
   name: siteConfig.name,
   url: siteConfig.url,
+  logo: absoluteUrl(siteConfig.defaultOgImage),
   contactPoint: {
     "@type": "ContactPoint",
     email: siteConfig.contactEmail,

@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://www.vitalbloom.blog",
   locale: "en_US",
   contactEmail: "hello@vitalbloom.blog",
-  defaultOgImage: "/globe.svg",
+  defaultOgImage: "/og-default.png",
   keywords: [
     "wellness",
     "nutrition",
