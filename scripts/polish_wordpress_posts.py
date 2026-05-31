@@ -40,7 +40,7 @@ POLISH_SECTIONS: dict[str, str] = {
   <ul>
     <li>Choose one daily cue, such as after brushing your teeth or before opening email.</li>
     <li>Keep the first sessions short enough that they feel almost too easy.</li>
-    <li>Use plain labels like “thinking,” “planning,” or “worrying” when your mind wanders.</li>
+    <li>Use plain labels like "thinking," "planning," or "worrying" when your mind wanders.</li>
     <li>End by noticing one practical next step for the rest of your day.</li>
   </ul>
 </section>
@@ -78,7 +78,7 @@ POLISH_SECTIONS: dict[str, str] = {
     "screen-time-and-sleep-quality": """
 <section>
   <h2>How to Reduce Evening Screen Disruption</h2>
-  <p>Screen time can affect sleep in more than one way. Bright light may delay sleepiness, but stimulating content, late messages, and “one more video” loops can also keep the brain alert. A better approach is to design a clear digital wind-down period.</p>
+  <p>Screen time can affect sleep in more than one way. Bright light may delay sleepiness, but stimulating content, late messages, and "one more video" loops can also keep the brain alert. A better approach is to design a clear digital wind-down period.</p>
   <p>Start with the final 30 minutes before bed. Put the phone on charge away from the bed, lower room lighting, and switch to a calm offline activity such as reading, stretching, or preparing for the next morning.</p>
 </section>
 <section>
@@ -235,6 +235,190 @@ POLISH_SECTIONS: dict[str, str] = {
   <p>No single food works for everyone. Overall routine, sleep schedule, stress, and caffeine timing usually matter more.</p>
   <h3>Should I stop drinking water before bed?</h3>
   <p>Stay hydrated during the day. If nighttime bathroom trips disrupt sleep, consider shifting more fluids earlier.</p>
+</section>
+""",
+    "post-workout-recovery-tips": """
+<section>
+  <h2>How to Recover Without Overcomplicating It</h2>
+  <p>Recovery is not just what happens after a hard workout. It is the combination of sleep, hydration, food, rest days, and smart progression. When those basics are consistent, your body has a better chance to adapt to training.</p>
+  <p>Beginners often recover better by doing slightly less than they think they can handle. Leave some energy in reserve, especially during the first few weeks of a new routine.</p>
+</section>
+<section>
+  <h2>Post-Workout Recovery Checklist</h2>
+  <ul>
+    <li>Cool down with gentle movement instead of stopping suddenly.</li>
+    <li>Drink water and replace fluids after sweaty sessions.</li>
+    <li>Eat a balanced meal or snack with protein and carbohydrates.</li>
+    <li>Sleep enough before increasing workout intensity.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Should soreness guide every workout?</h3>
+  <p>Soreness is one signal, but energy, performance, sleep, and joint comfort also matter.</p>
+  <h3>Do I need expensive recovery tools?</h3>
+  <p>No. Sleep, gradual training, hydration, and balanced meals usually matter more than gadgets.</p>
+</section>
+""",
+    "seasonal-wellness-tips": """
+<section>
+  <h2>How to Adjust Your Routine by Season</h2>
+  <p>Seasonal wellness is about planning for predictable changes. Shorter daylight, hotter weather, cold and flu season, travel, and holiday schedules can all disrupt routines if you wait until the last minute.</p>
+  <p>Use the start of each season as a checkpoint. Review your sleep schedule, movement plan, hydration, food choices, and preventive health habits so your routine matches the environment you are actually in.</p>
+</section>
+<section>
+  <h2>Seasonal Reset Checklist</h2>
+  <ul>
+    <li>Prepare weather-appropriate walking or workout options.</li>
+    <li>Keep hydration visible during hot or dry months.</li>
+    <li>Make sleep routines stronger during busy holiday periods.</li>
+    <li>Follow common illness-prevention habits during cold and flu season.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Should my routine change every season?</h3>
+  <p>The core habits can stay the same, but the details may need to change with weather, daylight, and schedule demands.</p>
+  <h3>What is the easiest seasonal habit to start?</h3>
+  <p>Plan one backup movement option for days when weather or daylight interrupts your normal routine.</p>
+</section>
+""",
+    "strength-training-basics": """
+<section>
+  <h2>How Beginners Should Think About Strength</h2>
+  <p>Strength training is not only for athletes. It supports daily movement, balance, bone health, and long-term independence. Beginners can start with simple movements such as squats, hinges, pushes, pulls, and carries.</p>
+  <p>The first goal is learning control. Use a range of motion that feels safe, keep the pace steady, and increase resistance gradually after your technique feels consistent.</p>
+</section>
+<section>
+  <h2>Beginner Strength Checklist</h2>
+  <ul>
+    <li>Start with two sessions per week if you are new to training.</li>
+    <li>Practice movement quality before chasing heavy weight.</li>
+    <li>Include both upper-body and lower-body exercises.</li>
+    <li>Rest at least a day between challenging strength sessions at first.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Can I strength train at home?</h3>
+  <p>Yes. Bodyweight exercises, resistance bands, and household weights can be enough for a beginner routine.</p>
+  <h3>When should I increase weight?</h3>
+  <p>Increase gradually when you can finish the planned reps with good form and no unusual pain.</p>
+</section>
+""",
+    "simple-hydration-guide": """
+<section>
+  <h2>How to Make Hydration Easier</h2>
+  <p>Hydration habits work best when water is easy to reach. Many people do not need a complicated tracking system; they need a visible bottle, regular meal-time fluids, and extra attention during heat, illness, or sweaty activity.</p>
+  <p>Thirst, urine color, activity level, climate, and medical conditions can all affect fluid needs. People with specific health concerns should follow advice from their healthcare professional.</p>
+</section>
+<section>
+  <h2>Daily Hydration Checklist</h2>
+  <ul>
+    <li>Drink water with meals and snacks.</li>
+    <li>Carry water during errands, commuting, or workouts.</li>
+    <li>Increase fluids during hot weather or heavier sweating.</li>
+    <li>Choose water more often than sugary drinks.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Does coffee count toward hydration?</h3>
+  <p>Many beverages contribute fluid, but water is still a simple default choice for everyday hydration.</p>
+  <h3>Can I drink too much water?</h3>
+  <p>Yes, although it is uncommon for most healthy adults. Follow medical guidance if you have kidney, heart, or electrolyte concerns.</p>
+</section>
+""",
+    "how-to-avoid-burnout": """
+<section>
+  <h2>How to Notice Burnout Risk Earlier</h2>
+  <p>Burnout risk often builds gradually. You may notice constant fatigue, cynicism, lower motivation, difficulty focusing, or feeling detached from work that used to feel manageable. The earlier you notice those signals, the easier it is to adjust.</p>
+  <p>Prevention starts with boundaries that are specific enough to protect. Decide when work ends, which notifications can wait, and what recovery habits are non-negotiable during demanding weeks.</p>
+</section>
+<section>
+  <h2>Burnout Boundary Checklist</h2>
+  <ul>
+    <li>Define a daily shutdown cue for work.</li>
+    <li>Schedule short breaks before exhaustion hits.</li>
+    <li>Protect sleep and meals during high-pressure periods.</li>
+    <li>Talk with a manager, clinician, or trusted support person if symptoms persist.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Is burnout the same as normal tiredness?</h3>
+  <p>No. Burnout is more persistent and is often tied to chronic work-related stress.</p>
+  <h3>Can a weekend fix burnout?</h3>
+  <p>A weekend can help with rest, but deeper burnout usually requires ongoing changes to workload, boundaries, and support.</p>
+</section>
+""",
+    "beginner-meditation-guide": """
+<section>
+  <h2>How to Start Meditation Gently</h2>
+  <p>Meditation can be simple: sit comfortably, choose a focus, notice when your mind wanders, and return without judging yourself. Wandering is not a mistake. It is part of the practice.</p>
+  <p>For beginners, short sessions are enough. Try two to five minutes at the same time each day, then slowly add time only if the habit feels steady.</p>
+</section>
+<section>
+  <h2>Beginner Meditation Checklist</h2>
+  <ul>
+    <li>Choose a quiet enough place, not a perfect place.</li>
+    <li>Use your breath, a phrase, or body sensations as an anchor.</li>
+    <li>Restart gently whenever attention drifts.</li>
+    <li>End by noticing how your body feels before moving on.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Do I have to sit cross-legged?</h3>
+  <p>No. A chair, cushion, or supported position can work as long as you are comfortable and alert.</p>
+  <h3>What if meditation feels uncomfortable?</h3>
+  <p>Keep it short, try grounding techniques, and seek professional support if intense distress comes up.</p>
+</section>
+""",
+    "evening-habits-better-rest": """
+<section>
+  <h2>How to Create a Realistic Evening Wind-Down</h2>
+  <p>Better rest often starts before you get into bed. A consistent wind-down routine gives your body cues that the active part of the day is ending. The routine can be simple: dim lights, finish heavy tasks, prepare tomorrow's essentials, and choose one calming activity.</p>
+  <p>Try to repeat the same order most nights. Predictability can make the routine easier, even when the exact bedtime shifts slightly.</p>
+</section>
+<section>
+  <h2>Evening Routine Checklist</h2>
+  <ul>
+    <li>Set a reminder to begin winding down.</li>
+    <li>Move stimulating work or conversations earlier when possible.</li>
+    <li>Lower light and reduce screen intensity.</li>
+    <li>Prepare your bedroom for cool, dark, quiet sleep.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>How long should a wind-down routine be?</h3>
+  <p>Even 15 to 30 minutes can help if it is consistent and calming.</p>
+  <h3>What if I cannot keep the same bedtime?</h3>
+  <p>Keep the same routine order and wake time as often as possible, even when bedtime varies.</p>
+</section>
+""",
+    "simple-breathing-exercises": """
+<section>
+  <h2>How to Use Breathing Exercises Safely</h2>
+  <p>Breathing exercises can be a quick way to slow down during everyday stress. The goal is not to force huge breaths. It is to breathe in a steady, comfortable rhythm that helps your body feel less rushed.</p>
+  <p>If a technique makes you dizzy or uncomfortable, stop and return to normal breathing. People with respiratory, cardiac, panic, or trauma-related concerns may want guidance from a qualified professional.</p>
+</section>
+<section>
+  <h2>Simple Breathing Checklist</h2>
+  <ul>
+    <li>Start with one or two minutes instead of long sessions.</li>
+    <li>Keep the shoulders relaxed and the jaw unclenched.</li>
+    <li>Use a slow exhale when you want to settle down.</li>
+    <li>Practice when calm so the skill is easier during stress.</li>
+  </ul>
+</section>
+<section>
+  <h2>Common Questions</h2>
+  <h3>Can breathing exercises stop all anxiety?</h3>
+  <p>No. They can help some people manage stress in the moment, but they are not a complete treatment for anxiety disorders.</p>
+  <h3>When is the best time to practice?</h3>
+  <p>Practice during low-stress moments first, then use the same technique during harder moments.</p>
 </section>
 """,
 }
