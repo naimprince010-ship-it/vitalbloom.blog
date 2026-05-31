@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about VitalBloom's practical, evidence-informed wellness publishing mission."
+    "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards."
 };
 
 export default function AboutPage() {
@@ -31,10 +31,40 @@ export default function AboutPage() {
             topics.
           </p>
           <p>
+            We use an evidence-informed editorial process: articles are researched
+            against credible public health, medical, academic, and expert sources
+            when health claims are involved. Our editorial team prioritizes clear
+            explanations, practical steps, and transparent references over hype or
+            quick fixes.
+          </p>
+          <p>
+            VitalBloom is an educational wellness publication. We do not provide
+            diagnosis, treatment plans, or emergency support. We encourage readers
+            to work with qualified professionals for personal medical, mental
+            health, nutrition, or fitness concerns.
+          </p>
+          <p>
             Articles are written for general education and are not a substitute
             for professional medical advice. Readers should speak with qualified
             professionals about personal health concerns.
           </p>
+        </section>
+
+        <section className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-5">
+            <h2 className="text-lg font-semibold text-zinc-900">What We Cover</h2>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              Sleep routines, beginner fitness, balanced eating, stress support,
+              mindfulness, hydration, recovery, and sustainable daily habits.
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-5">
+            <h2 className="text-lg font-semibold text-zinc-900">How We Work</h2>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              We build articles around reader intent, credible references, cautious
+              health language, and updates when guidance or source quality changes.
+            </p>
+          </div>
         </section>
       </article>
     </main>

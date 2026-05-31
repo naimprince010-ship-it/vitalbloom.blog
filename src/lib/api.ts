@@ -129,7 +129,7 @@ const mapWpAuthor = (author: WpAuthorNode | null | undefined): Author => {
     name: author?.name?.trim() || "VitalBloom Editorial Team",
     bio:
       stripHtml(author?.description) ||
-      "Editorial contributor for VitalBloom.blog.",
+      "VitalBloom's editorial team creates evidence-informed wellness guides using credible sources, practical examples, and careful health communication.",
     avatar: author?.avatar?.url?.trim() || ""
   };
 };

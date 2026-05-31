@@ -51,6 +51,7 @@ export const footerNavigation = {
   ],
   legal: [
     { label: "Disclaimer", href: "/disclaimer" },
+    { label: "Editorial Policy", href: "/editorial-policy" },
     { label: "Cookie Policy", href: "/cookie-policy" }
   ]
 } as const;
