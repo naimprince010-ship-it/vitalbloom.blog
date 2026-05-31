@@ -1,4 +1,5 @@
 import type { Author, Category, Post, PostSource } from "@/types/blog";
+import { siteConfig } from "@/config/site";
 import { authors, categories, posts } from "@/lib/mock-data";
 import {
   WP_CATEGORIES_QUERY,
@@ -210,8 +211,11 @@ const mapWpPost = (post: WpPostNode): Post | null => {
   const cleanedContent = stripHtml(rawContent);
   const cleanedExcerpt = stripHtml(post.excerpt) || cleanedContent.slice(0, 180);
   const canonicalUrl = post.seo?.canonical?.trim();
+  const frontendCanonicalUrl = `${siteConfig.url}/${slug}`;
   const derivedCanonicalUrl =
-    canonicalUrl || (cmsApiUrl ? `${cmsApiUrl.replace(/\/graphql\/?$/, "")}/${slug}` : undefined);
+    canonicalUrl && canonicalUrl.startsWith(siteConfig.url)
+      ? canonicalUrl
+      : frontendCanonicalUrl;
 
   return {
     id: post.id?.trim() || slug,

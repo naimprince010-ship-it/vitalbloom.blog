@@ -9,6 +9,12 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "journaling-for-mental-clarity.png",
+        "title": "Journaling for Mental Clarity",
+        "subtitle": "Benefits, prompts, and a simple starter routine",
+        "palette": ("#f7f4ee", "#e7d9bf", "#9a7344", "#3b2b1d"),
+    },
+    {
         "filename": "better-sleep-routine-guide.png",
         "title": "Better Sleep Routine Guide",
         "subtitle": "A complete beginner plan for calmer nights",
