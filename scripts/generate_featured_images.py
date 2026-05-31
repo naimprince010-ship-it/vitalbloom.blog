@@ -9,6 +9,12 @@ HEIGHT = 900
 
 IMAGES = [
     {
+        "filename": "stress-management-guide.png",
+        "title": "Stress Management Guide",
+        "subtitle": "Practical ways to calm everyday overwhelm",
+        "palette": ("#f5f2fa", "#d6c8eb", "#755aa0", "#302640"),
+    },
+    {
         "filename": "beginner-home-workout-guide.png",
         "title": "Beginner Home Workout Guide",
         "subtitle": "Simple strength and movement without a gym",
