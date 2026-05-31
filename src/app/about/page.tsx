@@ -4,7 +4,10 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards."
+    "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards.",
+  alternates: {
+    canonical: `${siteConfig.url}/about`
+  }
 };
 
 export default function AboutPage() {

@@ -3,7 +3,10 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${siteConfig.name} for editorial, privacy, or general website questions.`
+  description: `Contact ${siteConfig.name} for editorial, privacy, or general website questions.`,
+  alternates: {
+    canonical: `${siteConfig.url}/contact`
+  }
 };
 
 export default function ContactPage() {

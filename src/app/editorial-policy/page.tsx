@@ -4,7 +4,10 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Editorial Policy",
   description:
-    "Read VitalBloom's editorial policy for sourcing, fact-checking, updates, corrections, and health content standards."
+    "Read VitalBloom's editorial policy for sourcing, fact-checking, updates, corrections, and health content standards.",
+  alternates: {
+    canonical: `${siteConfig.url}/editorial-policy`
+  }
 };
 
 export default function EditorialPolicyPage() {

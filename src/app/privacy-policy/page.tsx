@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: `Read how ${siteConfig.name} handles privacy, analytics, cookies, and data requests.`
+  description: `Read how ${siteConfig.name} handles privacy, analytics, cookies, and data requests.`,
+  alternates: {
+    canonical: `${siteConfig.url}/privacy-policy`
+  }
 };
 
 export default function PrivacyPolicyPage() {

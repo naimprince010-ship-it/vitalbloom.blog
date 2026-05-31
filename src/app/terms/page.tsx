@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
-  description: `Review the website terms for using ${siteConfig.name}.`
+  description: `Review the website terms for using ${siteConfig.name}.`,
+  alternates: {
+    canonical: `${siteConfig.url}/terms`
+  }
 };
 
 export default function TermsPage() {

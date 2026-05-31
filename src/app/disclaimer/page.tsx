@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`
+  description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`,
+  alternates: {
+    canonical: `${siteConfig.url}/disclaimer`
+  }
 };
 
 export default function DisclaimerPage() {
