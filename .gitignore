@@ -16,6 +16,7 @@
 # local tool caches
 /.npm-cache/
 /.tmp/
+__pycache__/
 
 # next.js
 /.next/
