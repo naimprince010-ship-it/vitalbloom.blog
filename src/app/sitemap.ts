@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { getCategories, getPosts } from "@/lib/api";
 
 export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
