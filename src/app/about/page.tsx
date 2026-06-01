@@ -62,6 +62,12 @@ export default function AboutPage() {
             for professional medical advice. Readers should speak with qualified
             professionals about personal health concerns.
           </p>
+          <p>
+            We label source-backed articles with references and editorial review
+            details where available. We also maintain a correction path through
+            our contact email so readers can flag unclear wording, broken
+            sources, or outdated guidance.
+          </p>
         </section>
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -77,6 +83,21 @@ export default function AboutPage() {
             <p className="mt-2 text-sm leading-6 text-zinc-600">
               We build articles around reader intent, credible references, cautious
               health language, and updates when guidance or source quality changes.
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-5">
+            <h2 className="text-lg font-semibold text-zinc-900">Review Standards</h2>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              Health-related articles are checked for source alignment, practical
+              usefulness, and wording that avoids diagnosis, treatment claims, or
+              one-size-fits-all promises.
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-5">
+            <h2 className="text-lg font-semibold text-zinc-900">Reader Corrections</h2>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              Readers can request corrections, source reviews, or clarification by
+              contacting us at {siteConfig.contactEmail}.
             </p>
           </div>
         </section>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
+import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
 import { siteConfig } from "@/config/site";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
@@ -20,6 +21,8 @@ const formatDate = (dateString: string): string => {
     year: "numeric"
   });
 };
+
+const isDefined = <T,>(value: T | undefined): value is T => Boolean(value);
 
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -77,6 +80,16 @@ export default async function PostPage({ params }: PostPageProps) {
   const author = getAuthorById(post.authorId);
   const relatedPosts = await getRelatedPosts(post.id, post.categoryId);
   const category = await getCategoryById(post.categoryId);
+  const pillarGuideSlugs = category
+    ? categoryPillarGuideSlugs[category.slug] ?? []
+    : [];
+  const pillarGuides = (
+    await Promise.all(
+      pillarGuideSlugs
+        .filter((pillarSlug) => pillarSlug !== post.slug)
+        .map((pillarSlug) => getPostBySlug(pillarSlug))
+    )
+  ).filter(isDefined);
   const breadcrumbs = [
     { name: "Home", url: "/" },
     ...(category
@@ -190,6 +203,31 @@ export default async function PostPage({ params }: PostPageProps) {
             About the Author
           </h2>
           <p className="mt-2 text-sm leading-6 text-zinc-600">{author.bio}</p>
+        </section>
+      ) : null}
+
+      {pillarGuides.length > 0 ? (
+        <section
+          aria-labelledby="essential-guides"
+          className="rounded-lg border border-emerald-100 bg-emerald-50/60 p-5"
+        >
+          <h2 id="essential-guides" className="text-lg font-semibold text-zinc-900">
+            Essential Guides
+          </h2>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            {pillarGuides.map((pillarGuide) => (
+              <Link
+                key={pillarGuide.slug}
+                href={`/${pillarGuide.slug}`}
+                className="rounded-md border border-emerald-100 bg-white p-4 text-sm leading-6 text-zinc-700 transition hover:border-emerald-200 hover:text-zinc-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              >
+                <span className="block font-semibold text-zinc-900">
+                  {pillarGuide.title}
+                </span>
+                <span className="mt-1 block">{pillarGuide.excerpt}</span>
+              </Link>
+            ))}
+          </div>
         </section>
       ) : null}
 

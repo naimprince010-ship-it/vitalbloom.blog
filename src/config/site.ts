@@ -32,6 +32,7 @@ export const mainNavigation = [
   { label: "Nutrition", href: "/category/nutrition" },
   { label: "Fitness", href: "/category/fitness" },
   { label: "Mindfulness", href: "/category/mindfulness" },
+  { label: "Wellness", href: "/category/wellness" },
   { label: "Sleep", href: "/category/sleep" }
 ] as const;
 
@@ -47,6 +48,7 @@ export const footerNavigation = {
     { label: "Nutrition", href: "/category/nutrition" },
     { label: "Fitness", href: "/category/fitness" },
     { label: "Mindfulness", href: "/category/mindfulness" },
+    { label: "Wellness", href: "/category/wellness" },
     { label: "Sleep", href: "/category/sleep" }
   ],
   legal: [

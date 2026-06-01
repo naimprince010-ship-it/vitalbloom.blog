@@ -68,6 +68,11 @@ export default function EditorialPolicyPage() {
               personal medical advice, and we use cautious language when evidence is
               mixed, early, or not appropriate for every reader.
             </p>
+            <p className="mt-2">
+              Our review checks include claim-source alignment, practical context,
+              appropriate disclaimers, and whether a reader should be directed to a
+              qualified professional for personal concerns.
+            </p>
           </section>
 
           <section>
@@ -83,6 +88,12 @@ export default function EditorialPolicyPage() {
                 {siteConfig.contactEmail}
               </a>
               .
+            </p>
+            <p className="mt-2">
+              High-impact health and wellness pages may be revisited when source
+              quality changes, when reader feedback identifies unclear guidance, or
+              when we expand an article with stronger examples, references, or
+              internal links.
             </p>
           </section>
 
