@@ -271,7 +271,7 @@ const fetchFromCms = async <TData, TVariables extends Record<string, unknown>>(
       },
       body: JSON.stringify({ query, variables }),
       signal: controller.signal,
-      next: { revalidate: 60, tags: ["cms-content"] }
+      next: { revalidate: 60, tags: ["cms-content", "posts"] }
     });
   } catch (error) {
     if (error instanceof Error && error.name === "AbortError") {
