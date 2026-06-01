@@ -42,13 +42,11 @@ VitalBloom Editorial Team
 
 ## 3. Craig Hospital Resource Library
 
-Status: Needs contact verification
-
-Contact path: https://craighospital.org/resources
+To: marketing@craighospital.org
 
 Subject: Patient-friendly sleep checklist for your resource library
 
-Hi Craig Hospital Resource Library team,
+Hi Craig Hospital Marketing team,
 
 I found your sleep hygiene tips rack card and noticed it gives patients practical steps for building healthier sleep habits.
 
@@ -177,13 +175,11 @@ VitalBloom Editorial Team
 
 ## 10. University of Texas System Work Healthy From Home
 
-Status: Needs contact verification
-
-Contact path: https://utsystem.edu/offices/employee-benefits/who-contact
+To: livingwell@utsystem.edu
 
 Subject: Remote work wellness checklist for employee wellness readers
 
-Hi Office of Employee Benefits team,
+Hi Office of Employee Benefits Living Well team,
 
 I found your Work Healthy From Home resource and noticed it gives practical support for employee well-being outside the office.
 

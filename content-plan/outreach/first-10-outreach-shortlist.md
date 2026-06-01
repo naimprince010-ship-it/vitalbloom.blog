@@ -58,21 +58,18 @@ These are the first prospects to manually verify for contact details and persona
 
 ## Contact Verification Snapshot
 
-- Ready to send/personalize: 8 of 10
-- Needs final manual contact verification: 2 of 10
+- Ready to send/personalize: 10 of 10
+- Needs final manual contact verification: 0 of 10
 
 Ready:
 
 - UT Dallas Student Wellness Center - studentwellness@utdallas.edu
 - Columbia Health - alice@columbia.edu
+- Craig Hospital Resource Library - marketing@craighospital.org
 - San Francisco Health Service System - hss.connect@sfgov.org
 - Fairfax County Food Council - fairfaxfoodcouncil@fairfaxcounty.gov
 - The Whole U, University of Washington - wholeu@uw.edu
 - University of Utah Health - UUHMediaRelations@hsc.utah.edu
 - NC State Environmental Health and Safety - use contact form: https://ehs.ncsu.edu/ask-ehs/
 - Stanford Medicine Pathology Wellness Resources - pathologyhr@stanford.edu
-
-Verify before sending:
-
-- Craig Hospital Resource Library - contact path found at https://craighospital.org/resources, but no direct editorial/resource email confirmed yet
-- University of Texas System Work Healthy From Home - contact path found at https://utsystem.edu/offices/employee-benefits/who-contact, but best recipient still needs final confirmation
+- University of Texas System Work Healthy From Home - livingwell@utsystem.edu
