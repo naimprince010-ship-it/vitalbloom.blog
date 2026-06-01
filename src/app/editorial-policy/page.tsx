@@ -7,6 +7,17 @@ export const metadata: Metadata = {
     "Read VitalBloom's editorial policy for sourcing, fact-checking, updates, corrections, and health content standards.",
   alternates: {
     canonical: `${siteConfig.url}/editorial-policy`
+  },
+  openGraph: {
+    title: `${siteConfig.name} Editorial Policy`,
+    description:
+      "Read VitalBloom's editorial policy for sourcing, fact-checking, updates, corrections, and health content standards.",
+    url: `${siteConfig.url}/editorial-policy`
+  },
+  twitter: {
+    title: `${siteConfig.name} Editorial Policy`,
+    description:
+      "Read VitalBloom's editorial policy for sourcing, fact-checking, updates, corrections, and health content standards."
   }
 };
 

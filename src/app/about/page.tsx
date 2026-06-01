@@ -7,6 +7,17 @@ export const metadata: Metadata = {
     "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards.",
   alternates: {
     canonical: `${siteConfig.url}/about`
+  },
+  openGraph: {
+    title: `About ${siteConfig.name}`,
+    description:
+      "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards.",
+    url: `${siteConfig.url}/about`
+  },
+  twitter: {
+    title: `About ${siteConfig.name}`,
+    description:
+      "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards."
   }
 };
 

@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: `Read how ${siteConfig.name} handles privacy, analytics, cookies, and data requests.`,
   alternates: {
     canonical: `${siteConfig.url}/privacy-policy`
+  },
+  openGraph: {
+    title: `${siteConfig.name} Privacy Policy`,
+    description: `Read how ${siteConfig.name} handles privacy, analytics, cookies, and data requests.`,
+    url: `${siteConfig.url}/privacy-policy`
+  },
+  twitter: {
+    title: `${siteConfig.name} Privacy Policy`,
+    description: `Read how ${siteConfig.name} handles privacy, analytics, cookies, and data requests.`
   }
 };
 

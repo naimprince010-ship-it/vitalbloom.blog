@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: `Learn how ${siteConfig.name} may use cookies for site functionality, analytics, and advertising measurement.`,
   alternates: {
     canonical: `${siteConfig.url}/cookie-policy`
+  },
+  openGraph: {
+    title: `${siteConfig.name} Cookie Policy`,
+    description: `Learn how ${siteConfig.name} may use cookies for site functionality, analytics, and advertising measurement.`,
+    url: `${siteConfig.url}/cookie-policy`
+  },
+  twitter: {
+    title: `${siteConfig.name} Cookie Policy`,
+    description: `Learn how ${siteConfig.name} may use cookies for site functionality, analytics, and advertising measurement.`
   }
 };
 

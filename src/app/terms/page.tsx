@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: `Review the website terms for using ${siteConfig.name}.`,
   alternates: {
     canonical: `${siteConfig.url}/terms`
+  },
+  openGraph: {
+    title: `${siteConfig.name} Terms and Conditions`,
+    description: `Review the website terms for using ${siteConfig.name}.`,
+    url: `${siteConfig.url}/terms`
+  },
+  twitter: {
+    title: `${siteConfig.name} Terms and Conditions`,
+    description: `Review the website terms for using ${siteConfig.name}.`
   }
 };
 

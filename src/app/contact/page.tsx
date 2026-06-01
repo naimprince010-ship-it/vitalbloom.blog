@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: `Contact ${siteConfig.name} for editorial, privacy, or general website questions.`,
   alternates: {
     canonical: `${siteConfig.url}/contact`
+  },
+  openGraph: {
+    title: `Contact ${siteConfig.name}`,
+    description: `Contact ${siteConfig.name} for editorial, privacy, or general website questions.`,
+    url: `${siteConfig.url}/contact`
+  },
+  twitter: {
+    title: `Contact ${siteConfig.name}`,
+    description: `Contact ${siteConfig.name} for editorial, privacy, or general website questions.`
   }
 };
 

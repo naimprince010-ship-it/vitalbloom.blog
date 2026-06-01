@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`,
   alternates: {
     canonical: `${siteConfig.url}/disclaimer`
+  },
+  openGraph: {
+    title: `${siteConfig.name} Disclaimer`,
+    description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`,
+    url: `${siteConfig.url}/disclaimer`
+  },
+  twitter: {
+    title: `${siteConfig.name} Disclaimer`,
+    description: `${siteConfig.name} publishes educational wellness content and does not replace professional medical advice.`
   }
 };
 
