@@ -54,30 +54,49 @@ export const articleSchema = (
   category: Category | undefined
 ) => ({
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "@id": `${siteConfig.url}/${post.slug}#article`,
   headline: post.title,
   description: post.seo.metaDescription || post.excerpt,
-  image: post.featuredImage ? [post.featuredImage] : undefined,
+  image: post.featuredImage
+    ? [absoluteUrl(post.featuredImage)]
+    : [absoluteUrl(siteConfig.defaultOgImage)],
   datePublished: post.publishedAt,
   dateModified: post.updatedAt || post.publishedAt,
   author: {
-    "@type": "Person",
-    name: author?.name || "VitalBloom Editorial Team"
+    "@type": author?.name ? "Person" : "Organization",
+    name: author?.name || "VitalBloom Editorial Team",
+    url: siteConfig.url
   },
   publisher: {
     "@id": `${siteConfig.url}/#organization`
+  },
+  isPartOf: {
+    "@id": `${siteConfig.url}/#website`
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": `${siteConfig.url}/${post.slug}`
   },
   articleSection: category?.name,
-  citation: post.sources.map((source) => source.url),
-  reviewedBy: post.editorialReview.reviewedBy
+  citation: post.sources.map((source) => ({
+    "@type": "CreativeWork",
+    name: source.title,
+    url: source.url,
+    publisher: source.publisher
+      ? {
+          "@type": "Organization",
+          name: source.publisher
+        }
+      : undefined
+  })),
+  reviewedBy: post.editorialReview.reviewedBy || post.editorialReview.factCheckedBy
     ? {
-        "@type": "Person",
-        name: post.editorialReview.reviewedBy
+        "@type": "Organization",
+        name:
+          post.editorialReview.reviewedBy ||
+          post.editorialReview.factCheckedBy ||
+          "VitalBloom Editorial Team"
       }
     : undefined,
   inLanguage: "en"

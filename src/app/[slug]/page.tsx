@@ -24,6 +24,19 @@ const formatDate = (dateString: string): string => {
 
 const isDefined = <T,>(value: T | undefined): value is T => Boolean(value);
 
+const getReviewDate = (post: Awaited<ReturnType<typeof getPostBySlug>>): string | undefined => {
+  if (!post) {
+    return undefined;
+  }
+
+  return (
+    post.editorialReview.reviewedAt ||
+    post.editorialReview.factCheckedAt ||
+    post.updatedAt ||
+    post.publishedAt
+  );
+};
+
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -90,6 +103,12 @@ export default async function PostPage({ params }: PostPageProps) {
         .map((pillarSlug) => getPostBySlug(pillarSlug))
     )
   ).filter(isDefined);
+  const reviewDate = getReviewDate(post);
+  const reviewByline =
+    post.editorialReview.reviewedBy ||
+    post.editorialReview.factCheckedBy ||
+    author?.name ||
+    "VitalBloom Editorial Team";
   const breadcrumbs = [
     { name: "Home", url: "/" },
     ...(category
@@ -125,6 +144,19 @@ export default async function PostPage({ params }: PostPageProps) {
               </>
             ) : null}
           </div>
+          <div className="flex flex-wrap gap-2 text-sm text-zinc-600">
+            <span className="rounded-md bg-zinc-100 px-2.5 py-1">
+              {reviewDate ? `Updated ${formatDate(reviewDate)}` : "Editorially reviewed"}
+            </span>
+            <span className="rounded-md bg-emerald-50 px-2.5 py-1 text-emerald-800">
+              {post.sources.length > 0
+                ? `${post.sources.length} credible source${post.sources.length === 1 ? "" : "s"}`
+                : "Editorial source review"}
+            </span>
+            <span className="rounded-md bg-zinc-100 px-2.5 py-1">
+              Checked by {reviewByline}
+            </span>
+          </div>
         </header>
 
         <PostImage
@@ -144,12 +176,17 @@ export default async function PostPage({ params }: PostPageProps) {
           post.editorialReview.reviewedBy) ? (
           <section
             aria-labelledby="sources-and-review"
-            className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-5"
+            className="mt-8 border-t border-zinc-200 pt-6"
           >
             <h2 id="sources-and-review" className="text-lg font-semibold text-zinc-900">
               Sources &amp; Editorial Review
             </h2>
             <div className="mt-3 space-y-2 text-sm leading-6 text-zinc-700">
+              <p>
+                This article is maintained by the VitalBloom editorial process:
+                source alignment, practical context, and reader safety are checked
+                before publication and during updates.
+              </p>
               {post.editorialReview.factCheckedBy ? (
                 <p>
                   Fact-checked by {post.editorialReview.factCheckedBy}
@@ -182,6 +219,12 @@ export default async function PostPage({ params }: PostPageProps) {
                       </a>
                       {source.publisher ? (
                         <span className="text-zinc-500"> - {source.publisher}</span>
+                      ) : null}
+                      {source.accessedAt ? (
+                        <span className="text-zinc-500">
+                          {" "}
+                          (accessed {formatDate(source.accessedAt)})
+                        </span>
                       ) : null}
                     </li>
                   ))}
