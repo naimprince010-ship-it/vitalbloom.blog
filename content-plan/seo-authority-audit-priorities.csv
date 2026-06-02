@@ -1,15 +1,4 @@
 slug,title,hub,words,internal_links,incoming_internal_links,sources,has_meta_title,has_meta_description,has_focus_keyword,has_fact_check,has_featured_image,needs_pillar_link,needs_asset_link,issues,priority_score
-easy-balanced-dinner-formula,Easy Balanced Dinner Formula for Busy Weeknights,nutrition,950,5,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
-healthy-pantry-staples-for-beginners,Healthy Pantry Staples for Beginners: Build Balanced Meals Faster,nutrition,1011,5,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
-shift-work-sleep-basics,Shift Work Sleep Basics: Practical Habits for Irregular Schedules,sleep,925,5,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
-student-stress-management-checklist,Student Stress Management Checklist for Busy Weeks,stress_mindfulness,903,4,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
-healthy-routine-after-travel,Healthy Routine After Travel: Reset Gently Without Overcorrecting,wellness_lifestyle,987,6,1,4,True,True,True,True,True,False,False,increase_inbound_internal_links,7
-balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,874,5,24,2,True,True,True,True,True,False,False,expand_to_900_words,6
-better-sleep-routine,How to Build a Better Sleep Routine,sleep,876,5,9,2,True,True,True,True,True,False,False,expand_to_900_words,6
-screen-time-and-sleep-quality,Screen Time and Sleep Quality: What to Know,sleep,849,4,6,2,True,True,True,True,True,False,False,expand_to_900_words,6
-sleep-hygiene-checklist-printable,Sleep Hygiene Checklist Printable,sleep,820,6,28,2,True,True,True,True,True,False,False,expand_to_900_words,6
-practice-mindfulness-simply,How to Practice Mindfulness Without Overcomplicating It,stress_mindfulness,859,5,8,2,True,True,True,True,True,False,False,expand_to_900_words,6
-add-protein-to-every-meal,How to Add Protein to Every Meal Without Overthinking It,nutrition,884,4,7,3,True,True,True,True,True,False,False,expand_to_900_words,3
 morning-routine-for-low-energy-days,Morning Routine for Low-Energy Days: Gentle First Steps,wellness_lifestyle,946,4,2,3,True,True,True,True,True,False,True,link_to_asset,3
 beginner-home-workout-plan,Beginner Home Workout Plan for Building Consistency,fitness,933,3,5,2,True,True,True,True,True,False,True,link_to_asset,2
 high-protein-vegetarian-meals,High-Protein Vegetarian Meals for Everyday Eating,nutrition,906,3,9,2,True,True,True,True,True,False,True,link_to_asset,2
@@ -29,13 +18,17 @@ rest-day-routine-for-beginners,Rest Day Routine for Beginners: Recover Without L
 strength-training-basics,Strength Training Basics for Beginners,fitness,925,5,2,2,True,True,True,True,True,False,False,,0
 stretching-routine-desk-workers,Stretching Routine for Desk Workers,fitness,943,4,5,2,True,True,True,True,True,False,False,,0
 walking-for-weight-management,Walking for Weight Management and Better Energy,fitness,955,4,11,2,True,True,True,True,True,False,False,,0
+add-protein-to-every-meal,How to Add Protein to Every Meal Without Overthinking It,nutrition,949,4,7,3,True,True,True,True,True,False,False,,0
 balanced-plate-guide,Balanced Plate Guide: How to Build Healthy Meals Without Counting Calories,nutrition,1229,18,24,4,True,True,True,True,True,False,False,,0
 balanced-plate-method,How to Build a Balanced Plate Without Counting Calories,nutrition,923,4,6,2,True,True,True,True,True,False,False,,0
+balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,960,5,24,2,True,True,True,True,True,False,False,,0
 beginner-meal-prep-checklist,Beginner Meal Prep Checklist for Balanced Meals,nutrition,909,4,5,3,True,True,True,True,True,False,False,,0
 budget-friendly-healthy-meals,Budget-Friendly Healthy Meals: Simple Balanced Ideas,nutrition,990,5,2,3,True,True,True,True,True,False,False,,0
+easy-balanced-dinner-formula,Easy Balanced Dinner Formula for Busy Weeknights,nutrition,950,5,3,3,True,True,True,True,True,False,False,,0
 fiber-rich-carbohydrates-guide,Fiber-Rich Carbohydrates: A Beginner Guide for Balanced Plates,nutrition,929,5,5,3,True,True,True,True,True,False,False,,0
 foods-support-better-digestion,Foods That Support Better Digestion Naturally,nutrition,919,4,6,2,True,True,True,True,True,False,False,,0
 healthy-breakfast-ideas,Healthy Breakfast Ideas for Busy Mornings,nutrition,933,4,7,2,True,True,True,True,True,False,False,,0
+healthy-pantry-staples-for-beginners,Healthy Pantry Staples for Beginners: Build Balanced Meals Faster,nutrition,1011,5,2,3,True,True,True,True,True,False,False,,0
 healthy-snack-plate-ideas,Healthy Snack Plate Ideas for Energy Between Meals,nutrition,966,7,6,3,True,True,True,True,True,False,False,,0
 healthy-snacks-for-work,Healthy Snacks for Work: Simple Ideas for Steady Energy,nutrition,956,6,3,3,True,True,True,True,True,False,False,,0
 high-fiber-breakfast-ideas,High-Fiber Breakfast Ideas That Keep Mornings Simple,nutrition,913,7,3,2,True,True,True,True,True,False,False,,0
@@ -43,15 +36,16 @@ how-to-build-a-filling-salad,How to Build a Filling Salad That Actually Feels Li
 how-to-eat-more-vegetables,How to Eat More Vegetables Without Changing Everything,nutrition,937,5,2,3,True,True,True,True,True,False,False,,0
 hydration-tracker-printable,Hydration Tracker Printable: A Simple Way to Notice Your Water Habits,nutrition,939,5,4,3,True,True,True,True,True,False,False,,0
 low-sugar-snack-ideas,Low-Sugar Snack Ideas That Still Feel Satisfying,nutrition,928,5,4,2,True,True,True,True,True,False,False,,0
-meal-planning-for-busy-weeks,Meal Planning for Busy Weeks: A Flexible Beginner System,nutrition,938,5,3,3,True,True,True,True,True,False,False,,0
+meal-planning-for-busy-weeks,Meal Planning for Busy Weeks: A Flexible Beginner System,nutrition,963,7,3,3,True,True,True,True,True,False,False,,0
 mindful-eating-for-beginners,Mindful Eating for Beginners: A Simple Non-Diet Guide,nutrition,930,5,2,3,True,True,True,True,True,False,False,,0
 simple-breakfast-meal-prep,Simple Breakfast Meal Prep for Busy Mornings,nutrition,942,6,2,3,True,True,True,True,True,False,False,,0
-simple-grocery-list-for-healthy-eating,Simple Grocery List for Healthy Eating Without Overbuying,nutrition,1051,5,7,3,True,True,True,True,True,False,False,,0
+simple-grocery-list-for-healthy-eating,Simple Grocery List for Healthy Eating Without Overbuying,nutrition,1077,7,7,3,True,True,True,True,True,False,False,,0
 simple-hydration-guide,A Simple Hydration Guide for Better Daily Wellness,nutrition,947,6,3,2,True,True,True,True,True,False,False,,0
 simple-meal-prep-healthy-lunches,Simple Meal Prep Ideas for Healthy Weekday Lunches,nutrition,967,5,3,2,True,True,True,True,True,False,False,,0
 bedroom-environment-checklist,Bedroom Environment Checklist for Better Sleep,sleep,926,5,3,3,True,True,True,True,True,False,False,,0
 bedtime-anxiety-racing-thoughts,Bedtime Anxiety: How to Quiet Racing Thoughts at Night,sleep,920,5,2,3,True,True,True,True,True,False,False,,0
 beginner-evening-routine-better-sleep,A Beginner-Friendly Evening Routine for Better Sleep,sleep,944,5,2,2,True,True,True,True,True,False,False,,0
+better-sleep-routine,How to Build a Better Sleep Routine,sleep,941,5,9,2,True,True,True,True,True,False,False,,0
 better-sleep-routine-guide,How to Build a Better Sleep Routine: A Complete Beginner Guide,sleep,1286,18,23,4,True,True,True,True,True,False,False,,0
 caffeine-and-sleep-cutoff,Caffeine and Sleep: How to Find Your Cutoff Time,sleep,914,4,2,3,True,True,True,True,True,False,False,,0
 evening-habits-better-rest,Evening Habits for Better Rest,sleep,946,4,10,2,True,True,True,True,True,False,False,,0
@@ -61,9 +55,12 @@ how-to-reset-after-a-bad-night-sleep,How to Reset After a Bad Night's Sleep,slee
 morning-light-and-sleep,Morning Light and Sleep: A Simple Habit for Better Rhythm,sleep,908,4,4,3,True,True,True,True,True,False,False,,0
 nap-timing-guide,Nap Timing Guide: How to Rest Without Ruining Night Sleep,sleep,942,5,2,3,True,True,True,True,True,False,False,,0
 phone-free-bedtime-routine,Phone-Free Bedtime Routine: How to Make Nights Feel Calmer,sleep,952,6,3,3,True,True,True,True,True,False,False,,0
+screen-time-and-sleep-quality,Screen Time and Sleep Quality: What to Know,sleep,919,4,6,2,True,True,True,True,True,False,False,,0
+shift-work-sleep-basics,Shift Work Sleep Basics: Practical Habits for Irregular Schedules,sleep,925,5,3,3,True,True,True,True,True,False,False,,0
 sleep-debt-recovery-guide,Sleep Debt Recovery Guide: How to Reset After Short Nights,sleep,917,4,8,3,True,True,True,True,True,False,False,,0
-sleep-friendly-evening-routine,Sleep-Friendly Evening Routine: Simple Cues for Better Rest,sleep,963,7,6,3,True,True,True,True,True,False,False,,0
-sleep-hygiene-checklist,Sleep Hygiene Checklist for Everyday Life,sleep,955,3,10,2,True,True,True,True,True,False,False,,0
+sleep-friendly-evening-routine,Sleep-Friendly Evening Routine: Simple Cues for Better Rest,sleep,984,8,6,3,True,True,True,True,True,False,False,,0
+sleep-hygiene-checklist,Sleep Hygiene Checklist for Everyday Life,sleep,976,4,10,2,True,True,True,True,True,False,False,,0
+sleep-hygiene-checklist-printable,Sleep Hygiene Checklist Printable,sleep,908,6,28,2,True,True,True,True,True,False,False,,0
 sleep-routine-for-parents-caregivers,Sleep Routine for Parents and Caregivers: Small Habits That Help,sleep,900,7,2,3,True,True,True,True,True,False,False,,0
 stress-affects-sleep,How Stress Affects Sleep and What You Can Do,sleep,906,7,7,2,True,True,True,True,True,False,False,,0
 weekend-reset-for-better-sleep,Weekend Reset for Better Sleep Without Wrecking Monday,sleep,953,6,2,4,True,True,True,True,True,False,False,,0
@@ -71,7 +68,7 @@ weekend-sleep-schedule,Weekend Sleep Schedule: How to Rest Without Wrecking Mond
 why-you-wake-up-tired,Why You Wake Up Tired: Common Causes and Simple Fixes,sleep,936,5,5,3,True,True,True,True,True,False,False,,0
 beginner-meditation-guide,Beginner Meditation Guide for a Calmer Mind,stress_mindfulness,930,7,2,2,True,True,True,True,True,False,False,,0
 calm-down-when-stress-feels-overwhelming,How to Calm Down When Stress Feels Overwhelming,stress_mindfulness,903,4,3,3,True,True,True,True,True,False,False,,0
-daily-stress-relief-routine,How to Build a Daily Stress Relief Routine That Actually Fits,stress_mindfulness,910,5,6,3,True,True,True,True,True,False,False,,0
+daily-stress-relief-routine,How to Build a Daily Stress Relief Routine That Actually Fits,stress_mindfulness,931,6,6,3,True,True,True,True,True,False,False,,0
 grounding-techniques-for-stress,Grounding Techniques for Stress: Simple Ways to Feel Present Again,stress_mindfulness,964,5,4,3,True,True,True,True,True,False,False,,0
 how-to-avoid-burnout,How to Avoid Burnout With Better Daily Boundaries,stress_mindfulness,951,4,6,2,True,True,True,True,True,False,False,,0
 how-to-wind-down-after-work,How to Wind Down After Work Without Carrying the Day Home,stress_mindfulness,967,5,3,3,True,True,True,True,True,False,False,,0
@@ -79,6 +76,7 @@ journaling-for-mental-clarity,"Journaling for Mental Clarity: Benefits, Prompts,
 journaling-mental-clarity,Journaling for Mental Clarity and Reflection,stress_mindfulness,904,6,3,2,True,True,True,True,True,False,False,,0
 mindful-morning-routine,Mindful Morning Routine for a Better Day,stress_mindfulness,953,7,3,2,True,True,True,True,True,False,False,,0
 morning-stress-reset,Morning Stress Reset: How to Start the Day Calmer,stress_mindfulness,954,5,2,3,True,True,True,True,True,False,False,,0
+practice-mindfulness-simply,How to Practice Mindfulness Without Overcomplicating It,stress_mindfulness,931,5,8,2,True,True,True,True,True,False,False,,0
 recover-after-stressful-day,How to Recover After a Stressful Day,stress_mindfulness,928,7,3,3,True,True,True,True,True,False,False,,0
 simple-breathing-exercises,Simple Breathing Exercises for Everyday Stress,stress_mindfulness,983,4,17,2,True,True,True,True,True,False,False,,0
 simple-relaxation-techniques,Simple Relaxation Techniques for Stress Relief,stress_mindfulness,932,5,5,3,True,True,True,True,True,False,False,,0
@@ -87,11 +85,13 @@ stress-and-screen-time,Stress and Screen Time: How to Create Calmer Digital Boun
 stress-journaling-prompts,Stress Journaling Prompts for Overthinking and Mental Clutter,stress_mindfulness,931,5,3,3,True,True,True,True,True,False,False,,0
 stress-management-guide,Stress Management Guide: Practical Ways to Reduce Everyday Stress,stress_mindfulness,1164,18,22,4,True,True,True,True,True,False,False,,0
 stress-reset-checklist-printable,Stress Reset Checklist Printable,stress_mindfulness,1084,7,22,3,True,True,True,True,True,False,False,,0
+student-stress-management-checklist,Student Stress Management Checklist for Busy Weeks,stress_mindfulness,903,4,2,3,True,True,True,True,True,False,False,,0
 work-stress-reset-routine,Work Stress Reset: A Practical Routine for Busy Days,stress_mindfulness,907,7,2,3,True,True,True,True,True,False,False,,0
 beginner-guide-to-balanced-living,Beginner Guide to Balanced Living: A Practical Wellness Framework,wellness_lifestyle,957,6,2,4,True,True,True,True,True,False,False,,0
 daily-wellness-routine-beginners,Daily Wellness Routine for Beginners,wellness_lifestyle,948,13,19,2,True,True,True,True,True,False,False,,0
 digital-wellness-routine,Digital Wellness Routine: Healthier Screen Boundaries for Everyday Life,wellness_lifestyle,946,6,4,3,True,True,True,True,True,False,False,,0
-healthy-habits-when-life-feels-busy,Healthy Habits When Life Feels Busy: A Realistic Guide,wellness_lifestyle,929,6,6,3,True,True,True,True,True,False,False,,0
+healthy-habits-when-life-feels-busy,Healthy Habits When Life Feels Busy: A Realistic Guide,wellness_lifestyle,950,7,6,3,True,True,True,True,True,False,False,,0
+healthy-routine-after-travel,Healthy Routine After Travel: Reset Gently Without Overcorrecting,wellness_lifestyle,987,6,3,4,True,True,True,True,True,False,False,,0
 how-to-build-a-simple-wellness-plan,How to Build a Simple Wellness Plan That Fits Real Life,wellness_lifestyle,1071,4,5,4,True,True,True,True,True,False,True,link_to_asset,0
 how-to-build-a-weekly-reset-routine,How to Build a Weekly Reset Routine That Actually Helps,wellness_lifestyle,955,5,2,3,True,True,True,True,True,False,False,,0
 how-to-stay-consistent-with-healthy-habits,How to Stay Consistent With Healthy Habits Without Perfection,wellness_lifestyle,936,6,2,4,True,True,True,True,True,False,False,,0

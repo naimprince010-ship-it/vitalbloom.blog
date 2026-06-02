@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-02T09:27:27+00:00",
+    "generated_at": "2026-06-02T09:38:55+00:00",
     "site_url": "https://backend.vitalbloom.blog",
     "post_count": 100,
     "posts": [
@@ -445,10 +445,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 929,
-            "h2_count": 15,
+            "word_count": 950,
+            "h2_count": 16,
             "h3_count": 0,
-            "paragraph_count": 29,
+            "paragraph_count": 30,
             "internal_links": [
                 {
                     "href": "/sustainable-wellness-routine",
@@ -473,6 +473,10 @@
                 {
                     "href": "/daily-wellness-checklist",
                     "anchor": "Daily Wellness Checklist"
+                },
+                {
+                    "href": "/healthy-routine-after-travel",
+                    "anchor": "Healthy Routine After Travel"
                 }
             ],
             "external_links": [],
@@ -484,7 +488,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:27",
+            "modified_gmt": "2026-06-02 09:35:21",
             "published_gmt": "2026-06-02 05:40:12"
         },
         {
@@ -683,10 +687,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 963,
-            "h2_count": 16,
+            "word_count": 984,
+            "h2_count": 17,
             "h3_count": 0,
-            "paragraph_count": 30,
+            "paragraph_count": 31,
             "internal_links": [
                 {
                     "href": "/better-sleep-routine",
@@ -715,6 +719,10 @@
                 {
                     "href": "/sleep-routine-for-parents-caregivers",
                     "anchor": "Sleep Routine for Parents and Caregivers"
+                },
+                {
+                    "href": "/shift-work-sleep-basics",
+                    "anchor": "Shift Work Sleep Basics"
                 }
             ],
             "external_links": [],
@@ -726,7 +734,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:26:37",
+            "modified_gmt": "2026-06-02 09:35:11",
             "published_gmt": "2026-06-02 05:20:11"
         },
         {
@@ -1413,10 +1421,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 938,
-            "h2_count": 14,
+            "word_count": 963,
+            "h2_count": 15,
             "h3_count": 0,
-            "paragraph_count": 27,
+            "paragraph_count": 28,
             "internal_links": [
                 {
                     "href": "/balanced-plate-printable-guide",
@@ -1437,6 +1445,14 @@
                 {
                     "href": "/balanced-plate-guide",
                     "anchor": "Balanced Plate Guide"
+                },
+                {
+                    "href": "/easy-balanced-dinner-formula",
+                    "anchor": "Easy Balanced Dinner Formula"
+                },
+                {
+                    "href": "/healthy-routine-after-travel",
+                    "anchor": "Healthy Routine After Travel"
                 }
             ],
             "external_links": [],
@@ -1448,7 +1464,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:29",
+            "modified_gmt": "2026-06-02 09:35:09",
             "published_gmt": "2026-06-02 03:52:23"
         },
         {
@@ -1459,10 +1475,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 1051,
-            "h2_count": 14,
+            "word_count": 1077,
+            "h2_count": 15,
             "h3_count": 0,
-            "paragraph_count": 27,
+            "paragraph_count": 28,
             "internal_links": [
                 {
                     "href": "/balanced-plate-printable-guide",
@@ -1483,6 +1499,14 @@
                 {
                     "href": "/balanced-plate-guide",
                     "anchor": "Balanced Plate Guide"
+                },
+                {
+                    "href": "/healthy-pantry-staples-for-beginners",
+                    "anchor": "Healthy Pantry Staples for Beginners"
+                },
+                {
+                    "href": "/easy-balanced-dinner-formula",
+                    "anchor": "Easy Balanced Dinner Formula"
                 }
             ],
             "external_links": [],
@@ -1494,7 +1518,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:41",
+            "modified_gmt": "2026-06-02 09:35:06",
             "published_gmt": "2026-06-02 03:52:13"
         },
         {
@@ -1605,10 +1629,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 884,
-            "h2_count": 21,
+            "word_count": 949,
+            "h2_count": 22,
             "h3_count": 0,
-            "paragraph_count": 18,
+            "paragraph_count": 20,
             "internal_links": [
                 {
                     "href": "/balanced-plate-printable-guide",
@@ -1636,7 +1660,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 03:10:22",
+            "modified_gmt": "2026-06-02 09:35:00",
             "published_gmt": "2026-06-02 03:04:31"
         },
         {
@@ -2437,10 +2461,10 @@
             "categories": [
                 "Stress"
             ],
-            "word_count": 910,
-            "h2_count": 15,
+            "word_count": 931,
+            "h2_count": 16,
             "h3_count": 0,
-            "paragraph_count": 24,
+            "paragraph_count": 25,
             "internal_links": [
                 {
                     "href": "/stress-reset-checklist-printable",
@@ -2461,6 +2485,10 @@
                 {
                     "href": "/stress-management-guide",
                     "anchor": "Stress Management Guide"
+                },
+                {
+                    "href": "/student-stress-management-checklist",
+                    "anchor": "Student Stress Management Checklist"
                 }
             ],
             "external_links": [],
@@ -2472,7 +2500,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-01",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:04",
+            "modified_gmt": "2026-06-02 09:35:18",
             "published_gmt": "2026-06-01 15:11:29"
         },
         {
@@ -2779,10 +2807,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 874,
-            "h2_count": 16,
+            "word_count": 960,
+            "h2_count": 17,
             "h3_count": 6,
-            "paragraph_count": 21,
+            "paragraph_count": 23,
             "internal_links": [
                 {
                     "href": "/balanced-plate-guide",
@@ -2814,7 +2842,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-01",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:26:12",
+            "modified_gmt": "2026-06-02 09:34:47",
             "published_gmt": "2026-06-01 07:27:56"
         },
         {
@@ -2825,10 +2853,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 820,
-            "h2_count": 11,
+            "word_count": 908,
+            "h2_count": 13,
             "h3_count": 3,
-            "paragraph_count": 17,
+            "paragraph_count": 20,
             "internal_links": [
                 {
                     "href": "/sleep-hygiene-checklist",
@@ -2864,7 +2892,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-01",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:01:32",
+            "modified_gmt": "2026-06-02 09:38:40",
             "published_gmt": "2026-06-01 07:04:14"
         },
         {
@@ -3617,10 +3645,10 @@
             "categories": [
                 "Mindfulness"
             ],
-            "word_count": 859,
-            "h2_count": 18,
+            "word_count": 931,
+            "h2_count": 19,
             "h3_count": 6,
-            "paragraph_count": 36,
+            "paragraph_count": 38,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -3652,7 +3680,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-01 14:49:06",
+            "modified_gmt": "2026-06-02 09:34:57",
             "published_gmt": "2026-05-30 12:04:36"
         },
         {
@@ -3909,10 +3937,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 849,
-            "h2_count": 16,
+            "word_count": 919,
+            "h2_count": 17,
             "h3_count": 6,
-            "paragraph_count": 33,
+            "paragraph_count": 35,
             "internal_links": [
                 {
                     "href": "/sleep-hygiene-checklist",
@@ -3940,7 +3968,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-01 07:22:54",
+            "modified_gmt": "2026-06-02 09:34:52",
             "published_gmt": "2026-05-30 11:52:44"
         },
         {
@@ -4615,10 +4643,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 955,
-            "h2_count": 19,
+            "word_count": 976,
+            "h2_count": 20,
             "h3_count": 4,
-            "paragraph_count": 40,
+            "paragraph_count": 41,
             "internal_links": [
                 {
                     "href": "/simple-breathing-exercises",
@@ -4631,6 +4659,10 @@
                 {
                     "href": "/sleep-hygiene-checklist-printable",
                     "anchor": "Sleep Hygiene Checklist Printable"
+                },
+                {
+                    "href": "/shift-work-sleep-basics",
+                    "anchor": "Shift Work Sleep Basics"
                 }
             ],
             "external_links": [],
@@ -4642,7 +4674,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-01 07:22:51",
+            "modified_gmt": "2026-06-02 09:35:14",
             "published_gmt": "2026-05-30 10:47:35"
         },
         {
@@ -4733,10 +4765,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 876,
-            "h2_count": 14,
+            "word_count": 941,
+            "h2_count": 15,
             "h3_count": 4,
-            "paragraph_count": 34,
+            "paragraph_count": 36,
             "internal_links": [
                 {
                     "href": "/simple-breathing-exercises",
@@ -4768,7 +4800,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:40",
+            "modified_gmt": "2026-06-02 09:34:50",
             "published_gmt": "2026-05-30 09:56:02"
         },
         {

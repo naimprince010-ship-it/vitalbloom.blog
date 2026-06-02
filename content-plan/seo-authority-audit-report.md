@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-02T09:27:27+00:00
+Generated from live WordPress data: 2026-06-02T09:38:55+00:00
 Published posts audited: 100
 
 ## Executive Summary
@@ -11,7 +11,7 @@ Published posts audited: 100
 - Posts needing more internal links: 0
 - Posts needing hub pillar link: 0
 - Posts needing printable/asset link: 10
-- Posts with weak inbound internal links: 5
+- Posts with weak inbound internal links: 0
 
 ## Hub Distribution
 
@@ -25,17 +25,6 @@ Published posts audited: 100
 
 | Priority | Hub | Slug | Main Issues |
 | ---: | --- | --- | --- |
-| 7 | nutrition | `/easy-balanced-dinner-formula` | increase_inbound_internal_links |
-| 7 | nutrition | `/healthy-pantry-staples-for-beginners` | increase_inbound_internal_links |
-| 7 | sleep | `/shift-work-sleep-basics` | increase_inbound_internal_links |
-| 7 | stress_mindfulness | `/student-stress-management-checklist` | increase_inbound_internal_links |
-| 7 | wellness_lifestyle | `/healthy-routine-after-travel` | increase_inbound_internal_links |
-| 6 | nutrition | `/balanced-plate-printable-guide` | expand_to_900_words |
-| 6 | sleep | `/better-sleep-routine` | expand_to_900_words |
-| 6 | sleep | `/screen-time-and-sleep-quality` | expand_to_900_words |
-| 6 | sleep | `/sleep-hygiene-checklist-printable` | expand_to_900_words |
-| 6 | stress_mindfulness | `/practice-mindfulness-simply` | expand_to_900_words |
-| 3 | nutrition | `/add-protein-to-every-meal` | expand_to_900_words |
 | 3 | wellness_lifestyle | `/morning-routine-for-low-energy-days` | link_to_asset |
 | 2 | fitness | `/beginner-home-workout-plan` | link_to_asset |
 | 2 | nutrition | `/high-protein-vegetarian-meals` | link_to_asset |
@@ -50,6 +39,17 @@ Published posts audited: 100
 | 0 | fitness | `/exercise-sustainable-habit` | none |
 | 0 | fitness | `/how-to-start-strength-training-at-home` | none |
 | 0 | fitness | `/low-impact-cardio-for-beginners` | none |
+| 0 | fitness | `/post-workout-recovery-tips` | none |
+| 0 | fitness | `/rest-day-routine-for-beginners` | none |
+| 0 | fitness | `/strength-training-basics` | none |
+| 0 | fitness | `/stretching-routine-desk-workers` | none |
+| 0 | fitness | `/walking-for-weight-management` | none |
+| 0 | nutrition | `/add-protein-to-every-meal` | none |
+| 0 | nutrition | `/balanced-plate-guide` | none |
+| 0 | nutrition | `/balanced-plate-method` | none |
+| 0 | nutrition | `/balanced-plate-printable-guide` | none |
+| 0 | nutrition | `/beginner-meal-prep-checklist` | none |
+| 0 | nutrition | `/budget-friendly-healthy-meals` | none |
 
 ## 30-Day Authority Plan
 
