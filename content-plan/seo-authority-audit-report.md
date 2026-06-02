@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-02T09:03:12+00:00
+Generated from live WordPress data: 2026-06-02T09:19:33+00:00
 Published posts audited: 100
 
 ## Executive Summary
@@ -25,14 +25,6 @@ Published posts audited: 100
 
 | Priority | Hub | Slug | Main Issues |
 | ---: | --- | --- | --- |
-| 16 | wellness_lifestyle | `/healthy-habits-remote-workers` | expand_to_900_words, link_to_asset |
-| 16 | wellness_lifestyle | `/remote-worker-wellness-checklist` | expand_to_900_words, link_to_asset |
-| 10 | fitness | `/strength-training-basics` | expand_to_900_words |
-| 10 | sleep | `/foods-drinks-affect-sleep` | expand_to_900_words |
-| 10 | stress_mindfulness | `/journaling-mental-clarity` | expand_to_900_words |
-| 10 | stress_mindfulness | `/mindful-morning-routine` | expand_to_900_words |
-| 10 | wellness_lifestyle | `/seasonal-wellness-tips` | expand_to_900_words |
-| 10 | wellness_lifestyle | `/small-healthy-habits` | expand_to_900_words |
 | 7 | fitness | `/low-impact-cardio-for-beginners` | increase_inbound_internal_links |
 | 7 | nutrition | `/easy-balanced-dinner-formula` | increase_inbound_internal_links |
 | 7 | nutrition | `/healthy-pantry-staples-for-beginners` | increase_inbound_internal_links |
@@ -50,6 +42,14 @@ Published posts audited: 100
 | 6 | nutrition | `/balanced-plate-method` | expand_to_900_words |
 | 6 | nutrition | `/balanced-plate-printable-guide` | expand_to_900_words |
 | 6 | nutrition | `/foods-support-better-digestion` | expand_to_900_words |
+| 6 | nutrition | `/healthy-breakfast-ideas` | expand_to_900_words |
+| 6 | nutrition | `/low-sugar-snack-ideas` | expand_to_900_words |
+| 6 | sleep | `/better-sleep-routine` | expand_to_900_words |
+| 6 | sleep | `/screen-time-and-sleep-quality` | expand_to_900_words |
+| 6 | sleep | `/sleep-hygiene-checklist-printable` | expand_to_900_words |
+| 6 | stress_mindfulness | `/practice-mindfulness-simply` | expand_to_900_words |
+| 3 | nutrition | `/add-protein-to-every-meal` | expand_to_900_words |
+| 3 | wellness_lifestyle | `/morning-routine-for-low-energy-days` | link_to_asset |
 
 ## 30-Day Authority Plan
 

@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-02T09:03:12+00:00",
+    "generated_at": "2026-06-02T09:19:33+00:00",
     "site_url": "https://backend.vitalbloom.blog",
     "post_count": 100,
     "posts": [
@@ -2705,10 +2705,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 842,
-            "h2_count": 16,
+            "word_count": 917,
+            "h2_count": 17,
             "h3_count": 3,
-            "paragraph_count": 18,
+            "paragraph_count": 20,
             "internal_links": [
                 {
                     "href": "/healthy-habits-remote-workers",
@@ -2737,6 +2737,10 @@
                 {
                     "href": "/remote-worker-wellness-checklist",
                     "anchor": "Remote Worker Wellness Checklist"
+                },
+                {
+                    "href": "/remote-worker-wellness-checklist",
+                    "anchor": "Remote Worker Wellness Checklist"
                 }
             ],
             "external_links": [],
@@ -2748,7 +2752,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-01",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:21",
+            "modified_gmt": "2026-06-02 09:19:00",
             "published_gmt": "2026-06-01 07:28:01"
         },
         {
@@ -3761,10 +3765,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 846,
-            "h2_count": 20,
+            "word_count": 917,
+            "h2_count": 21,
             "h3_count": 6,
-            "paragraph_count": 32,
+            "paragraph_count": 34,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -3800,7 +3804,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:08",
+            "modified_gmt": "2026-06-02 09:19:17",
             "published_gmt": "2026-05-30 11:52:54"
         },
         {
@@ -3811,10 +3815,10 @@
             "categories": [
                 "Mindfulness"
             ],
-            "word_count": 878,
-            "h2_count": 18,
+            "word_count": 953,
+            "h2_count": 19,
             "h3_count": 6,
-            "paragraph_count": 36,
+            "paragraph_count": 38,
             "internal_links": [
                 {
                     "href": "/seasonal-wellness-tips",
@@ -3843,6 +3847,10 @@
                 {
                     "href": "/practice-mindfulness-simply",
                     "anchor": "Practice Mindfulness Simply"
+                },
+                {
+                    "href": "/morning-routine-for-low-energy-days",
+                    "anchor": "Morning Routine for Low-Energy Days"
                 }
             ],
             "external_links": [],
@@ -3854,7 +3862,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:46",
+            "modified_gmt": "2026-06-02 09:19:11",
             "published_gmt": "2026-05-30 11:52:49"
         },
         {
@@ -3995,10 +4003,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 853,
-            "h2_count": 16,
+            "word_count": 923,
+            "h2_count": 17,
             "h3_count": 6,
-            "paragraph_count": 36,
+            "paragraph_count": 38,
             "internal_links": [
                 {
                     "href": "/simple-hydration-guide",
@@ -4034,7 +4042,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:05",
+            "modified_gmt": "2026-06-02 09:19:14",
             "published_gmt": "2026-05-30 11:41:07"
         },
         {
@@ -4045,10 +4053,10 @@
             "categories": [
                 "Mindfulness"
             ],
-            "word_count": 828,
-            "h2_count": 17,
+            "word_count": 904,
+            "h2_count": 18,
             "h3_count": 6,
-            "paragraph_count": 35,
+            "paragraph_count": 37,
             "internal_links": [
                 {
                     "href": "/how-to-avoid-burnout",
@@ -4073,6 +4081,14 @@
                 {
                     "href": "/stress-journaling-prompts",
                     "anchor": "Stress Journaling Prompts"
+                },
+                {
+                    "href": "/stress-management-guide",
+                    "anchor": "Stress Management Guide"
+                },
+                {
+                    "href": "/stress-reset-checklist-printable",
+                    "anchor": "Stress Reset Checklist Printable"
                 }
             ],
             "external_links": [],
@@ -4084,7 +4100,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:43",
+            "modified_gmt": "2026-06-02 09:19:08",
             "published_gmt": "2026-05-30 11:41:02"
         },
         {
@@ -4095,10 +4111,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 835,
-            "h2_count": 17,
+            "word_count": 914,
+            "h2_count": 18,
             "h3_count": 6,
-            "paragraph_count": 33,
+            "paragraph_count": 35,
             "internal_links": [
                 {
                     "href": "/sleep-hygiene-checklist",
@@ -4126,7 +4142,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:01:57",
+            "modified_gmt": "2026-06-02 09:19:06",
             "published_gmt": "2026-05-30 11:40:57"
         },
         {
@@ -4137,10 +4153,10 @@
             "categories": [
                 "Fitness"
             ],
-            "word_count": 845,
-            "h2_count": 16,
+            "word_count": 925,
+            "h2_count": 17,
             "h3_count": 11,
-            "paragraph_count": 36,
+            "paragraph_count": 38,
             "internal_links": [
                 {
                     "href": "/better-sleep-routine",
@@ -4161,6 +4177,14 @@
                 {
                     "href": "/rest-day-routine-for-beginners",
                     "anchor": "Rest Day Routine for Beginners"
+                },
+                {
+                    "href": "/beginner-home-workout-guide",
+                    "anchor": "Beginner Home Workout Guide"
+                },
+                {
+                    "href": "/how-to-start-strength-training-at-home",
+                    "anchor": "How to Start Strength Training at Home"
                 }
             ],
             "external_links": [],
@@ -4172,7 +4196,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:22",
+            "modified_gmt": "2026-06-02 09:19:03",
             "published_gmt": "2026-05-30 11:40:53"
         },
         {
@@ -4455,10 +4479,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 892,
-            "h2_count": 14,
+            "word_count": 958,
+            "h2_count": 15,
             "h3_count": 4,
-            "paragraph_count": 37,
+            "paragraph_count": 39,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -4479,6 +4503,10 @@
                 {
                     "href": "/digital-wellness-routine",
                     "anchor": "Digital Wellness Routine"
+                },
+                {
+                    "href": "/remote-worker-wellness-checklist",
+                    "anchor": "Remote Worker Wellness Checklist"
                 }
             ],
             "external_links": [],
@@ -4490,7 +4518,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:17",
+            "modified_gmt": "2026-06-02 09:18:57",
             "published_gmt": "2026-05-30 10:47:45"
         },
         {
