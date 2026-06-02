@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-02T09:19:33+00:00",
+    "generated_at": "2026-06-02T09:27:27+00:00",
     "site_url": "https://backend.vitalbloom.blog",
     "post_count": 100,
     "posts": [
@@ -683,10 +683,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 938,
-            "h2_count": 15,
+            "word_count": 963,
+            "h2_count": 16,
             "h3_count": 0,
-            "paragraph_count": 29,
+            "paragraph_count": 30,
             "internal_links": [
                 {
                     "href": "/better-sleep-routine",
@@ -707,6 +707,14 @@
                 {
                     "href": "/better-sleep-routine-guide",
                     "anchor": "Better Sleep Routine Guide"
+                },
+                {
+                    "href": "/nap-timing-guide",
+                    "anchor": "Nap Timing Guide"
+                },
+                {
+                    "href": "/sleep-routine-for-parents-caregivers",
+                    "anchor": "Sleep Routine for Parents and Caregivers"
                 }
             ],
             "external_links": [],
@@ -718,7 +726,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:44",
+            "modified_gmt": "2026-06-02 09:26:37",
             "published_gmt": "2026-06-02 05:20:11"
         },
         {
@@ -1497,10 +1505,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 940,
-            "h2_count": 22,
+            "word_count": 966,
+            "h2_count": 23,
             "h3_count": 0,
-            "paragraph_count": 22,
+            "paragraph_count": 23,
             "internal_links": [
                 {
                     "href": "/balanced-plate-printable-guide",
@@ -1521,6 +1529,14 @@
                 {
                     "href": "/balanced-plate-guide",
                     "anchor": "Balanced Plate Guide"
+                },
+                {
+                    "href": "/mindful-eating-for-beginners",
+                    "anchor": "Mindful Eating for Beginners"
+                },
+                {
+                    "href": "/how-to-build-a-filling-salad",
+                    "anchor": "How to Build a Filling Salad"
                 }
             ],
             "external_links": [],
@@ -1532,7 +1548,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-02",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:38",
+            "modified_gmt": "2026-06-02 09:26:40",
             "published_gmt": "2026-06-02 03:04:40"
         },
         {
@@ -2763,10 +2779,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 803,
-            "h2_count": 15,
+            "word_count": 874,
+            "h2_count": 16,
             "h3_count": 6,
-            "paragraph_count": 19,
+            "paragraph_count": 21,
             "internal_links": [
                 {
                     "href": "/balanced-plate-guide",
@@ -2798,7 +2814,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-06-01",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:13",
+            "modified_gmt": "2026-06-02 09:26:12",
             "published_gmt": "2026-06-01 07:27:56"
         },
         {
@@ -2859,10 +2875,10 @@
             "categories": [
                 "Mindfulness"
             ],
-            "word_count": 1139,
-            "h2_count": 15,
+            "word_count": 1164,
+            "h2_count": 16,
             "h3_count": 6,
-            "paragraph_count": 28,
+            "paragraph_count": 29,
             "internal_links": [
                 {
                     "href": "/simple-breathing-exercises",
@@ -2927,6 +2943,14 @@
                 {
                     "href": "/stress-journaling-prompts",
                     "anchor": "Stress Journaling Prompts"
+                },
+                {
+                    "href": "/recover-after-stressful-day",
+                    "anchor": "Recover After a Stressful Day"
+                },
+                {
+                    "href": "/student-stress-management-checklist",
+                    "anchor": "Student Stress Management Checklist"
                 }
             ],
             "external_links": [],
@@ -2938,7 +2962,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-31",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:56",
+            "modified_gmt": "2026-06-02 09:26:30",
             "published_gmt": "2026-05-31 15:38:03"
         },
         {
@@ -3027,10 +3051,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 1203,
-            "h2_count": 14,
+            "word_count": 1229,
+            "h2_count": 15,
             "h3_count": 6,
-            "paragraph_count": 27,
+            "paragraph_count": 28,
             "internal_links": [
                 {
                     "href": "/balanced-plate-method",
@@ -3095,6 +3119,14 @@
                 {
                     "href": "/mindful-eating-for-beginners",
                     "anchor": "Mindful Eating for Beginners"
+                },
+                {
+                    "href": "/easy-balanced-dinner-formula",
+                    "anchor": "Easy Balanced Dinner Formula"
+                },
+                {
+                    "href": "/how-to-build-a-filling-salad",
+                    "anchor": "How to Build a Filling Salad"
                 }
             ],
             "external_links": [],
@@ -3106,7 +3138,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-31",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:53",
+            "modified_gmt": "2026-06-02 09:26:24",
             "published_gmt": "2026-05-31 15:09:43"
         },
         {
@@ -3171,10 +3203,10 @@
             "categories": [
                 "Sleep"
             ],
-            "word_count": 1264,
-            "h2_count": 13,
+            "word_count": 1286,
+            "h2_count": 14,
             "h3_count": 13,
-            "paragraph_count": 34,
+            "paragraph_count": 35,
             "internal_links": [
                 {
                     "href": "/sleep-hygiene-checklist",
@@ -3243,6 +3275,10 @@
                 {
                     "href": "/weekend-sleep-schedule",
                     "anchor": "Weekend Sleep Schedule"
+                },
+                {
+                    "href": "/sleep-routine-for-parents-caregivers",
+                    "anchor": "Sleep Routine for Parents and Caregivers"
                 }
             ],
             "external_links": [],
@@ -3254,7 +3290,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-31",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:55",
+            "modified_gmt": "2026-06-02 09:26:27",
             "published_gmt": "2026-05-31 07:32:06"
         },
         {
@@ -3681,10 +3717,10 @@
             "categories": [
                 "Fitness"
             ],
-            "word_count": 852,
-            "h2_count": 17,
+            "word_count": 935,
+            "h2_count": 18,
             "h3_count": 6,
-            "paragraph_count": 37,
+            "paragraph_count": 39,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -3712,7 +3748,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:07",
+            "modified_gmt": "2026-06-02 09:26:02",
             "published_gmt": "2026-05-30 12:04:25"
         },
         {
@@ -3723,10 +3759,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 840,
-            "h2_count": 17,
+            "word_count": 923,
+            "h2_count": 18,
             "h3_count": 6,
-            "paragraph_count": 35,
+            "paragraph_count": 37,
             "internal_links": [
                 {
                     "href": "/high-protein-vegetarian-meals",
@@ -3754,7 +3790,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:11",
+            "modified_gmt": "2026-06-02 09:26:09",
             "published_gmt": "2026-05-30 12:04:20"
         },
         {
@@ -3915,10 +3951,10 @@
             "categories": [
                 "Fitness"
             ],
-            "word_count": 832,
-            "h2_count": 17,
+            "word_count": 906,
+            "h2_count": 18,
             "h3_count": 6,
-            "paragraph_count": 37,
+            "paragraph_count": 39,
             "internal_links": [
                 {
                     "href": "/better-sleep-routine",
@@ -3946,7 +3982,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:08",
+            "modified_gmt": "2026-06-02 09:26:05",
             "published_gmt": "2026-05-30 11:52:39"
         },
         {
@@ -3957,10 +3993,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 862,
-            "h2_count": 19,
+            "word_count": 928,
+            "h2_count": 20,
             "h3_count": 4,
-            "paragraph_count": 40,
+            "paragraph_count": 42,
             "internal_links": [
                 {
                     "href": "/high-protein-vegetarian-meals",
@@ -3992,7 +4028,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 08:16:38",
+            "modified_gmt": "2026-06-02 09:26:20",
             "published_gmt": "2026-05-30 11:52:34"
         },
         {
@@ -4395,10 +4431,10 @@
             "categories": [
                 "Fitness"
             ],
-            "word_count": 873,
-            "h2_count": 18,
+            "word_count": 943,
+            "h2_count": 19,
             "h3_count": 4,
-            "paragraph_count": 45,
+            "paragraph_count": 47,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -4426,7 +4462,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:10",
+            "modified_gmt": "2026-06-02 09:26:07",
             "published_gmt": "2026-05-30 11:26:39"
         },
         {
@@ -4437,10 +4473,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 851,
-            "h2_count": 17,
+            "word_count": 919,
+            "h2_count": 18,
             "h3_count": 4,
-            "paragraph_count": 40,
+            "paragraph_count": 42,
             "internal_links": [
                 {
                     "href": "/daily-wellness-checklist",
@@ -4468,7 +4504,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:15",
+            "modified_gmt": "2026-06-02 09:26:14",
             "published_gmt": "2026-05-30 11:26:34"
         },
         {
@@ -4479,10 +4515,10 @@
             "categories": [
                 "Wellness"
             ],
-            "word_count": 958,
-            "h2_count": 15,
+            "word_count": 983,
+            "h2_count": 16,
             "h3_count": 4,
-            "paragraph_count": 39,
+            "paragraph_count": 40,
             "internal_links": [
                 {
                     "href": "/walking-for-weight-management",
@@ -4507,6 +4543,14 @@
                 {
                     "href": "/remote-worker-wellness-checklist",
                     "anchor": "Remote Worker Wellness Checklist"
+                },
+                {
+                    "href": "/low-impact-cardio-for-beginners",
+                    "anchor": "Low-Impact Cardio for Beginners"
+                },
+                {
+                    "href": "/recover-after-stressful-day",
+                    "anchor": "Recover After a Stressful Day"
                 }
             ],
             "external_links": [],
@@ -4518,7 +4562,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:18:57",
+            "modified_gmt": "2026-06-02 09:26:34",
             "published_gmt": "2026-05-30 10:47:45"
         },
         {
@@ -4773,10 +4817,10 @@
             "categories": [
                 "Nutrition"
             ],
-            "word_count": 873,
-            "h2_count": 17,
+            "word_count": 933,
+            "h2_count": 18,
             "h3_count": 4,
-            "paragraph_count": 41,
+            "paragraph_count": 43,
             "internal_links": [
                 {
                     "href": "/high-protein-vegetarian-meals",
@@ -4804,7 +4848,7 @@
             "fact_checked_by": "VitalBloom Editorial Team",
             "fact_checked_at": "2026-05-30",
             "has_featured_image": true,
-            "modified_gmt": "2026-06-02 09:02:16",
+            "modified_gmt": "2026-06-02 09:26:17",
             "published_gmt": "2026-05-30 09:55:50"
         },
         {

@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-02T09:19:33+00:00
+Generated from live WordPress data: 2026-06-02T09:27:27+00:00
 Published posts audited: 100
 
 ## Executive Summary
@@ -11,7 +11,7 @@ Published posts audited: 100
 - Posts needing more internal links: 0
 - Posts needing hub pillar link: 0
 - Posts needing printable/asset link: 10
-- Posts with weak inbound internal links: 11
+- Posts with weak inbound internal links: 5
 
 ## Hub Distribution
 
@@ -25,31 +25,31 @@ Published posts audited: 100
 
 | Priority | Hub | Slug | Main Issues |
 | ---: | --- | --- | --- |
-| 7 | fitness | `/low-impact-cardio-for-beginners` | increase_inbound_internal_links |
 | 7 | nutrition | `/easy-balanced-dinner-formula` | increase_inbound_internal_links |
 | 7 | nutrition | `/healthy-pantry-staples-for-beginners` | increase_inbound_internal_links |
-| 7 | nutrition | `/how-to-build-a-filling-salad` | increase_inbound_internal_links |
-| 7 | nutrition | `/mindful-eating-for-beginners` | increase_inbound_internal_links |
-| 7 | sleep | `/nap-timing-guide` | increase_inbound_internal_links |
 | 7 | sleep | `/shift-work-sleep-basics` | increase_inbound_internal_links |
-| 7 | sleep | `/sleep-routine-for-parents-caregivers` | increase_inbound_internal_links |
-| 7 | stress_mindfulness | `/recover-after-stressful-day` | increase_inbound_internal_links |
 | 7 | stress_mindfulness | `/student-stress-management-checklist` | increase_inbound_internal_links |
 | 7 | wellness_lifestyle | `/healthy-routine-after-travel` | increase_inbound_internal_links |
-| 6 | fitness | `/exercise-sustainable-habit` | expand_to_900_words |
-| 6 | fitness | `/post-workout-recovery-tips` | expand_to_900_words |
-| 6 | fitness | `/stretching-routine-desk-workers` | expand_to_900_words |
-| 6 | nutrition | `/balanced-plate-method` | expand_to_900_words |
 | 6 | nutrition | `/balanced-plate-printable-guide` | expand_to_900_words |
-| 6 | nutrition | `/foods-support-better-digestion` | expand_to_900_words |
-| 6 | nutrition | `/healthy-breakfast-ideas` | expand_to_900_words |
-| 6 | nutrition | `/low-sugar-snack-ideas` | expand_to_900_words |
 | 6 | sleep | `/better-sleep-routine` | expand_to_900_words |
 | 6 | sleep | `/screen-time-and-sleep-quality` | expand_to_900_words |
 | 6 | sleep | `/sleep-hygiene-checklist-printable` | expand_to_900_words |
 | 6 | stress_mindfulness | `/practice-mindfulness-simply` | expand_to_900_words |
 | 3 | nutrition | `/add-protein-to-every-meal` | expand_to_900_words |
 | 3 | wellness_lifestyle | `/morning-routine-for-low-energy-days` | link_to_asset |
+| 2 | fitness | `/beginner-home-workout-plan` | link_to_asset |
+| 2 | nutrition | `/high-protein-vegetarian-meals` | link_to_asset |
+| 2 | wellness_lifestyle | `/better-breaks-remote-work` | link_to_asset |
+| 2 | wellness_lifestyle | `/daily-wellness-checklist` | link_to_asset |
+| 2 | wellness_lifestyle | `/healthy-habits-remote-workers` | link_to_asset |
+| 2 | wellness_lifestyle | `/remote-worker-wellness-checklist` | link_to_asset |
+| 0 | fitness | `/10-minute-walking-routine` | none |
+| 0 | fitness | `/beginner-home-workout-guide` | link_to_asset |
+| 0 | fitness | `/beginner-stretching-routine` | none |
+| 0 | fitness | `/daily-mobility-routine` | none |
+| 0 | fitness | `/exercise-sustainable-habit` | none |
+| 0 | fitness | `/how-to-start-strength-training-at-home` | none |
+| 0 | fitness | `/low-impact-cardio-for-beginners` | none |
 
 ## 30-Day Authority Plan
 
