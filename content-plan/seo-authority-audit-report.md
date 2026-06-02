@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-02T08:09:39+00:00
+Generated from live WordPress data: 2026-06-02T08:17:39+00:00
 Published posts audited: 100
 
 ## Executive Summary
@@ -8,10 +8,10 @@ Published posts audited: 100
 - Total published posts: 100
 - Posts with featured images missing: 0
 - Posts missing source metadata: 0
-- Posts needing more internal links: 11
-- Posts needing hub pillar link: 64
-- Posts needing printable/asset link: 54
-- Posts with weak inbound internal links: 38
+- Posts needing more internal links: 1
+- Posts needing hub pillar link: 44
+- Posts needing printable/asset link: 34
+- Posts with weak inbound internal links: 19
 
 ## Hub Distribution
 
@@ -25,31 +25,31 @@ Published posts audited: 100
 
 | Priority | Hub | Slug | Main Issues |
 | ---: | --- | --- | --- |
-| 66 | wellness_lifestyle | `/seasonal-wellness-tips` | expand_to_900_words, add_internal_links, link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 52 | wellness_lifestyle | `/small-healthy-habits` | expand_to_900_words, add_internal_links, link_to_hub_pillar, link_to_asset |
-| 52 | wellness_lifestyle | `/sustainable-wellness-routine` | expand_to_900_words, add_internal_links, link_to_hub_pillar, link_to_asset |
-| 48 | stress_mindfulness | `/beginner-meditation-guide` | expand_to_900_words, link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 48 | wellness_lifestyle | `/healthy-habits-remote-workers` | expand_to_900_words, add_internal_links, link_to_hub_pillar, link_to_asset |
-| 45 | wellness_lifestyle | `/recover-after-stressful-day` | expand_to_900_words, link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 38 | fitness | `/strength-training-basics` | expand_to_900_words, add_internal_links, link_to_asset |
-| 38 | nutrition | `/simple-hydration-guide` | add_internal_links, link_to_hub_pillar, link_to_asset |
-| 35 | sleep | `/sleep-routine-for-parents-caregivers` | expand_to_900_words, link_to_hub_pillar, increase_inbound_internal_links |
-| 35 | sleep | `/weekend-sleep-schedule` | expand_to_900_words, link_to_hub_pillar, increase_inbound_internal_links |
-| 35 | stress_mindfulness | `/work-stress-reset-routine` | expand_to_900_words, link_to_hub_pillar, increase_inbound_internal_links |
-| 34 | nutrition | `/high-fiber-breakfast-ideas` | expand_to_900_words, link_to_hub_pillar, link_to_asset |
-| 34 | nutrition | `/low-sugar-snack-ideas` | expand_to_900_words, add_internal_links, link_to_asset |
-| 34 | sleep | `/better-sleep-routine` | expand_to_900_words, add_internal_links, link_to_asset |
-| 34 | stress_mindfulness | `/journaling-mental-clarity` | expand_to_900_words, link_to_hub_pillar, link_to_asset |
-| 34 | stress_mindfulness | `/mindful-morning-routine` | expand_to_900_words, link_to_hub_pillar, link_to_asset |
-| 34 | wellness_lifestyle | `/daily-wellness-checklist` | add_internal_links, link_to_hub_pillar, link_to_asset |
-| 34 | wellness_lifestyle | `/daily-wellness-routine-beginners` | expand_to_900_words, add_internal_links, link_to_asset |
-| 34 | wellness_lifestyle | `/remote-worker-wellness-checklist` | expand_to_900_words, link_to_hub_pillar, link_to_asset |
-| 31 | fitness | `/beginner-stretching-routine` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 31 | fitness | `/how-to-start-strength-training-at-home` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 31 | fitness | `/low-impact-cardio-for-beginners` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 31 | fitness | `/rest-day-routine-for-beginners` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 31 | nutrition | `/healthy-snacks-for-work` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
-| 31 | nutrition | `/simple-breakfast-meal-prep` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
+| 31 | wellness_lifestyle | `/healthy-routine-after-travel` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
+| 31 | wellness_lifestyle | `/how-to-stay-consistent-with-healthy-habits` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
+| 31 | wellness_lifestyle | `/recover-after-stressful-day` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
+| 31 | wellness_lifestyle | `/simple-energy-boosting-habits` | link_to_hub_pillar, link_to_asset, increase_inbound_internal_links |
+| 30 | sleep | `/sleep-hygiene-checklist-printable` | expand_to_900_words, link_to_hub_pillar, link_to_asset |
+| 24 | sleep | `/beginner-evening-routine-better-sleep` | link_to_hub_pillar, increase_inbound_internal_links |
+| 24 | wellness_lifestyle | `/seasonal-wellness-tips` | expand_to_900_words, increase_inbound_internal_links |
+| 21 | nutrition | `/budget-friendly-healthy-meals` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | nutrition | `/easy-balanced-dinner-formula` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | nutrition | `/healthy-pantry-staples-for-beginners` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | nutrition | `/how-to-build-a-filling-salad` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | nutrition | `/how-to-eat-more-vegetables` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | nutrition | `/mindful-eating-for-beginners` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | sleep | `/bedtime-anxiety-racing-thoughts` | expand_to_900_words, link_to_hub_pillar |
+| 21 | sleep | `/nap-timing-guide` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | sleep | `/shift-work-sleep-basics` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | stress_mindfulness | `/morning-stress-reset` | link_to_hub_pillar, increase_inbound_internal_links |
+| 21 | stress_mindfulness | `/stress-and-screen-time` | expand_to_900_words, link_to_hub_pillar |
+| 20 | fitness | `/10-minute-walking-routine` | link_to_hub_pillar, link_to_asset |
+| 20 | fitness | `/walking-for-weight-management` | add_internal_links, link_to_asset |
+| 20 | nutrition | `/simple-meal-prep-healthy-lunches` | link_to_hub_pillar, link_to_asset |
+| 20 | sleep | `/foods-drinks-affect-sleep` | expand_to_900_words, link_to_asset |
+| 17 | sleep | `/how-to-reset-after-a-bad-night-sleep` | link_to_hub_pillar, link_to_asset |
+| 17 | sleep | `/phone-free-bedtime-routine` | link_to_hub_pillar, link_to_asset |
+| 17 | sleep | `/weekend-reset-for-better-sleep` | link_to_hub_pillar, link_to_asset |
 
 ## 30-Day Authority Plan
 

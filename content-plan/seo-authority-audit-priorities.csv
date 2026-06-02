@@ -1,39 +1,11 @@
 slug,title,hub,words,internal_links,incoming_internal_links,sources,has_meta_title,has_meta_description,has_focus_keyword,has_fact_check,has_featured_image,needs_pillar_link,needs_asset_link,issues,priority_score
-seasonal-wellness-tips,Seasonal Wellness Tips for Staying Balanced,wellness_lifestyle,821,2,1,2,True,True,True,True,True,True,True,expand_to_900_words;add_internal_links;link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,66
-small-healthy-habits,Small Healthy Habits That Can Improve Your Day,wellness_lifestyle,810,2,2,2,True,True,True,True,True,True,True,expand_to_900_words;add_internal_links;link_to_hub_pillar;link_to_asset,52
-sustainable-wellness-routine,How to Build a Sustainable Wellness Routine,wellness_lifestyle,882,2,3,2,True,True,True,True,True,True,True,expand_to_900_words;add_internal_links;link_to_hub_pillar;link_to_asset,52
-beginner-meditation-guide,Beginner Meditation Guide for a Calmer Mind,stress_mindfulness,899,3,1,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,48
-healthy-habits-remote-workers,Healthy Habits for Remote Workers,wellness_lifestyle,857,1,5,2,True,True,True,True,True,True,True,expand_to_900_words;add_internal_links;link_to_hub_pillar;link_to_asset,48
-recover-after-stressful-day,How to Recover After a Stressful Day,wellness_lifestyle,898,4,1,3,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,45
-strength-training-basics,Strength Training Basics for Beginners,fitness,811,2,2,2,True,True,True,True,True,False,True,expand_to_900_words;add_internal_links;link_to_asset,38
-simple-hydration-guide,A Simple Hydration Guide for Better Daily Wellness,nutrition,916,2,3,2,True,True,True,True,True,True,True,add_internal_links;link_to_hub_pillar;link_to_asset,38
-sleep-routine-for-parents-caregivers,Sleep Routine for Parents and Caregivers: Small Habits That Help,sleep,872,4,0,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar;increase_inbound_internal_links,35
-weekend-sleep-schedule,Weekend Sleep Schedule: How to Rest Without Wrecking Monday,sleep,886,4,1,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar;increase_inbound_internal_links,35
-work-stress-reset-routine,Work Stress Reset: A Practical Routine for Busy Days,stress_mindfulness,877,4,1,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar;increase_inbound_internal_links,35
-high-fiber-breakfast-ideas,High-Fiber Breakfast Ideas That Keep Mornings Simple,nutrition,881,3,3,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,34
-low-sugar-snack-ideas,Low-Sugar Snack Ideas That Still Feel Satisfying,nutrition,832,2,4,2,True,True,True,True,True,False,True,expand_to_900_words;add_internal_links;link_to_asset,34
-better-sleep-routine,How to Build a Better Sleep Routine,sleep,848,2,9,2,True,True,True,True,True,False,True,expand_to_900_words;add_internal_links;link_to_asset,34
-journaling-mental-clarity,Journaling for Mental Clarity and Reflection,stress_mindfulness,800,3,3,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,34
-mindful-morning-routine,Mindful Morning Routine for a Better Day,stress_mindfulness,845,3,3,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,34
-daily-wellness-checklist,Daily Wellness Checklist for a Healthier Routine,wellness_lifestyle,1103,2,5,2,True,True,True,True,True,True,True,add_internal_links;link_to_hub_pillar;link_to_asset,34
-daily-wellness-routine-beginners,Daily Wellness Routine for Beginners,wellness_lifestyle,851,2,5,2,True,True,True,True,True,False,True,expand_to_900_words;add_internal_links;link_to_asset,34
-remote-worker-wellness-checklist,Remote Worker Wellness Checklist,wellness_lifestyle,794,4,3,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,34
-beginner-stretching-routine,Beginner Stretching Routine for Everyday Comfort,fitness,951,4,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-how-to-start-strength-training-at-home,How to Start Strength Training at Home Without a Gym,fitness,919,4,0,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-low-impact-cardio-for-beginners,Low-Impact Cardio for Beginners: Simple Ways to Start,fitness,912,4,0,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-rest-day-routine-for-beginners,Rest Day Routine for Beginners: Recover Without Losing Momentum,fitness,951,4,0,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-healthy-snacks-for-work,Healthy Snacks for Work: Simple Ideas for Steady Energy,nutrition,931,4,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-simple-breakfast-meal-prep,Simple Breakfast Meal Prep for Busy Mornings,nutrition,917,4,0,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-how-to-reset-after-a-bad-night-sleep,How to Reset After a Bad Night's Sleep,sleep,918,4,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-phone-free-bedtime-routine,Phone-Free Bedtime Routine: How to Make Nights Feel Calmer,sleep,926,4,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-weekend-reset-for-better-sleep,Weekend Reset for Better Sleep Without Wrecking Monday,sleep,927,4,0,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-beginner-guide-to-balanced-living,Beginner Guide to Balanced Living: A Practical Wellness Framework,wellness_lifestyle,931,4,1,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-digital-wellness-routine,Digital Wellness Routine: Healthier Screen Boundaries for Everyday Life,wellness_lifestyle,920,4,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
 healthy-routine-after-travel,Healthy Routine After Travel: Reset Gently Without Overcorrecting,wellness_lifestyle,961,4,0,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-how-to-stay-consistent-with-healthy-habits,How to Stay Consistent With Healthy Habits Without Perfection,wellness_lifestyle,910,4,0,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-simple-energy-boosting-habits,Simple Energy-Boosting Habits for Steadier Days,wellness_lifestyle,919,4,0,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
-sleep-hygiene-checklist-printable,Sleep Hygiene Checklist Printable,sleep,794,4,21,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,30
+how-to-stay-consistent-with-healthy-habits,How to Stay Consistent With Healthy Habits Without Perfection,wellness_lifestyle,910,4,1,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
+recover-after-stressful-day,How to Recover After a Stressful Day,wellness_lifestyle,928,7,1,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
+simple-energy-boosting-habits,Simple Energy-Boosting Habits for Steadier Days,wellness_lifestyle,919,4,1,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset;increase_inbound_internal_links,31
+sleep-hygiene-checklist-printable,Sleep Hygiene Checklist Printable,sleep,794,4,23,2,True,True,True,True,True,True,True,expand_to_900_words;link_to_hub_pillar;link_to_asset,30
 beginner-evening-routine-better-sleep,A Beginner-Friendly Evening Routine for Better Sleep,sleep,922,4,1,2,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,24
+seasonal-wellness-tips,Seasonal Wellness Tips for Staying Balanced,wellness_lifestyle,853,6,1,2,True,True,True,True,True,False,False,expand_to_900_words;increase_inbound_internal_links,24
 budget-friendly-healthy-meals,Budget-Friendly Healthy Meals: Simple Balanced Ideas,nutrition,969,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 easy-balanced-dinner-formula,Easy Balanced Dinner Formula for Busy Weeknights,nutrition,929,4,0,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 healthy-pantry-staples-for-beginners,Healthy Pantry Staples for Beginners: Build Balanced Meals Faster,nutrition,990,4,0,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
@@ -43,59 +15,87 @@ mindful-eating-for-beginners,Mindful Eating for Beginners: A Simple Non-Diet Gui
 bedtime-anxiety-racing-thoughts,Bedtime Anxiety: How to Quiet Racing Thoughts at Night,sleep,898,4,2,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar,21
 nap-timing-guide,Nap Timing Guide: How to Rest Without Ruining Night Sleep,sleep,920,4,0,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 shift-work-sleep-basics,Shift Work Sleep Basics: Practical Habits for Irregular Schedules,sleep,903,4,0,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
-how-to-wind-down-after-work,How to Wind Down After Work Without Carrying the Day Home,stress_mindfulness,946,4,0,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 morning-stress-reset,Morning Stress Reset: How to Start the Day Calmer,stress_mindfulness,933,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
-simple-relaxation-techniques,Simple Relaxation Techniques for Stress Relief,stress_mindfulness,911,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
-simple-self-care-checklist,Simple Self-Care Checklist for Real-Life Stress,stress_mindfulness,924,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 stress-and-screen-time,Stress and Screen Time: How to Create Calmer Digital Boundaries,stress_mindfulness,897,4,2,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar,21
-stress-journaling-prompts,Stress Journaling Prompts for Overthinking and Mental Clutter,stress_mindfulness,910,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
-how-to-build-a-weekly-reset-routine,How to Build a Weekly Reset Routine That Actually Helps,wellness_lifestyle,932,4,1,3,True,True,True,True,True,True,False,link_to_hub_pillar;increase_inbound_internal_links,21
 10-minute-walking-routine,How to Build a 10-Minute Walking Routine for Busy Days,fitness,931,3,3,2,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,20
 walking-for-weight-management,Walking for Weight Management and Better Energy,fitness,930,2,11,2,True,True,True,True,True,False,True,add_internal_links;link_to_asset,20
 simple-meal-prep-healthy-lunches,Simple Meal Prep Ideas for Healthy Weekday Lunches,nutrition,942,3,3,2,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,20
 foods-drinks-affect-sleep,Foods and Drinks That Can Affect Sleep Quality,sleep,813,3,3,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,20
-daily-mobility-routine,Daily Mobility Routine: Small Movement Breaks for Real Life,fitness,924,4,2,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
+how-to-reset-after-a-bad-night-sleep,How to Reset After a Bad Night's Sleep,sleep,918,4,3,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
+phone-free-bedtime-routine,Phone-Free Bedtime Routine: How to Make Nights Feel Calmer,sleep,926,4,3,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
+weekend-reset-for-better-sleep,Weekend Reset for Better Sleep Without Wrecking Monday,sleep,927,4,2,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
 daily-stress-relief-routine,How to Build a Daily Stress Relief Routine That Actually Fits,stress_mindfulness,889,4,5,3,True,True,True,True,True,True,False,expand_to_900_words;link_to_hub_pillar,17
-healthy-habits-when-life-feels-busy,Healthy Habits When Life Feels Busy: A Realistic Guide,wellness_lifestyle,903,4,3,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
-how-to-build-a-simple-wellness-plan,How to Build a Simple Wellness Plan That Fits Real Life,wellness_lifestyle,1071,4,1,4,True,True,True,True,True,False,True,link_to_asset;increase_inbound_internal_links,17
-morning-routine-for-low-energy-days,Morning Routine for Low-Energy Days: Gentle First Steps,wellness_lifestyle,946,4,1,3,True,True,True,True,True,False,True,link_to_asset;increase_inbound_internal_links,17
+beginner-guide-to-balanced-living,Beginner Guide to Balanced Living: A Practical Wellness Framework,wellness_lifestyle,931,4,2,4,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,17
 exercise-sustainable-habit,How to Make Exercise a Sustainable Habit,fitness,830,3,8,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
 post-workout-recovery-tips,Recovery Tips After Exercise for Better Progress,fitness,810,3,4,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
 stretching-routine-desk-workers,Stretching Routine for Desk Workers,fitness,851,3,5,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
 balanced-plate-method,How to Build a Balanced Plate Without Counting Calories,nutrition,818,3,6,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
-balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,781,4,13,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
+balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,781,4,19,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
 foods-support-better-digestion,Foods That Support Better Digestion Naturally,nutrition,829,3,6,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
 healthy-breakfast-ideas,Healthy Breakfast Ideas for Busy Mornings,nutrition,851,3,7,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
-better-breaks-remote-work,How to Take Better Breaks During Remote Work,wellness_lifestyle,902,3,6,2,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,16
-stress-reset-checklist-printable,Stress Reset Checklist Printable,stress_mindfulness,1059,5,18,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,13
-fiber-rich-carbohydrates-guide,Fiber-Rich Carbohydrates: A Beginner Guide for Balanced Plates,nutrition,908,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
-hydration-tracker-printable,Hydration Tracker Printable: A Simple Way to Notice Your Water Habits,nutrition,918,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
+better-breaks-remote-work,How to Take Better Breaks During Remote Work,wellness_lifestyle,902,3,7,2,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,16
+healthy-habits-remote-workers,Healthy Habits for Remote Workers,wellness_lifestyle,892,5,5,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
+remote-worker-wellness-checklist,Remote Worker Wellness Checklist,wellness_lifestyle,820,6,9,2,True,True,True,True,True,False,True,expand_to_900_words;link_to_asset,16
+daily-mobility-routine,Daily Mobility Routine: Small Movement Breaks for Real Life,fitness,924,4,4,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,13
+stress-reset-checklist-printable,Stress Reset Checklist Printable,stress_mindfulness,1059,5,21,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,13
+digital-wellness-routine,Digital Wellness Routine: Healthier Screen Boundaries for Everyday Life,wellness_lifestyle,920,4,4,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,13
+healthy-habits-when-life-feels-busy,Healthy Habits When Life Feels Busy: A Realistic Guide,wellness_lifestyle,903,4,6,3,True,True,True,True,True,True,True,link_to_hub_pillar;link_to_asset,13
+strength-training-basics,Strength Training Basics for Beginners,fitness,845,5,2,2,True,True,True,True,True,False,False,expand_to_900_words,10
+journaling-mental-clarity,Journaling for Mental Clarity and Reflection,stress_mindfulness,828,6,3,2,True,True,True,True,True,False,False,expand_to_900_words,10
+mindful-morning-routine,Mindful Morning Routine for a Better Day,stress_mindfulness,878,7,3,2,True,True,True,True,True,False,False,expand_to_900_words,10
+small-healthy-habits,Small Healthy Habits That Can Improve Your Day,wellness_lifestyle,846,6,2,2,True,True,True,True,True,False,False,expand_to_900_words,10
+low-impact-cardio-for-beginners,Low-Impact Cardio for Beginners: Simple Ways to Start,fitness,938,6,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
 meal-planning-for-busy-weeks,Meal Planning for Busy Weeks: A Flexible Beginner System,nutrition,917,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
-bedroom-environment-checklist,Bedroom Environment Checklist for Better Sleep,sleep,904,4,2,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
-sleep-friendly-evening-routine,Sleep-Friendly Evening Routine: Simple Cues for Better Rest,sleep,916,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
+bedroom-environment-checklist,Bedroom Environment Checklist for Better Sleep,sleep,904,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
+sleep-routine-for-parents-caregivers,Sleep Routine for Parents and Caregivers: Small Habits That Help,sleep,900,7,0,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
+weekend-sleep-schedule,Weekend Sleep Schedule: How to Rest Without Wrecking Monday,sleep,921,7,1,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
+how-to-wind-down-after-work,How to Wind Down After Work Without Carrying the Day Home,stress_mindfulness,946,4,3,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
+stress-journaling-prompts,Stress Journaling Prompts for Overthinking and Mental Clutter,stress_mindfulness,910,4,2,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
 student-stress-management-checklist,Student Stress Management Checklist for Busy Weeks,stress_mindfulness,903,4,0,3,True,True,True,True,True,False,False,increase_inbound_internal_links,7
+how-to-build-a-weekly-reset-routine,How to Build a Weekly Reset Routine That Actually Helps,wellness_lifestyle,932,4,2,3,True,True,True,True,True,True,False,link_to_hub_pillar,7
+low-sugar-snack-ideas,Low-Sugar Snack Ideas That Still Feel Satisfying,nutrition,862,5,4,2,True,True,True,True,True,False,False,expand_to_900_words,6
+better-sleep-routine,How to Build a Better Sleep Routine,sleep,876,5,9,2,True,True,True,True,True,False,False,expand_to_900_words,6
 screen-time-and-sleep-quality,Screen Time and Sleep Quality: What to Know,sleep,849,4,6,2,True,True,True,True,True,False,False,expand_to_900_words,6
-practice-mindfulness-simply,How to Practice Mindfulness Without Overcomplicating It,stress_mindfulness,859,5,6,2,True,True,True,True,True,False,False,expand_to_900_words,6
+practice-mindfulness-simply,How to Practice Mindfulness Without Overcomplicating It,stress_mindfulness,859,5,8,2,True,True,True,True,True,False,False,expand_to_900_words,6
 add-protein-to-every-meal,How to Add Protein to Every Meal Without Overthinking It,nutrition,884,4,7,3,True,True,True,True,True,False,False,expand_to_900_words,3
-healthy-snack-plate-ideas,Healthy Snack Plate Ideas for Energy Between Meals,nutrition,919,4,5,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
-simple-grocery-list-for-healthy-eating,Simple Grocery List for Healthy Eating Without Overbuying,nutrition,1030,4,6,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+fiber-rich-carbohydrates-guide,Fiber-Rich Carbohydrates: A Beginner Guide for Balanced Plates,nutrition,908,4,5,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+healthy-snack-plate-ideas,Healthy Snack Plate Ideas for Energy Between Meals,nutrition,919,4,6,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+hydration-tracker-printable,Hydration Tracker Printable: A Simple Way to Notice Your Water Habits,nutrition,918,4,4,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+simple-grocery-list-for-healthy-eating,Simple Grocery List for Healthy Eating Without Overbuying,nutrition,1030,4,7,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
 evening-stress-reset,Evening Stress Reset: How to Stop Carrying the Day Into Bed,sleep,942,4,5,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+sleep-friendly-evening-routine,Sleep-Friendly Evening Routine: Simple Cues for Better Rest,sleep,916,4,6,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
 why-you-wake-up-tired,Why You Wake Up Tired: Common Causes and Simple Fixes,sleep,914,4,5,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
 grounding-techniques-for-stress,Grounding Techniques for Stress: Simple Ways to Feel Present Again,stress_mindfulness,943,4,4,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+simple-relaxation-techniques,Simple Relaxation Techniques for Stress Relief,stress_mindfulness,911,4,5,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+simple-self-care-checklist,Simple Self-Care Checklist for Real-Life Stress,stress_mindfulness,924,4,4,3,True,True,True,True,True,True,False,link_to_hub_pillar,3
+morning-routine-for-low-energy-days,Morning Routine for Low-Energy Days: Gentle First Steps,wellness_lifestyle,946,4,2,3,True,True,True,True,True,False,True,link_to_asset,3
 beginner-home-workout-plan,Beginner Home Workout Plan for Building Consistency,fitness,933,3,5,2,True,True,True,True,True,False,True,link_to_asset,2
 high-protein-vegetarian-meals,High-Protein Vegetarian Meals for Everyday Eating,nutrition,906,3,9,2,True,True,True,True,True,False,True,link_to_asset,2
-beginner-home-workout-guide,Beginner Home Workout Guide: A Simple Plan to Build Strength and Consistency,fitness,1020,8,7,4,True,True,True,True,True,False,True,link_to_asset,0
-balanced-plate-guide,Balanced Plate Guide: How to Build Healthy Meals Without Counting Calories,nutrition,1129,7,8,4,True,True,True,True,True,False,True,link_to_asset,0
+daily-wellness-checklist,Daily Wellness Checklist for a Healthier Routine,wellness_lifestyle,1138,6,9,2,True,True,True,True,True,False,True,link_to_asset,2
+beginner-home-workout-guide,Beginner Home Workout Guide: A Simple Plan to Build Strength and Consistency,fitness,1060,13,11,4,True,True,True,True,True,False,True,link_to_asset,0
+beginner-stretching-routine,Beginner Stretching Routine for Everyday Comfort,fitness,980,7,2,3,True,True,True,True,True,False,False,,0
+how-to-start-strength-training-at-home,How to Start Strength Training at Home Without a Gym,fitness,945,6,2,3,True,True,True,True,True,False,False,,0
+rest-day-routine-for-beginners,Rest Day Routine for Beginners: Recover Without Losing Momentum,fitness,977,6,2,3,True,True,True,True,True,False,False,,0
+balanced-plate-guide,Balanced Plate Guide: How to Build Healthy Meals Without Counting Calories,nutrition,1168,12,12,4,True,True,True,True,True,False,False,,0
 beginner-meal-prep-checklist,Beginner Meal Prep Checklist for Balanced Meals,nutrition,909,4,5,3,True,True,True,True,True,False,False,,0
-better-sleep-routine-guide,How to Build a Better Sleep Routine: A Complete Beginner Guide,sleep,1189,8,9,4,True,True,True,True,True,False,True,link_to_asset,0
+healthy-snacks-for-work,Healthy Snacks for Work: Simple Ideas for Steady Energy,nutrition,956,6,3,3,True,True,True,True,True,False,False,,0
+high-fiber-breakfast-ideas,High-Fiber Breakfast Ideas That Keep Mornings Simple,nutrition,913,7,3,2,True,True,True,True,True,False,False,,0
+simple-breakfast-meal-prep,Simple Breakfast Meal Prep for Busy Mornings,nutrition,942,6,2,3,True,True,True,True,True,False,False,,0
+simple-hydration-guide,A Simple Hydration Guide for Better Daily Wellness,nutrition,947,6,3,2,True,True,True,True,True,False,False,,0
+better-sleep-routine-guide,How to Build a Better Sleep Routine: A Complete Beginner Guide,sleep,1230,13,11,4,True,True,True,True,True,False,False,,0
 caffeine-and-sleep-cutoff,Caffeine and Sleep: How to Find Your Cutoff Time,sleep,914,4,2,3,True,True,True,True,True,False,False,,0
 evening-habits-better-rest,Evening Habits for Better Rest,sleep,946,4,10,2,True,True,True,True,True,False,False,,0
 morning-light-and-sleep,Morning Light and Sleep: A Simple Habit for Better Rhythm,sleep,908,4,4,3,True,True,True,True,True,False,False,,0
 sleep-debt-recovery-guide,Sleep Debt Recovery Guide: How to Reset After Short Nights,sleep,917,4,8,3,True,True,True,True,True,False,False,,0
 sleep-hygiene-checklist,Sleep Hygiene Checklist for Everyday Life,sleep,955,3,10,2,True,True,True,True,True,False,False,,0
 stress-affects-sleep,How Stress Affects Sleep and What You Can Do,sleep,906,7,7,2,True,True,True,True,True,False,False,,0
+beginner-meditation-guide,Beginner Meditation Guide for a Calmer Mind,stress_mindfulness,930,7,2,2,True,True,True,True,True,False,False,,0
 calm-down-when-stress-feels-overwhelming,How to Calm Down When Stress Feels Overwhelming,stress_mindfulness,903,4,3,3,True,True,True,True,True,False,False,,0
 how-to-avoid-burnout,How to Avoid Burnout With Better Daily Boundaries,stress_mindfulness,951,4,6,2,True,True,True,True,True,False,False,,0
 journaling-for-mental-clarity,"Journaling for Mental Clarity: Benefits, Prompts, and How to Start",stress_mindfulness,1200,7,7,4,True,True,True,True,True,False,True,link_to_asset,0
 simple-breathing-exercises,Simple Breathing Exercises for Everyday Stress,stress_mindfulness,983,4,17,2,True,True,True,True,True,False,False,,0
-stress-management-guide,Stress Management Guide: Practical Ways to Reduce Everyday Stress,stress_mindfulness,1073,8,8,4,True,True,True,True,True,False,False,,0
+stress-management-guide,Stress Management Guide: Practical Ways to Reduce Everyday Stress,stress_mindfulness,1107,12,13,4,True,True,True,True,True,False,False,,0
+work-stress-reset-routine,Work Stress Reset: A Practical Routine for Busy Days,stress_mindfulness,907,7,2,3,True,True,True,True,True,False,False,,0
+daily-wellness-routine-beginners,Daily Wellness Routine for Beginners,wellness_lifestyle,913,9,11,2,True,True,True,True,True,False,False,,0
+how-to-build-a-simple-wellness-plan,How to Build a Simple Wellness Plan That Fits Real Life,wellness_lifestyle,1071,4,5,4,True,True,True,True,True,False,True,link_to_asset,0
+sustainable-wellness-routine,How to Build a Sustainable Wellness Routine,wellness_lifestyle,917,6,4,2,True,True,True,True,True,False,False,,0
