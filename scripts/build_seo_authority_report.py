@@ -18,7 +18,7 @@ HUBS = {
     "stress_mindfulness": {
         "pillar": "stress-management-guide",
         "assets": {"stress-reset-checklist-printable"},
-        "keywords": {"stress", "mindfulness", "breathing", "journaling", "burnout", "relaxation", "calm", "grounding"},
+        "keywords": {"stress", "mindfulness", "breathing", "journaling", "burnout", "relaxation", "calm", "grounding", "recover", "stressful"},
     },
     "nutrition": {
         "pillar": "balanced-plate-guide",
