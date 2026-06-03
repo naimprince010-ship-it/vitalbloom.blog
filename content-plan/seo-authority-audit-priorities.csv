@@ -1,13 +1,7 @@
 slug,title,hub,words,internal_links,incoming_internal_links,sources,has_meta_title,has_meta_description,has_focus_keyword,has_fact_check,has_featured_image,needs_pillar_link,needs_asset_link,issues,priority_score
-morning-routine-for-low-energy-days,Morning Routine for Low-Energy Days: Gentle First Steps,wellness_lifestyle,946,4,2,3,True,True,True,True,True,False,True,link_to_asset,3
-beginner-home-workout-plan,Beginner Home Workout Plan for Building Consistency,fitness,933,3,5,2,True,True,True,True,True,False,True,link_to_asset,2
-high-protein-vegetarian-meals,High-Protein Vegetarian Meals for Everyday Eating,nutrition,906,3,9,2,True,True,True,True,True,False,True,link_to_asset,2
-better-breaks-remote-work,How to Take Better Breaks During Remote Work,wellness_lifestyle,929,5,7,2,True,True,True,True,True,False,True,link_to_asset,2
-daily-wellness-checklist,Daily Wellness Checklist for a Healthier Routine,wellness_lifestyle,1138,6,15,2,True,True,True,True,True,False,True,link_to_asset,2
-healthy-habits-remote-workers,Healthy Habits for Remote Workers,wellness_lifestyle,983,7,5,2,True,True,True,True,True,False,True,link_to_asset,2
-remote-worker-wellness-checklist,Remote Worker Wellness Checklist,wellness_lifestyle,917,7,17,2,True,True,True,True,True,False,True,link_to_asset,2
 10-minute-walking-routine,How to Build a 10-Minute Walking Routine for Busy Days,fitness,957,5,4,2,True,True,True,True,True,False,False,,0
-beginner-home-workout-guide,Beginner Home Workout Guide: A Simple Plan to Build Strength and Consistency,fitness,1060,13,13,4,True,True,True,True,True,False,True,link_to_asset,0
+beginner-home-workout-guide,Beginner Home Workout Guide: A Simple Plan to Build Strength and Consistency,fitness,1127,14,13,4,True,True,True,True,True,False,False,,0
+beginner-home-workout-plan,Beginner Home Workout Plan for Building Consistency,fitness,1070,4,5,2,True,True,True,True,True,False,False,,0
 beginner-stretching-routine,Beginner Stretching Routine for Everyday Comfort,fitness,980,7,2,3,True,True,True,True,True,False,False,,0
 daily-mobility-routine,Daily Mobility Routine: Small Movement Breaks for Real Life,fitness,950,6,4,3,True,True,True,True,True,False,False,,0
 exercise-sustainable-habit,How to Make Exercise a Sustainable Habit,fitness,935,4,8,2,True,True,True,True,True,False,False,,0
@@ -21,7 +15,7 @@ walking-for-weight-management,Walking for Weight Management and Better Energy,fi
 add-protein-to-every-meal,How to Add Protein to Every Meal Without Overthinking It,nutrition,949,4,7,3,True,True,True,True,True,False,False,,0
 balanced-plate-guide,Balanced Plate Guide: How to Build Healthy Meals Without Counting Calories,nutrition,1229,18,24,4,True,True,True,True,True,False,False,,0
 balanced-plate-method,How to Build a Balanced Plate Without Counting Calories,nutrition,923,4,6,2,True,True,True,True,True,False,False,,0
-balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,960,5,24,2,True,True,True,True,True,False,False,,0
+balanced-plate-printable-guide,Balanced Plate Printable Guide,nutrition,960,5,25,2,True,True,True,True,True,False,False,,0
 beginner-meal-prep-checklist,Beginner Meal Prep Checklist for Balanced Meals,nutrition,909,4,5,3,True,True,True,True,True,False,False,,0
 budget-friendly-healthy-meals,Budget-Friendly Healthy Meals: Simple Balanced Ideas,nutrition,990,5,2,3,True,True,True,True,True,False,False,,0
 easy-balanced-dinner-formula,Easy Balanced Dinner Formula for Busy Weeknights,nutrition,950,5,3,3,True,True,True,True,True,False,False,,0
@@ -32,6 +26,7 @@ healthy-pantry-staples-for-beginners,Healthy Pantry Staples for Beginners: Build
 healthy-snack-plate-ideas,Healthy Snack Plate Ideas for Energy Between Meals,nutrition,966,7,6,3,True,True,True,True,True,False,False,,0
 healthy-snacks-for-work,Healthy Snacks for Work: Simple Ideas for Steady Energy,nutrition,956,6,3,3,True,True,True,True,True,False,False,,0
 high-fiber-breakfast-ideas,High-Fiber Breakfast Ideas That Keep Mornings Simple,nutrition,913,7,3,2,True,True,True,True,True,False,False,,0
+high-protein-vegetarian-meals,High-Protein Vegetarian Meals for Everyday Eating,nutrition,972,4,9,2,True,True,True,True,True,False,False,,0
 how-to-build-a-filling-salad,How to Build a Filling Salad That Actually Feels Like a Meal,nutrition,941,5,2,3,True,True,True,True,True,False,False,,0
 how-to-eat-more-vegetables,How to Eat More Vegetables Without Changing Everything,nutrition,937,5,2,3,True,True,True,True,True,False,False,,0
 hydration-tracker-printable,Hydration Tracker Printable: A Simple Way to Notice Your Water Habits,nutrition,939,5,4,3,True,True,True,True,True,False,False,,0
@@ -72,7 +67,7 @@ daily-stress-relief-routine,How to Build a Daily Stress Relief Routine That Actu
 grounding-techniques-for-stress,Grounding Techniques for Stress: Simple Ways to Feel Present Again,stress_mindfulness,964,5,4,3,True,True,True,True,True,False,False,,0
 how-to-avoid-burnout,How to Avoid Burnout With Better Daily Boundaries,stress_mindfulness,951,4,6,2,True,True,True,True,True,False,False,,0
 how-to-wind-down-after-work,How to Wind Down After Work Without Carrying the Day Home,stress_mindfulness,967,5,3,3,True,True,True,True,True,False,False,,0
-journaling-for-mental-clarity,"Journaling for Mental Clarity: Benefits, Prompts, and How to Start",stress_mindfulness,1200,7,7,4,True,True,True,True,True,False,True,link_to_asset,0
+journaling-for-mental-clarity,"Journaling for Mental Clarity: Benefits, Prompts, and How to Start",stress_mindfulness,1265,8,7,4,True,True,True,True,True,False,False,,0
 journaling-mental-clarity,Journaling for Mental Clarity and Reflection,stress_mindfulness,904,6,3,2,True,True,True,True,True,False,False,,0
 mindful-morning-routine,Mindful Morning Routine for a Better Day,stress_mindfulness,953,7,3,2,True,True,True,True,True,False,False,,0
 morning-stress-reset,Morning Stress Reset: How to Start the Day Calmer,stress_mindfulness,954,5,2,3,True,True,True,True,True,False,False,,0
@@ -84,17 +79,22 @@ simple-self-care-checklist,Simple Self-Care Checklist for Real-Life Stress,stres
 stress-and-screen-time,Stress and Screen Time: How to Create Calmer Digital Boundaries,stress_mindfulness,918,5,3,3,True,True,True,True,True,False,False,,0
 stress-journaling-prompts,Stress Journaling Prompts for Overthinking and Mental Clutter,stress_mindfulness,931,5,3,3,True,True,True,True,True,False,False,,0
 stress-management-guide,Stress Management Guide: Practical Ways to Reduce Everyday Stress,stress_mindfulness,1164,18,22,4,True,True,True,True,True,False,False,,0
-stress-reset-checklist-printable,Stress Reset Checklist Printable,stress_mindfulness,1084,7,22,3,True,True,True,True,True,False,False,,0
+stress-reset-checklist-printable,Stress Reset Checklist Printable,stress_mindfulness,1084,7,24,3,True,True,True,True,True,False,False,,0
 student-stress-management-checklist,Student Stress Management Checklist for Busy Weeks,stress_mindfulness,903,4,2,3,True,True,True,True,True,False,False,,0
 work-stress-reset-routine,Work Stress Reset: A Practical Routine for Busy Days,stress_mindfulness,907,7,2,3,True,True,True,True,True,False,False,,0
 beginner-guide-to-balanced-living,Beginner Guide to Balanced Living: A Practical Wellness Framework,wellness_lifestyle,957,6,2,4,True,True,True,True,True,False,False,,0
+better-breaks-remote-work,How to Take Better Breaks During Remote Work,wellness_lifestyle,1047,6,7,2,True,True,True,True,True,False,False,,0
+daily-wellness-checklist,Daily Wellness Checklist for a Healthier Routine,wellness_lifestyle,1200,7,20,2,True,True,True,True,True,False,False,,0
 daily-wellness-routine-beginners,Daily Wellness Routine for Beginners,wellness_lifestyle,948,13,19,2,True,True,True,True,True,False,False,,0
 digital-wellness-routine,Digital Wellness Routine: Healthier Screen Boundaries for Everyday Life,wellness_lifestyle,946,6,4,3,True,True,True,True,True,False,False,,0
+healthy-habits-remote-workers,Healthy Habits for Remote Workers,wellness_lifestyle,1114,8,5,2,True,True,True,True,True,False,False,,0
 healthy-habits-when-life-feels-busy,Healthy Habits When Life Feels Busy: A Realistic Guide,wellness_lifestyle,950,7,6,3,True,True,True,True,True,False,False,,0
 healthy-routine-after-travel,Healthy Routine After Travel: Reset Gently Without Overcorrecting,wellness_lifestyle,987,6,3,4,True,True,True,True,True,False,False,,0
-how-to-build-a-simple-wellness-plan,How to Build a Simple Wellness Plan That Fits Real Life,wellness_lifestyle,1071,4,5,4,True,True,True,True,True,False,True,link_to_asset,0
+how-to-build-a-simple-wellness-plan,How to Build a Simple Wellness Plan That Fits Real Life,wellness_lifestyle,1130,5,5,4,True,True,True,True,True,False,False,,0
 how-to-build-a-weekly-reset-routine,How to Build a Weekly Reset Routine That Actually Helps,wellness_lifestyle,955,5,2,3,True,True,True,True,True,False,False,,0
 how-to-stay-consistent-with-healthy-habits,How to Stay Consistent With Healthy Habits Without Perfection,wellness_lifestyle,936,6,2,4,True,True,True,True,True,False,False,,0
+morning-routine-for-low-energy-days,Morning Routine for Low-Energy Days: Gentle First Steps,wellness_lifestyle,1014,5,2,3,True,True,True,True,True,False,False,,0
+remote-worker-wellness-checklist,Remote Worker Wellness Checklist,wellness_lifestyle,1039,8,19,2,True,True,True,True,True,False,False,,0
 seasonal-wellness-tips,Seasonal Wellness Tips for Staying Balanced,wellness_lifestyle,923,6,2,2,True,True,True,True,True,False,False,,0
 simple-energy-boosting-habits,Simple Energy-Boosting Habits for Steadier Days,wellness_lifestyle,945,6,2,4,True,True,True,True,True,False,False,,0
 small-healthy-habits,Small Healthy Habits That Can Improve Your Day,wellness_lifestyle,917,6,2,2,True,True,True,True,True,False,False,,0

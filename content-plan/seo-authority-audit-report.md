@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-02T09:38:55+00:00
+Generated from live WordPress data: 2026-06-03T06:21:24+00:00
 Published posts audited: 100
 
 ## Executive Summary
@@ -10,7 +10,7 @@ Published posts audited: 100
 - Posts missing source metadata: 0
 - Posts needing more internal links: 0
 - Posts needing hub pillar link: 0
-- Posts needing printable/asset link: 10
+- Posts needing printable/asset link: 0
 - Posts with weak inbound internal links: 0
 
 ## Hub Distribution
@@ -25,15 +25,9 @@ Published posts audited: 100
 
 | Priority | Hub | Slug | Main Issues |
 | ---: | --- | --- | --- |
-| 3 | wellness_lifestyle | `/morning-routine-for-low-energy-days` | link_to_asset |
-| 2 | fitness | `/beginner-home-workout-plan` | link_to_asset |
-| 2 | nutrition | `/high-protein-vegetarian-meals` | link_to_asset |
-| 2 | wellness_lifestyle | `/better-breaks-remote-work` | link_to_asset |
-| 2 | wellness_lifestyle | `/daily-wellness-checklist` | link_to_asset |
-| 2 | wellness_lifestyle | `/healthy-habits-remote-workers` | link_to_asset |
-| 2 | wellness_lifestyle | `/remote-worker-wellness-checklist` | link_to_asset |
 | 0 | fitness | `/10-minute-walking-routine` | none |
-| 0 | fitness | `/beginner-home-workout-guide` | link_to_asset |
+| 0 | fitness | `/beginner-home-workout-guide` | none |
+| 0 | fitness | `/beginner-home-workout-plan` | none |
 | 0 | fitness | `/beginner-stretching-routine` | none |
 | 0 | fitness | `/daily-mobility-routine` | none |
 | 0 | fitness | `/exercise-sustainable-habit` | none |
@@ -50,6 +44,12 @@ Published posts audited: 100
 | 0 | nutrition | `/balanced-plate-printable-guide` | none |
 | 0 | nutrition | `/beginner-meal-prep-checklist` | none |
 | 0 | nutrition | `/budget-friendly-healthy-meals` | none |
+| 0 | nutrition | `/easy-balanced-dinner-formula` | none |
+| 0 | nutrition | `/fiber-rich-carbohydrates-guide` | none |
+| 0 | nutrition | `/foods-support-better-digestion` | none |
+| 0 | nutrition | `/healthy-breakfast-ideas` | none |
+| 0 | nutrition | `/healthy-pantry-staples-for-beginners` | none |
+| 0 | nutrition | `/healthy-snack-plate-ideas` | none |
 
 ## 30-Day Authority Plan
 

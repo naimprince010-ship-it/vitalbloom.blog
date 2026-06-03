@@ -81,7 +81,7 @@ def short_issue_list(post: dict, hub: str, targets: set[str], incoming: int) -> 
         issues.append("add_internal_links")
     if config["pillar"] != post["slug"] and config["pillar"] not in targets:
         issues.append("link_to_hub_pillar")
-    if config["assets"] and not (targets & config["assets"]):
+    if config["assets"] and post["slug"] not in config["assets"] and not (targets & config["assets"]):
         issues.append("link_to_asset")
     if post["source_count"] < 2:
         issues.append("add_sources")
@@ -159,7 +159,11 @@ def main() -> None:
             "has_fact_check": bool(post.get("fact_checked_by") and post.get("fact_checked_at")),
             "has_featured_image": bool(post.get("has_featured_image")),
             "needs_pillar_link": HUBS[hub]["pillar"] != slug and HUBS[hub]["pillar"] not in outgoing[slug],
-            "needs_asset_link": bool(HUBS[hub]["assets"]) and not bool(outgoing[slug] & HUBS[hub]["assets"]),
+            "needs_asset_link": (
+                bool(HUBS[hub]["assets"])
+                and slug not in HUBS[hub]["assets"]
+                and not bool(outgoing[slug] & HUBS[hub]["assets"])
+            ),
             "issues": ";".join(issues),
             "priority_score": score_priority(post, issues, incoming_count),
         })
