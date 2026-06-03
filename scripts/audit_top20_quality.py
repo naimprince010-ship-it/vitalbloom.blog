@@ -146,15 +146,28 @@ def main() -> None:
             "",
             "## Recommended Next Fix Order",
             "",
-            "1. Add stronger safety/caveat language to fitness and nutrition posts that discuss exercise, digestion, protein, or weight-related habits.",
-            "2. Add one practical example block to thin or routine-focused posts, especially sample days, sample weeks, or common beginner mistakes.",
-            "3. Increase source depth on posts with only two references by adding more specific government, academic, or professional-body sources.",
-            "4. Add inbound links to low-inbound support posts from closely related cluster posts.",
-            "",
-            "## Post-by-Post Notes",
-            "",
         ]
     )
+
+    if high == 0 and medium == 0 and minor == 0:
+        lines.extend(
+            [
+                "No remaining quality fixes were found for this Top 20 pass. The next useful step is to run the same manual-quality pass on the next 20 posts or start outreach for the strongest pillar/linkable assets.",
+                "",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "1. Add stronger safety/caveat language to fitness and nutrition posts that discuss exercise, digestion, protein, or weight-related habits.",
+                "2. Add one practical example block to thin or routine-focused posts, especially sample days, sample weeks, or common beginner mistakes.",
+                "3. Increase source depth on posts with only two references by adding more specific government, academic, or professional-body sources.",
+                "4. Add inbound links to low-inbound support posts from closely related cluster posts.",
+                "",
+            ]
+        )
+
+    lines.extend(["## Post-by-Post Notes", ""])
 
     for index, row, post, headings, sources, notes, rating in details:
         lines.extend(
