@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     template: seoDefaults.titleTemplate
   },
   description: seoDefaults.defaultDescription,
-  keywords: [...siteConfig.keywords],
   alternates: {
     canonical: seoDefaults.canonical
   },

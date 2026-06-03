@@ -6,15 +6,7 @@ export const siteConfig = {
   url: "https://www.vitalbloom.blog",
   locale: "en_US",
   contactEmail: "hello@vitalbloom.blog",
-  defaultOgImage: "/og-default.png",
-  keywords: [
-    "wellness",
-    "nutrition",
-    "healthy living",
-    "fitness",
-    "mindfulness",
-    "self care"
-  ]
+  defaultOgImage: "/og-default.png"
 } as const;
 
 export const seoDefaults = {

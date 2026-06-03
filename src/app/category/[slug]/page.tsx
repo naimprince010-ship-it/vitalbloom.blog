@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
+import { noindexDuplicateSlugs } from "@/config/content-quality";
 import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { siteConfig } from "@/config/site";
 import { getCategoryBySlug, getPostsByCategorySlug } from "@/lib/api";
@@ -73,7 +74,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
-  const posts = await getPostsByCategorySlug(slug);
+  const posts = (await getPostsByCategorySlug(slug)).filter(
+    (post) => !noindexDuplicateSlugs.has(post.slug)
+  );
   const pillarSlugs = categoryPillarGuideSlugs[category.slug] || [];
   const pillarPosts = pillarSlugs
     .map((pillarSlug) => posts.find((post) => post.slug === pillarSlug))
