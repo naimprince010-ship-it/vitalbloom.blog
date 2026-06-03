@@ -9,6 +9,10 @@ const absoluteUrl = (pathOrUrl: string): string => {
   return `${siteConfig.url}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
 };
 
+const isEditorialOrganizationName = (name: string | undefined): boolean => {
+  return !name || /editorial|team|desk/i.test(name);
+};
+
 export const organizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -64,7 +68,7 @@ export const articleSchema = (
   datePublished: post.publishedAt,
   dateModified: post.updatedAt || post.publishedAt,
   author: {
-    "@type": author?.name ? "Person" : "Organization",
+    "@type": isEditorialOrganizationName(author?.name) ? "Organization" : "Person",
     name: author?.name || "VitalBloom Editorial Team",
     url: siteConfig.url
   },
@@ -92,7 +96,11 @@ export const articleSchema = (
   })),
   reviewedBy: post.editorialReview.reviewedBy || post.editorialReview.factCheckedBy
     ? {
-        "@type": "Organization",
+        "@type": isEditorialOrganizationName(
+          post.editorialReview.reviewedBy || post.editorialReview.factCheckedBy
+        )
+          ? "Organization"
+          : "Person",
         name:
           post.editorialReview.reviewedBy ||
           post.editorialReview.factCheckedBy ||

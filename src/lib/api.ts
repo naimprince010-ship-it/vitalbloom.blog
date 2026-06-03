@@ -1,4 +1,5 @@
 import type { Author, Category, Post, PostSource } from "@/types/blog";
+import { getCanonicalUrlForSlug } from "@/config/content-quality";
 import { siteConfig } from "@/config/site";
 import { authors, categories, posts } from "@/lib/mock-data";
 import {
@@ -211,9 +212,10 @@ const mapWpPost = (post: WpPostNode): Post | null => {
   const cleanedContent = stripHtml(rawContent);
   const cleanedExcerpt = stripHtml(post.excerpt) || cleanedContent.slice(0, 180);
   const canonicalUrl = post.seo?.canonical?.trim();
-  const frontendCanonicalUrl = `${siteConfig.url}/${slug}`;
+  const frontendCanonicalUrl = getCanonicalUrlForSlug(slug);
+  const hasLocalCanonicalOverride = frontendCanonicalUrl !== `${siteConfig.url}/${slug}`;
   const derivedCanonicalUrl =
-    canonicalUrl && canonicalUrl.startsWith(siteConfig.url)
+    !hasLocalCanonicalOverride && canonicalUrl && canonicalUrl.startsWith(siteConfig.url)
       ? canonicalUrl
       : frontendCanonicalUrl;
 

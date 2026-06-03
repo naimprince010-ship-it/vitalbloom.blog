@@ -3,8 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import PostImage from "@/components/PostImage";
+import {
+  canonicalSlugOverrides,
+  getCanonicalUrlForSlug,
+  noindexDuplicateSlugs
+} from "@/config/content-quality";
 import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
+import { prepareArticleHtml } from "@/lib/article-html";
 import { siteConfig } from "@/config/site";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
@@ -55,12 +61,18 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const seoTitle = post.seo.metaTitle || post.title;
   const seoDescription = post.seo.metaDescription || post.excerpt;
   const seoImage = post.seo.ogImage || siteConfig.defaultOgImage;
-  const canonicalUrl =
-    post.seo.canonicalUrl || `${siteConfig.url}/${post.slug}`;
+  const canonicalUrl = post.seo.canonicalUrl || getCanonicalUrlForSlug(post.slug);
+  const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
 
   return {
     title: seoTitle,
     description: seoDescription,
+    robots: isDuplicateSupportPage
+      ? {
+          index: false,
+          follow: true
+        }
+      : undefined,
     alternates: {
       canonical: canonicalUrl
     },
@@ -109,6 +121,12 @@ export default async function PostPage({ params }: PostPageProps) {
     post.editorialReview.factCheckedBy ||
     author?.name ||
     "VitalBloom Editorial Team";
+  const articleHtml = prepareArticleHtml(
+    post.content,
+    post.slug,
+    canonicalSlugOverrides
+  );
+  const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
   const breadcrumbs = [
     { name: "Home", url: "/" },
     ...(category
@@ -156,6 +174,9 @@ export default async function PostPage({ params }: PostPageProps) {
             <span className="rounded-md bg-zinc-100 px-2.5 py-1">
               Checked by {reviewByline}
             </span>
+            <span className="rounded-md bg-zinc-100 px-2.5 py-1">
+              Professional medical review not claimed
+            </span>
           </div>
         </header>
 
@@ -166,9 +187,26 @@ export default async function PostPage({ params }: PostPageProps) {
           priority
         />
 
+        <aside className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
+          <p className="font-semibold">General wellness information only</p>
+          <p className="mt-1">
+            This article is for education and everyday habit-building. It is not
+            personal medical, nutrition, mental health, or fitness advice. If you
+            have symptoms, a diagnosis, medication questions, or urgent concerns,
+            work with a qualified professional.
+          </p>
+        </aside>
+
+        {isDuplicateSupportPage ? (
+          <aside className="mt-4 rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-700">
+            This page is kept as a supporting article, while the main version is
+            canonicalized for search engines to reduce topic overlap.
+          </aside>
+        ) : null}
+
         <section
           className="article-content mt-6 max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: articleHtml }}
         />
 
         {(post.sources.length > 0 ||
@@ -186,6 +224,11 @@ export default async function PostPage({ params }: PostPageProps) {
                 This article is maintained by the VitalBloom editorial process:
                 source alignment, practical context, and reader safety are checked
                 before publication and during updates.
+              </p>
+              <p>
+                VitalBloom does not present this article as reviewed by a doctor,
+                dietitian, therapist, or other licensed clinician unless a named
+                qualified reviewer is listed here.
               </p>
               {post.editorialReview.factCheckedBy ? (
                 <p>
@@ -246,6 +289,10 @@ export default async function PostPage({ params }: PostPageProps) {
             About the Author
           </h2>
           <p className="mt-2 text-sm leading-6 text-zinc-600">{author.bio}</p>
+          <p className="mt-2 text-sm leading-6 text-zinc-600">
+            Author names and review labels are shown for transparency. Clinical
+            credentials are not implied unless they are explicitly listed.
+          </p>
         </section>
       ) : null}
 

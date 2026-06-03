@@ -58,6 +58,12 @@ export default function EditorialPolicyPage() {
               professional organizations. Sources are listed on articles when they
               support health claims or practical guidance.
             </p>
+            <p className="mt-2">
+              General references are not treated as proof for every sentence. When
+              a post makes a specific health claim, our goal is to connect it to a
+              relevant source and revise the page when the source support is too
+              broad, outdated, or unclear.
+            </p>
           </section>
 
           <section>
@@ -72,6 +78,41 @@ export default function EditorialPolicyPage() {
               Our review checks include claim-source alignment, practical context,
               appropriate disclaimers, and whether a reader should be directed to a
               qualified professional for personal concerns.
+            </p>
+            <p className="mt-2">
+              A VitalBloom editorial review is not the same as medical review. We
+              only describe a page as medically, nutritionally, therapeutically, or
+              professionally reviewed when a qualified reviewer is named.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-zinc-900">
+              Authorship and Reviewer Labels
+            </h2>
+            <p className="mt-2">
+              Some articles are credited to the VitalBloom Editorial Team because
+              they are created and maintained through a shared editorial workflow.
+              We avoid inventing individual author names or credentials. If a
+              named contributor or credentialed reviewer is involved, the article
+              should identify that person and their role.
+            </p>
+            <p className="mt-2">
+              Articles also include a visible notice that they are general
+              wellness information and not a substitute for professional care.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-zinc-900">
+              Similar Topics and Canonical Pages
+            </h2>
+            <p className="mt-2">
+              When two older articles cover nearly the same search intent, we keep
+              the strongest page as the canonical version and may mark the shorter
+              support page as non-indexable while preserving it for readers who
+              already have the link. This reduces keyword cannibalization and
+              makes the site easier to navigate.
             </p>
           </section>
 

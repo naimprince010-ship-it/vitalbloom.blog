@@ -58,15 +58,22 @@ export default function AboutPage() {
             health, nutrition, or fitness concerns.
           </p>
           <p>
-            Articles are written for general education and are not a substitute
-            for professional medical advice. Readers should speak with qualified
-            professionals about personal health concerns.
+            Unless a page names a qualified reviewer, articles are editorially
+            reviewed by VitalBloom for clarity, source alignment, and cautious
+            health wording. We do not imply physician, dietitian, therapist, or
+            trainer review where it has not happened.
           </p>
           <p>
             We label source-backed articles with references and editorial review
             details where available. We also maintain a correction path through
             our contact email so readers can flag unclear wording, broken
             sources, or outdated guidance.
+          </p>
+          <p>
+            Our public contact address is {siteConfig.contactEmail}. We are
+            building the publication in public-facing stages and currently use
+            email as the primary contact channel rather than claiming social
+            profiles that are not actively maintained.
           </p>
         </section>
 
@@ -100,6 +107,23 @@ export default function AboutPage() {
               contacting us at {siteConfig.contactEmail}.
             </p>
           </div>
+        </section>
+
+        <section className="mt-8 border-t border-zinc-200 pt-6 text-sm leading-7 text-zinc-700">
+          <h2 className="text-lg font-semibold text-zinc-900">
+            Authorship and Accountability
+          </h2>
+          <p className="mt-2">
+            Articles may be credited to the VitalBloom Editorial Team when they
+            are produced through our shared editorial workflow. That byline means
+            the content has been checked against our editorial standards, not that
+            it has been personally reviewed by a licensed clinician.
+          </p>
+          <p className="mt-2">
+            When we add named contributors or credentialed reviewers, their names,
+            roles, and relevant qualifications will be shown on the article and in
+            structured data.
+          </p>
         </section>
       </article>
     </main>
