@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
     };
   }
 
-  const seoTitle = post.seo.metaTitle || post.title;
+  const seoTitle = post.title;
   const seoDescription = post.seo.metaDescription || post.excerpt;
   const seoImage = post.seo.ogImage || siteConfig.defaultOgImage;
   const canonicalUrl = post.seo.canonicalUrl || getCanonicalUrlForSlug(post.slug);
