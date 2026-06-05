@@ -81,6 +81,13 @@ const categoryTopicFilters: Record<string, Array<{ label: string; value: string;
     { label: "Snacks", value: "snacks", keywords: ["snack", "snacks"] },
     { label: "Balanced Plates", value: "balanced-plates", keywords: ["balanced-plate", "dinner", "salad"] },
     { label: "Hydration", value: "hydration", keywords: ["hydration", "water"] }
+  ],
+  stress: [
+    { label: "Quick Resets", value: "quick-resets", keywords: ["reset", "calm-down", "grounding"] },
+    { label: "Work Stress", value: "work-stress", keywords: ["work", "busy-days"] },
+    { label: "Student Support", value: "student-support", keywords: ["student"] },
+    { label: "Journaling", value: "journaling", keywords: ["journal", "journaling", "overthinking"] },
+    { label: "Digital Boundaries", value: "digital-boundaries", keywords: ["screen", "digital"] }
   ]
 };
 
