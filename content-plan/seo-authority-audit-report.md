@@ -1,6 +1,6 @@
 # VitalBloom SEO Authority Audit
 
-Generated from live WordPress data: 2026-06-05T04:12:41+00:00
+Generated from live WordPress data: 2026-06-05T04:35:29+00:00
 Published posts audited: 100
 
 ## Executive Summary
