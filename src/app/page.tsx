@@ -11,6 +11,11 @@ export default async function Home() {
   const pillarGuides = pillarGuideSlugs
     .map((slug) => posts.find((post) => post.slug === slug))
     .filter((post): post is NonNullable<typeof post> => Boolean(post));
+  const featuredSlugs = new Set([
+    heroPost?.slug,
+    ...pillarGuides.map((post) => post.slug)
+  ].filter(Boolean));
+  const latestPosts = posts.filter((post) => !featuredSlugs.has(post.slug));
 
   return (
     <main className="flex flex-1 flex-col gap-12 py-10 sm:py-12">
@@ -109,6 +114,35 @@ export default async function Home() {
         </section>
       ) : null}
 
+      <section
+        aria-labelledby="homepage-trust"
+        className="rounded-lg border border-zinc-200 bg-white p-5 sm:p-6"
+      >
+        <h2 id="homepage-trust" className="text-2xl font-semibold text-zinc-900">
+          Practical Wellness Guidance With Clear Editorial Standards
+        </h2>
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
+          VitalBloom publishes evidence-informed guides for everyday habits,
+          sleep, stress, movement, nutrition, and mindful living. Articles are
+          checked for source alignment, practical context, and reader safety;
+          professional medical review is shown only when it is actually claimed.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/about"
+            className="text-sm font-semibold text-green-700 underline underline-offset-4 hover:text-green-800"
+          >
+            About VitalBloom
+          </Link>
+          <Link
+            href="/editorial-policy"
+            className="text-sm font-semibold text-green-700 underline underline-offset-4 hover:text-green-800"
+          >
+            Editorial Policy
+          </Link>
+        </div>
+      </section>
+
       <section aria-labelledby="category-grid" className="space-y-5">
         <h2 id="category-grid" className="text-2xl font-semibold text-zinc-900">
           Explore Categories
@@ -141,7 +175,7 @@ export default async function Home() {
           Latest Posts
         </h2>
         <div className="space-y-4">
-          {posts.map((post) => (
+          {latestPosts.map((post) => (
             <article
               key={post.id}
               className="grid overflow-hidden rounded-lg border border-zinc-200 bg-white sm:grid-cols-[220px_1fr]"
