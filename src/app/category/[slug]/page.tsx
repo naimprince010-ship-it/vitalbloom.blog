@@ -13,6 +13,61 @@ type CategoryPageProps = {
   params: Promise<{
     slug: string;
   }>;
+  searchParams?: Promise<{
+    topic?: string;
+    page?: string;
+  }>;
+};
+
+const POSTS_PER_PAGE = 12;
+
+const categorySeoCopy: Record<string, { title: string; description: string; ogImage: string }> = {
+  nutrition: {
+    title: "Nutrition Guides: Balanced Eating, Meal Planning & Healthy Habits",
+    description:
+      "Explore practical nutrition guides for balanced eating, meal planning, healthy breakfasts, snacks, hydration, protein, fiber, digestion, and everyday food habits.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/balanced-plate-guide.png"
+  },
+  fitness: {
+    title: "Fitness Guides: Beginner Workouts, Walking & Recovery",
+    description:
+      "Beginner-friendly fitness guides for home workouts, walking, stretching, mobility, strength training, cardio, recovery, and realistic movement habits.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/beginner-home-workout-guide.png"
+  },
+  mindfulness: {
+    title: "Mindfulness Guides: Stress Support, Journaling & Calm Habits",
+    description:
+      "Mindfulness and stress-support guides for breathing, journaling, relaxation, mental clarity, calmer routines, and everyday emotional wellness.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/stress-management-guide.png"
+  },
+  sleep: {
+    title: "Sleep Guides: Better Routines, Rest & Evening Habits",
+    description:
+      "Sleep guides for bedtime routines, sleep hygiene, evening habits, screen boundaries, sleep debt, shift work, naps, and better daily rest.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/better-sleep-routine-guide.png"
+  },
+  stress: {
+    title: "Stress Guides: Relief Tools, Burnout Prevention & Resets",
+    description:
+      "Stress support guides for quick resets, burnout prevention, work stress, student stress, breathing, journaling, and calming daily routines.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/stress-management-guide.png"
+  },
+  lifestyle: {
+    title: "Lifestyle Guides: Daily Routines, Digital Wellness & Resets",
+    description:
+      "Lifestyle guides for daily routines, digital wellness, travel resets, remote work habits, weekly planning, consistency, and balanced living.",
+    ogImage: "https://backend.vitalbloom.blog/wp-content/uploads/2026/05/daily-wellness-routine-beginners.png"
+  }
+};
+
+const categoryTopicFilters: Record<string, Array<{ label: string; value: string; keywords: string[] }>> = {
+  nutrition: [
+    { label: "Meal Prep", value: "meal-prep", keywords: ["meal-prep", "meal-planning", "grocery"] },
+    { label: "Breakfast", value: "breakfast", keywords: ["breakfast", "morning"] },
+    { label: "Snacks", value: "snacks", keywords: ["snack", "snacks"] },
+    { label: "Balanced Plates", value: "balanced-plates", keywords: ["balanced-plate", "dinner", "salad"] },
+    { label: "Hydration", value: "hydration", keywords: ["hydration", "water"] }
+  ]
 };
 
 const formatDate = (dateString: string): string => {
@@ -25,8 +80,8 @@ const formatDate = (dateString: string): string => {
 
 const getDisplayDate = (post: { publishedAt: string; updatedAt?: string }) => {
   return {
-    label: post.updatedAt ? "Updated" : "Published",
-    value: post.updatedAt || post.publishedAt
+    published: post.publishedAt,
+    updated: post.updatedAt
   };
 };
 
@@ -45,9 +100,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     };
   }
 
-  const title = `${category.name} Articles`;
-  const description =
-    category.description || `Explore the latest ${category.name.toLowerCase()} posts.`;
+  const seoCopy = categorySeoCopy[category.slug];
+  const title = seoCopy?.title || `${category.name} Articles`;
+  const description = seoCopy?.description || category.description || `Explore the latest ${category.name.toLowerCase()} posts.`;
   const canonical = `${siteConfig.url}/category/${category.slug}`;
 
   return {
@@ -62,19 +117,32 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       description,
       url: canonical,
       siteName: siteConfig.name,
-      images: [siteConfig.defaultOgImage]
+      images: [seoCopy?.ogImage || siteConfig.defaultOgImage]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [siteConfig.defaultOgImage]
+      images: [seoCopy?.ogImage || siteConfig.defaultOgImage]
     }
   };
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+const matchesTopic = (
+  post: { slug: string; title: string },
+  topic?: { keywords: string[] }
+): boolean => {
+  if (!topic) {
+    return true;
+  }
+
+  const haystack = `${post.slug} ${post.title}`.toLowerCase();
+  return topic.keywords.some((keyword) => haystack.includes(keyword));
+};
+
+export default async function CategoryPage({ params, searchParams }: CategoryPageProps) {
   const { slug } = await params;
+  const query = (await searchParams) || {};
   const category = await getCategoryBySlug(slug);
 
   if (!category) {
@@ -88,7 +156,30 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const pillarPosts = pillarSlugs
     .map((pillarSlug) => posts.find((post) => post.slug === pillarSlug))
     .filter((post): post is NonNullable<typeof post> => Boolean(post));
-  const regularPosts = posts.filter((post) => !pillarSlugs.includes(post.slug));
+  const topicFilters = categoryTopicFilters[category.slug] || [];
+  const selectedTopic = topicFilters.find((topic) => topic.value === query.topic);
+  const filteredRegularPosts = posts
+    .filter((post) => !pillarSlugs.includes(post.slug))
+    .filter((post) => matchesTopic(post, selectedTopic));
+  const requestedPage = Number.parseInt(query.page || "1", 10);
+  const currentPage = Number.isFinite(requestedPage) && requestedPage > 0 ? requestedPage : 1;
+  const totalPages = Math.max(1, Math.ceil(filteredRegularPosts.length / POSTS_PER_PAGE));
+  const visiblePage = Math.min(currentPage, totalPages);
+  const regularPosts = filteredRegularPosts.slice(
+    (visiblePage - 1) * POSTS_PER_PAGE,
+    visiblePage * POSTS_PER_PAGE
+  );
+  const pageHref = (page: number) => {
+    const params = new URLSearchParams();
+    if (selectedTopic) {
+      params.set("topic", selectedTopic.value);
+    }
+    if (page > 1) {
+      params.set("page", String(page));
+    }
+    const suffix = params.toString();
+    return `/category/${category.slug}${suffix ? `?${suffix}` : ""}`;
+  };
   const breadcrumbs = [
     { name: "Home", url: "/" },
     { name: category.name, url: `/category/${category.slug}` }
@@ -141,9 +232,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                     <span>{post.readingTime} min guide</span>
                     <span aria-hidden="true">|</span>
-                    <time dateTime={displayDate.value}>
-                      {displayDate.label} {formatDate(displayDate.value)}
+                    <time dateTime={displayDate.published}>
+                      Published {formatDate(displayDate.published)}
                     </time>
+                    {displayDate.updated ? (
+                      <>
+                        <span aria-hidden="true">|</span>
+                        <time dateTime={displayDate.updated}>
+                          Updated {formatDate(displayDate.updated)}
+                        </time>
+                      </>
+                    ) : null}
                   </div>
                   <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
                     <Link
@@ -164,9 +263,44 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       ) : null}
 
       <section aria-labelledby="category-posts" className="space-y-4">
-        <h2 id="category-posts" className="text-2xl font-semibold text-zinc-900">
-          Latest in {category.name}
-        </h2>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 id="category-posts" className="text-2xl font-semibold text-zinc-900">
+              Latest in {category.name}
+            </h2>
+            <p className="mt-1 text-sm text-zinc-600">
+              Showing {regularPosts.length} of {filteredRegularPosts.length} posts
+              {selectedTopic ? ` for ${selectedTopic.label}` : ""}.
+            </p>
+          </div>
+          {topicFilters.length > 0 ? (
+            <div className="flex flex-wrap gap-2">
+              <Link
+                href={`/category/${category.slug}`}
+                className={`rounded-md border px-3 py-1.5 text-sm font-medium ${
+                  selectedTopic
+                    ? "border-zinc-200 text-zinc-700 hover:border-zinc-300"
+                    : "border-green-700 bg-green-700 text-white"
+                }`}
+              >
+                All
+              </Link>
+              {topicFilters.map((topic) => (
+                <Link
+                  key={topic.value}
+                  href={`/category/${category.slug}?topic=${topic.value}`}
+                  className={`rounded-md border px-3 py-1.5 text-sm font-medium ${
+                    selectedTopic?.value === topic.value
+                      ? "border-green-700 bg-green-700 text-white"
+                      : "border-zinc-200 text-zinc-700 hover:border-zinc-300"
+                  }`}
+                >
+                  {topic.label}
+                </Link>
+              ))}
+            </div>
+          ) : null}
+        </div>
         {regularPosts.length > 0 ? (
           <div className="space-y-4">
             {regularPosts.map((post) => (
@@ -187,9 +321,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                     <span>{post.readingTime} min read</span>
                     <span aria-hidden="true">|</span>
-                    <time dateTime={displayDate.value}>
-                      {displayDate.label} {formatDate(displayDate.value)}
+                    <time dateTime={displayDate.published}>
+                      Published {formatDate(displayDate.published)}
                     </time>
+                    {displayDate.updated ? (
+                      <>
+                        <span aria-hidden="true">|</span>
+                        <time dateTime={displayDate.updated}>
+                          Updated {formatDate(displayDate.updated)}
+                        </time>
+                      </>
+                    ) : null}
                   </div>
                   <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
                     <Link
@@ -209,6 +351,33 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         ) : (
           <p className="text-zinc-600">No published posts in this category yet.</p>
         )}
+        {totalPages > 1 ? (
+          <nav aria-label={`${category.name} pagination`} className="flex items-center justify-between gap-3 pt-2">
+            {visiblePage > 1 ? (
+              <Link
+                href={pageHref(visiblePage - 1)}
+                className="rounded-md border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 hover:border-zinc-300"
+              >
+                Previous
+              </Link>
+            ) : (
+              <span />
+            )}
+            <span className="text-sm text-zinc-600">
+              Page {visiblePage} of {totalPages}
+            </span>
+            {visiblePage < totalPages ? (
+              <Link
+                href={pageHref(visiblePage + 1)}
+                className="rounded-md border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 hover:border-zinc-300"
+              >
+                Next
+              </Link>
+            ) : (
+              <span />
+            )}
+          </nav>
+        ) : null}
       </section>
     </main>
   );

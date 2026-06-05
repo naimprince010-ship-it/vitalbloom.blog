@@ -103,13 +103,9 @@ export default async function Home() {
                   priority={index === 0}
                 />
               <div className="p-5">
-                {post.updatedAt ? (
-                  <p className="mb-2 text-sm font-medium text-zinc-500">
-                    Updated {formatCardDate(post.updatedAt)}
-                  </p>
-                ) : null}
                 <p className="mb-2 text-sm font-medium text-zinc-500">
                   {post.readingTime} min guide
+                  {post.updatedAt ? ` | Updated ${formatCardDate(post.updatedAt)}` : ""}
                 </p>
                   <h3 className="text-lg font-semibold tracking-tight text-zinc-900">
                     <Link
@@ -203,9 +199,16 @@ export default async function Home() {
                   <span>{post.readingTime} min read</span>
                   <span aria-hidden="true">|</span>
                   <time dateTime={post.updatedAt || post.publishedAt}>
-                    {post.updatedAt ? "Updated " : "Published "}
-                    {formatCardDate(post.updatedAt || post.publishedAt)}
+                    Published {formatCardDate(post.publishedAt)}
                   </time>
+                  {post.updatedAt ? (
+                    <>
+                      <span aria-hidden="true">|</span>
+                      <time dateTime={post.updatedAt}>
+                        Updated {formatCardDate(post.updatedAt)}
+                      </time>
+                    </>
+                  ) : null}
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
                   <Link
