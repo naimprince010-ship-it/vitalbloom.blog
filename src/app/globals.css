@@ -80,12 +80,10 @@ body {
 
 .article-content table {
   border-collapse: collapse;
-  display: block;
   font-size: 0.95rem;
   line-height: 1.55;
   margin-top: 1.25rem;
   max-width: 100%;
-  overflow-x: auto;
   width: 100%;
 }
 
@@ -118,5 +116,51 @@ body {
 @media (min-width: 640px) {
   .article-content {
     font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .article-content table,
+  .article-content thead,
+  .article-content tbody,
+  .article-content tr,
+  .article-content th,
+  .article-content td {
+    display: block;
+    width: 100%;
+  }
+
+  .article-content thead {
+    display: none;
+  }
+
+  .article-content tr {
+    border: 1px solid rgb(228 228 231);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .article-content tr + tr {
+    margin-top: 0.85rem;
+  }
+
+  .article-content td {
+    border: 0;
+    min-width: 0;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .article-content td + td {
+    border-top: 1px solid rgb(228 228 231);
+  }
+
+  .article-content td::before {
+    color: rgb(82 82 91);
+    content: attr(data-label);
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
   }
 }
