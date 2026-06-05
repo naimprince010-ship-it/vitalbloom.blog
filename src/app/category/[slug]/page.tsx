@@ -68,6 +68,13 @@ const categoryTopicFilters: Record<string, Array<{ label: string; value: string;
     { label: "Stretching & Mobility", value: "stretching-mobility", keywords: ["stretching", "mobility"] },
     { label: "Recovery", value: "recovery", keywords: ["recovery", "rest-day", "post-workout"] }
   ],
+  mindfulness: [
+    { label: "Stress Relief", value: "stress-relief", keywords: ["stress", "relaxation", "self-care"] },
+    { label: "Journaling", value: "journaling", keywords: ["journal", "journaling"] },
+    { label: "Meditation", value: "meditation", keywords: ["meditation", "mindfulness"] },
+    { label: "Breathing", value: "breathing", keywords: ["breathing", "breath"] },
+    { label: "Wind Down", value: "wind-down", keywords: ["wind-down", "morning", "after-work"] }
+  ],
   nutrition: [
     { label: "Meal Prep", value: "meal-prep", keywords: ["meal-prep", "meal-planning", "grocery"] },
     { label: "Breakfast", value: "breakfast", keywords: ["breakfast", "morning"] },

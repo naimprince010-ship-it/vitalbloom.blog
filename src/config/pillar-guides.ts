@@ -14,7 +14,13 @@ export const categoryPillarGuideSlugs: Record<string, string[]> = {
     "beginner-stretching-routine",
     "walking-for-weight-management"
   ],
-  mindfulness: ["stress-management-guide", "journaling-for-mental-clarity"],
+  mindfulness: [
+    "stress-management-guide",
+    "journaling-for-mental-clarity",
+    "beginner-meditation-guide",
+    "simple-breathing-exercises",
+    "simple-relaxation-techniques"
+  ],
   nutrition: [
     "balanced-plate-guide",
     "beginner-meal-prep-checklist",
