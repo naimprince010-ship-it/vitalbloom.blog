@@ -61,6 +61,13 @@ const categorySeoCopy: Record<string, { title: string; description: string; ogIm
 };
 
 const categoryTopicFilters: Record<string, Array<{ label: string; value: string; keywords: string[] }>> = {
+  fitness: [
+    { label: "Beginner Workouts", value: "beginner-workouts", keywords: ["beginner", "home-workout", "workout"] },
+    { label: "Strength", value: "strength", keywords: ["strength", "training"] },
+    { label: "Walking & Cardio", value: "walking-cardio", keywords: ["walking", "cardio"] },
+    { label: "Stretching & Mobility", value: "stretching-mobility", keywords: ["stretching", "mobility"] },
+    { label: "Recovery", value: "recovery", keywords: ["recovery", "rest-day", "post-workout"] }
+  ],
   nutrition: [
     { label: "Meal Prep", value: "meal-prep", keywords: ["meal-prep", "meal-planning", "grocery"] },
     { label: "Breakfast", value: "breakfast", keywords: ["breakfast", "morning"] },

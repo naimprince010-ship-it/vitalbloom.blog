@@ -7,7 +7,13 @@ export const pillarGuideSlugs = [
 ] as const;
 
 export const categoryPillarGuideSlugs: Record<string, string[]> = {
-  fitness: ["beginner-home-workout-guide"],
+  fitness: [
+    "beginner-home-workout-guide",
+    "how-to-start-strength-training-at-home",
+    "low-impact-cardio-for-beginners",
+    "beginner-stretching-routine",
+    "walking-for-weight-management"
+  ],
   mindfulness: ["stress-management-guide", "journaling-for-mental-clarity"],
   nutrition: [
     "balanced-plate-guide",
