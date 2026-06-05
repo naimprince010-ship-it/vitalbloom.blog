@@ -4,6 +4,14 @@ import { pillarGuideSlugs } from "@/config/pillar-guides";
 import { siteConfig } from "@/config/site";
 import { getCategories, getPosts } from "@/lib/api";
 
+const formatCardDate = (dateString: string): string => {
+  return new Date(dateString).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  });
+};
+
 export default async function Home() {
   const posts = await getPosts();
   const categories = await getCategories();
@@ -94,10 +102,15 @@ export default async function Home() {
                   className="aspect-[16/9] w-full object-cover"
                   priority={index === 0}
                 />
-                <div className="p-5">
+              <div className="p-5">
+                {post.updatedAt ? (
                   <p className="mb-2 text-sm font-medium text-zinc-500">
-                    {post.readingTime} min guide
+                    Updated {formatCardDate(post.updatedAt)}
                   </p>
+                ) : null}
+                <p className="mb-2 text-sm font-medium text-zinc-500">
+                  {post.readingTime} min guide
+                </p>
                   <h3 className="text-lg font-semibold tracking-tight text-zinc-900">
                     <Link
                       href={`/${post.slug}`}
@@ -189,12 +202,9 @@ export default async function Home() {
                 <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                   <span>{post.readingTime} min read</span>
                   <span aria-hidden="true">|</span>
-                  <time dateTime={post.publishedAt}>
-                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric"
-                    })}
+                  <time dateTime={post.updatedAt || post.publishedAt}>
+                    {post.updatedAt ? "Updated " : "Published "}
+                    {formatCardDate(post.updatedAt || post.publishedAt)}
                   </time>
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight text-zinc-900">

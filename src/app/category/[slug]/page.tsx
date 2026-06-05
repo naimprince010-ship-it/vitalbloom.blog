@@ -23,6 +23,13 @@ const formatDate = (dateString: string): string => {
   });
 };
 
+const getDisplayDate = (post: { publishedAt: string; updatedAt?: string }) => {
+  return {
+    label: post.updatedAt ? "Updated" : "Published",
+    value: post.updatedAt || post.publishedAt
+  };
+};
+
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
   const category = await getCategoryBySlug(slug);
@@ -116,6 +123,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {pillarPosts.map((post, index) => (
+              (() => {
+                const displayDate = getDisplayDate(post);
+
+                return (
               <article
                 key={post.id}
                 className="overflow-hidden rounded-lg border border-zinc-200 bg-white"
@@ -130,7 +141,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                     <span>{post.readingTime} min guide</span>
                     <span aria-hidden="true">|</span>
-                    <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+                    <time dateTime={displayDate.value}>
+                      {displayDate.label} {formatDate(displayDate.value)}
+                    </time>
                   </div>
                   <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
                     <Link
@@ -143,6 +156,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <p className="mt-2 text-base leading-7 text-zinc-600">{post.excerpt}</p>
                 </div>
               </article>
+                );
+              })()
             ))}
           </div>
         </section>
@@ -155,6 +170,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {regularPosts.length > 0 ? (
           <div className="space-y-4">
             {regularPosts.map((post) => (
+              (() => {
+                const displayDate = getDisplayDate(post);
+
+                return (
               <article
                 key={post.id}
                 className="grid overflow-hidden rounded-lg border border-zinc-200 bg-white sm:grid-cols-[220px_1fr]"
@@ -168,7 +187,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
                     <span>{post.readingTime} min read</span>
                     <span aria-hidden="true">|</span>
-                    <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+                    <time dateTime={displayDate.value}>
+                      {displayDate.label} {formatDate(displayDate.value)}
+                    </time>
                   </div>
                   <h3 className="text-xl font-semibold tracking-tight text-zinc-900">
                     <Link
@@ -181,6 +202,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <p className="mt-2 text-base leading-7 text-zinc-600">{post.excerpt}</p>
                 </div>
               </article>
+                );
+              })()
             ))}
           </div>
         ) : (
