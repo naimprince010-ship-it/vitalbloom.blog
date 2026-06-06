@@ -68,6 +68,11 @@ const categoryTopicFilters: Record<string, Array<{ label: string; value: string;
     { label: "Stretching & Mobility", value: "stretching-mobility", keywords: ["stretching", "mobility"] },
     { label: "Recovery", value: "recovery", keywords: ["recovery", "rest-day", "post-workout"] }
   ],
+  lifestyle: [
+    { label: "Remote Work", value: "remote-work", keywords: ["remote", "work", "breaks"] },
+    { label: "Digital Habits", value: "digital-habits", keywords: ["digital", "screen"] },
+    { label: "Daily Routines", value: "daily-routines", keywords: ["daily", "routine"] }
+  ],
   mindfulness: [
     { label: "Stress Relief", value: "stress-relief", keywords: ["stress", "relaxation", "self-care"] },
     { label: "Journaling", value: "journaling", keywords: ["journal", "journaling"] },
@@ -290,6 +295,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         </section>
       ) : null}
 
+      {filteredRegularPosts.length > 0 || selectedTopic ? (
       <section aria-labelledby="category-posts" className="space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -407,6 +413,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
           </nav>
         ) : null}
       </section>
+      ) : null}
     </main>
   );
 }
