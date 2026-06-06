@@ -43,6 +43,18 @@ const getReviewDate = (post: Awaited<ReturnType<typeof getPostBySlug>>): string 
   );
 };
 
+const needsCrisisSupportBox = (content: string): boolean => {
+  const normalizedContent = content.toLowerCase();
+
+  return [
+    "self-harm",
+    "suicide",
+    "unsafe",
+    "immediate danger",
+    "crisis support"
+  ].some((phrase) => normalizedContent.includes(phrase));
+};
+
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -126,6 +138,7 @@ export default async function PostPage({ params }: PostPageProps) {
     post.slug,
     canonicalSlugOverrides
   );
+  const showCrisisSupportBox = needsCrisisSupportBox(post.content);
   const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
   const breadcrumbs = [
     { name: "Home", url: "/" },
@@ -196,6 +209,43 @@ export default async function PostPage({ params }: PostPageProps) {
             work with a qualified professional.
           </p>
         </aside>
+
+        {showCrisisSupportBox ? (
+          <aside className="mt-4 rounded-lg border border-rose-200 bg-rose-50 p-4 text-sm leading-6 text-rose-950">
+            <p className="font-semibold">If you feel unsafe or may harm yourself</p>
+            <p className="mt-1">
+              Contact local emergency services now. In the United States, call or
+              text{" "}
+              <a
+                href="https://988lifeline.org/"
+                className="font-medium underline underline-offset-4"
+                rel="noreferrer"
+                target="_blank"
+              >
+                988 Suicide &amp; Crisis Lifeline
+              </a>
+              . You can also text HOME to 741741 through{" "}
+              <a
+                href="https://www.crisistextline.org/"
+                className="font-medium underline underline-offset-4"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Crisis Text Line
+              </a>
+              . Outside the United States, use{" "}
+              <a
+                href="https://findahelpline.com/"
+                className="font-medium underline underline-offset-4"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Find A Helpline
+              </a>
+              .
+            </p>
+          </aside>
+        ) : null}
 
         {isDuplicateSupportPage ? (
           <aside className="mt-4 rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-700">
