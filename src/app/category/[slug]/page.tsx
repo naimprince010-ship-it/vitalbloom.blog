@@ -88,6 +88,13 @@ const categoryTopicFilters: Record<string, Array<{ label: string; value: string;
     { label: "Student Support", value: "student-support", keywords: ["student"] },
     { label: "Journaling", value: "journaling", keywords: ["journal", "journaling", "overthinking"] },
     { label: "Digital Boundaries", value: "digital-boundaries", keywords: ["screen", "digital"] }
+  ],
+  wellness: [
+    { label: "Daily Routines", value: "daily-routines", keywords: ["daily", "routine", "weekly-reset"] },
+    { label: "Low Energy", value: "low-energy", keywords: ["energy", "low-energy", "morning"] },
+    { label: "Digital Wellness", value: "digital-wellness", keywords: ["digital", "screen"] },
+    { label: "Remote Work", value: "remote-work", keywords: ["remote", "work"] },
+    { label: "Consistency", value: "consistency", keywords: ["consistent", "sustainable", "habits"] }
   ]
 };
 

@@ -36,5 +36,11 @@ export const categoryPillarGuideSlugs: Record<string, string[]> = {
     "daily-stress-relief-routine",
     "grounding-techniques-for-stress"
   ],
-  wellness: ["stress-management-guide", "balanced-plate-guide"]
+  wellness: [
+    "daily-wellness-routine-beginners",
+    "how-to-build-a-simple-wellness-plan",
+    "beginner-guide-to-balanced-living",
+    "daily-wellness-checklist",
+    "how-to-stay-consistent-with-healthy-habits"
+  ]
 };
