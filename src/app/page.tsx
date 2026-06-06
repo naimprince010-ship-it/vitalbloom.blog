@@ -155,6 +155,35 @@ export default async function Home() {
         </div>
       </section>
 
+      <section
+        aria-labelledby="official-brand"
+        className="rounded-lg border border-zinc-200 bg-white p-5 sm:p-6"
+      >
+        <h2 id="official-brand" className="text-2xl font-semibold text-zinc-900">
+          Official VitalBloom Blog
+        </h2>
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
+          VitalBloom Blog is the wellness publication at VitalBloom.blog. We
+          publish free educational guides and checklists; we are not a supplement
+          store, tea shop, skincare store, telemedicine service, or medical
+          clinic.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/vitalbloom-blog"
+            className="text-sm font-semibold text-green-700 underline underline-offset-4 hover:text-green-800"
+          >
+            What VitalBloom Blog Is
+          </Link>
+          <Link
+            href="/why-trust-vitalbloom"
+            className="text-sm font-semibold text-green-700 underline underline-offset-4 hover:text-green-800"
+          >
+            Why Trust VitalBloom
+          </Link>
+        </div>
+      </section>
+
       <section aria-labelledby="category-grid" className="space-y-5">
         <h2 id="category-grid" className="text-2xl font-semibold text-zinc-900">
           Explore Categories

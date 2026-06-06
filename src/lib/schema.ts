@@ -21,6 +21,8 @@ export const organizationSchema = () => ({
   alternateName: [siteConfig.brandName, "VitalBloom.blog"],
   url: siteConfig.url,
   logo: absoluteUrl(siteConfig.defaultOgImage),
+  description:
+    "VitalBloom Blog is an educational wellness publication at VitalBloom.blog covering nutrition, fitness, sleep, stress, mindfulness, lifestyle, and healthy living.",
   contactPoint: {
     "@type": "ContactPoint",
     email: siteConfig.contactEmail,
@@ -38,6 +40,15 @@ export const websiteSchema = () => ({
   publisher: {
     "@id": `${siteConfig.url}/#organization`
   },
+  about: [
+    "Wellness",
+    "Nutrition",
+    "Fitness",
+    "Sleep",
+    "Stress management",
+    "Mindfulness",
+    "Healthy living"
+  ],
   inLanguage: "en"
 });
 

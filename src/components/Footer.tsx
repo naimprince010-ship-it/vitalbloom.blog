@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <section aria-labelledby="footer-brand" className="space-y-3">
           <h2 id="footer-brand" className="text-base font-semibold text-zinc-900">
-            {siteConfig.name}
+            {siteConfig.brandName}
           </h2>
           <p className="text-sm leading-6 text-zinc-600">{siteConfig.description}</p>
         </section>
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <p className="mt-8 text-xs text-zinc-500">
-        Copyright {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+        Copyright {new Date().getFullYear()} {siteConfig.brandName}. All rights reserved.
       </p>
     </footer>
   );

@@ -34,7 +34,9 @@ export const mainNavigation = [
 export const footerNavigation = {
   company: [
     { label: "Home", href: "/" },
+    { label: "VitalBloom Blog", href: "/vitalbloom-blog" },
     { label: "About", href: "/about" },
+    { label: "Why Trust Us", href: "/why-trust-vitalbloom" },
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms", href: "/terms" }
