@@ -28,7 +28,13 @@ export const categoryPillarGuideSlugs: Record<string, string[]> = {
     "high-protein-vegetarian-meals",
     "simple-grocery-list-for-healthy-eating"
   ],
-  sleep: ["better-sleep-routine-guide"],
+  sleep: [
+    "better-sleep-routine-guide",
+    "sleep-hygiene-checklist-printable",
+    "sleep-friendly-evening-routine",
+    "sleep-debt-recovery-guide",
+    "bedroom-environment-checklist"
+  ],
   lifestyle: ["better-breaks-remote-work"],
   stress: [
     "stress-reset-checklist-printable",

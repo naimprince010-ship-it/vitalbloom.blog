@@ -87,6 +87,13 @@ const categoryTopicFilters: Record<string, Array<{ label: string; value: string;
     { label: "Balanced Plates", value: "balanced-plates", keywords: ["balanced-plate", "dinner", "salad"] },
     { label: "Hydration", value: "hydration", keywords: ["hydration", "water"] }
   ],
+  sleep: [
+    { label: "Evening Routines", value: "evening-routines", keywords: ["evening", "bedtime", "wind-down"] },
+    { label: "Sleep Hygiene", value: "sleep-hygiene", keywords: ["sleep-hygiene", "bedroom", "checklist"] },
+    { label: "Screens & Caffeine", value: "screens-caffeine", keywords: ["screen", "phone", "caffeine"] },
+    { label: "Sleep Recovery", value: "sleep-recovery", keywords: ["recovery", "sleep-debt", "reset", "bad-night"] },
+    { label: "Schedules", value: "schedules", keywords: ["schedule", "shift-work", "weekend", "nap"] }
+  ],
   stress: [
     { label: "Quick Resets", value: "quick-resets", keywords: ["reset", "calm-down", "grounding"] },
     { label: "Work Stress", value: "work-stress", keywords: ["work", "busy-days"] },
