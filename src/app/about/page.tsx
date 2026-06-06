@@ -36,8 +36,9 @@ export default function AboutPage() {
 
         <section className="mt-6 space-y-4 text-sm leading-7 text-zinc-700">
           <p>
-            {siteConfig.name} publishes practical wellness, nutrition, fitness,
-            sleep, and mindfulness guides for everyday readers.
+            VitalBloom Blog is the wellness publication at VitalBloom.blog. We
+            publish practical wellness, nutrition, fitness, sleep, stress,
+            lifestyle, and mindfulness guides for everyday readers.
           </p>
           <p>
             Our goal is to make healthy routines feel realistic. We focus on
@@ -70,7 +71,8 @@ export default function AboutPage() {
             sources, or outdated guidance.
           </p>
           <p>
-            Our public contact address is {siteConfig.contactEmail}. We are
+            Our public contact address is {siteConfig.contactEmail}. The
+            official website for this publication is {siteConfig.url}. We are
             building the publication in public-facing stages and currently use
             email as the primary contact channel rather than claiming social
             profiles that are not actively maintained.

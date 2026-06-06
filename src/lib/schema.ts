@@ -18,6 +18,7 @@ export const organizationSchema = () => ({
   "@type": "Organization",
   "@id": `${siteConfig.url}/#organization`,
   name: siteConfig.name,
+  alternateName: [siteConfig.brandName, "VitalBloom.blog"],
   url: siteConfig.url,
   logo: absoluteUrl(siteConfig.defaultOgImage),
   contactPoint: {
@@ -31,7 +32,8 @@ export const websiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteConfig.url}/#website`,
-  name: siteConfig.name,
+  name: siteConfig.brandName,
+  alternateName: [siteConfig.name, "VitalBloom.blog"],
   url: siteConfig.url,
   publisher: {
     "@id": `${siteConfig.url}/#organization`

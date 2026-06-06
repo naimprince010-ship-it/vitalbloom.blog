@@ -29,13 +29,14 @@ export default async function Home() {
     <main className="flex flex-1 flex-col gap-12 py-10 sm:py-12">
       <header className="space-y-3 border-b border-zinc-200 pb-6">
         <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
-          Wellness Publishing Platform
+          {siteConfig.brandName}
         </p>
         <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-          {siteConfig.title}
+          VitalBloom Blog
         </h1>
         <p className="max-w-3xl text-base leading-7 text-zinc-600 sm:text-lg">
-          {siteConfig.description}
+          Evidence-informed wellness, nutrition, fitness, sleep, stress, and
+          mindful living guides from VitalBloom.blog.
         </p>
       </header>
 
@@ -131,10 +132,12 @@ export default async function Home() {
           Practical Wellness Guidance With Clear Editorial Standards
         </h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
-          VitalBloom publishes evidence-informed guides for everyday habits,
-          sleep, stress, movement, nutrition, and mindful living. Articles are
-          checked for source alignment, practical context, and reader safety;
-          professional medical review is shown only when it is actually claimed.
+          VitalBloom Blog is an independent wellness publication at
+          VitalBloom.blog. We publish evidence-informed guides for everyday
+          habits, sleep, stress, movement, nutrition, and mindful living.
+          Articles are checked for source alignment, practical context, and
+          reader safety; professional medical review is shown only when it is
+          actually claimed.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link

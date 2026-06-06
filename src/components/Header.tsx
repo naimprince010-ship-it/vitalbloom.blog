@@ -9,7 +9,7 @@ export default function Header() {
           href="/"
           className="text-lg font-semibold tracking-tight text-zinc-900 hover:text-zinc-700"
         >
-          {siteConfig.name}
+          {siteConfig.brandName}
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-5 md:flex">

@@ -1,8 +1,9 @@
 export const siteConfig = {
   name: "VitalBloom",
-  title: "Evidence-informed wellness, nutrition, and healthy living guides",
+  brandName: "VitalBloom Blog",
+  title: "VitalBloom Blog: Evidence-informed wellness and healthy living guides",
   description:
-    "VitalBloom.blog publishes practical wellness, nutrition, fitness, and mindful living guidance for everyday readers.",
+    "VitalBloom Blog is the wellness publication at VitalBloom.blog, publishing practical guides on nutrition, fitness, sleep, stress, mindfulness, and healthy living.",
   url: "https://www.vitalbloom.blog",
   locale: "en_US",
   contactEmail: "hello@vitalbloom.blog",
