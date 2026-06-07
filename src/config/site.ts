@@ -36,6 +36,7 @@ export const footerNavigation = {
   company: [
     { label: "Home", href: "/" },
     { label: "Join", href: "/join" },
+    { label: "7-Day Wellness Reset", href: "/7-day-wellness-reset" },
     { label: "VitalBloom Blog", href: "/vitalbloom-blog" },
     { label: "About", href: "/about" },
     { label: "Why Trust Us", href: "/why-trust-vitalbloom" },

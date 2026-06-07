@@ -195,16 +195,25 @@ export default async function Home() {
           Join VitalBloom Blog
         </h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          Get practical wellness guides, printable checklists, and future member
-          tools from VitalBloom Blog. This is the first step toward saved guides,
-          topic preferences, and weekly wellness routines on our own site.
+          Get the 7-Day Wellness Reset, practical wellness guides, printable
+          checklists, and future member tools from VitalBloom Blog. This is the
+          first step toward saved guides, topic preferences, and weekly wellness
+          routines on our own site.
         </p>
-        <Link
-          href="/join"
-          className="mt-4 inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-        >
-          Join the Updates List
-        </Link>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/join"
+            className="inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          >
+            Join the Updates List
+          </Link>
+          <Link
+            href="/7-day-wellness-reset"
+            className="inline-flex rounded-md border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          >
+            View the 7-Day Reset
+          </Link>
+        </div>
       </section>
 
       <section aria-labelledby="category-grid" className="space-y-5">

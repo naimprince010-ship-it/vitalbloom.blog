@@ -13,6 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
     "",
     "/join",
+    "/7-day-wellness-reset",
     "/vitalbloom-blog",
     "/about",
     "/why-trust-vitalbloom",

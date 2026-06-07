@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
-const joinSubject = "Join VitalBloom Blog";
+const joinSubject = "Join VitalBloom Blog and send the 7-Day Wellness Reset";
 const joinBody = [
   "Hi VitalBloom Blog,",
   "",
-  "I would like to join the VitalBloom member updates list.",
+  "I would like to join the VitalBloom member updates list and receive the 7-Day Wellness Reset.",
   "",
   "My main interests are:",
   "- Sleep",
@@ -26,20 +26,20 @@ const joinMailto = `mailto:${siteConfig.contactEmail}?subject=${encodeURICompone
 export const metadata: Metadata = {
   title: "Join VitalBloom Blog",
   description:
-    "Join VitalBloom Blog for member updates, practical wellness guides, printable checklists, and future saved-guide features.",
+    "Join VitalBloom Blog for the 7-Day Wellness Reset, member updates, practical wellness guides, printable checklists, and future saved-guide features.",
   alternates: {
     canonical: `${siteConfig.url}/join`
   },
   openGraph: {
     title: "Join VitalBloom Blog",
     description:
-      "Join VitalBloom Blog for member updates, practical wellness guides, printable checklists, and future saved-guide features.",
+      "Join VitalBloom Blog for the 7-Day Wellness Reset, member updates, practical wellness guides, printable checklists, and future saved-guide features.",
     url: `${siteConfig.url}/join`
   },
   twitter: {
     title: "Join VitalBloom Blog",
     description:
-      "Join VitalBloom Blog for member updates, practical wellness guides, printable checklists, and future saved-guide features."
+      "Join VitalBloom Blog for the 7-Day Wellness Reset, member updates, practical wellness guides, printable checklists, and future saved-guide features."
   }
 };
 
@@ -55,8 +55,9 @@ export default function JoinPage() {
             Join VitalBloom Blog
           </h1>
           <p className="mt-3 text-sm leading-6 text-zinc-600">
-            Get practical wellness guides, checklists, and future member updates
-            from the official VitalBloom Blog.
+            Get the 7-Day Wellness Reset, practical wellness guides,
+            checklists, and future member updates from the official VitalBloom
+            Blog.
           </p>
         </header>
 
@@ -76,18 +77,28 @@ export default function JoinPage() {
 
         <section className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/70 p-5">
           <h2 className="text-lg font-semibold text-zinc-900">
-            Join the Member Updates List
+            Get the 7-Day Wellness Reset
           </h2>
           <p className="mt-2 text-sm leading-6 text-zinc-700">
-            Send a quick email to join for future updates. We will use this
-            simple waitlist until a full member account system is ready.
+            Start with one week of realistic sleep, stress, nutrition,
+            movement, and mindfulness actions. Send a quick email to join the
+            waitlist and get reset updates while the full member account system
+            is being built.
           </p>
-          <a
-            href={joinMailto}
-            className="mt-4 inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-          >
-            Join by Email
-          </a>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <a
+              href={joinMailto}
+              className="inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              Join by Email
+            </a>
+            <Link
+              href="/7-day-wellness-reset"
+              className="inline-flex rounded-md border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              View the Reset
+            </Link>
+          </div>
         </section>
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -97,6 +108,7 @@ export default function JoinPage() {
             </h2>
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
               <li>Weekly wellness guide updates</li>
+              <li>7-Day Wellness Reset updates</li>
               <li>Printable checklists and trackers</li>
               <li>Sleep, stress, nutrition, and fitness routines</li>
               <li>Early access to future member tools</li>
