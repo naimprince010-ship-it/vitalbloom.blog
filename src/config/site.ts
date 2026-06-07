@@ -22,6 +22,7 @@ export const seoDefaults = {
 } as const;
 
 export const mainNavigation = [
+  { label: "Join", href: "/join" },
   { label: "Nutrition", href: "/category/nutrition" },
   { label: "Fitness", href: "/category/fitness" },
   { label: "Mindfulness", href: "/category/mindfulness" },
@@ -34,6 +35,7 @@ export const mainNavigation = [
 export const footerNavigation = {
   company: [
     { label: "Home", href: "/" },
+    { label: "Join", href: "/join" },
     { label: "VitalBloom Blog", href: "/vitalbloom-blog" },
     { label: "About", href: "/about" },
     { label: "Why Trust Us", href: "/why-trust-vitalbloom" },

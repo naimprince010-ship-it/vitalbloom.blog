@@ -184,6 +184,29 @@ export default async function Home() {
         </div>
       </section>
 
+      <section
+        aria-labelledby="join-vitalbloom"
+        className="rounded-lg border border-emerald-100 bg-emerald-50/70 p-5 sm:p-6"
+      >
+        <p className="text-sm font-medium uppercase tracking-[0.12em] text-emerald-800">
+          Member Updates
+        </p>
+        <h2 id="join-vitalbloom" className="mt-2 text-2xl font-semibold text-zinc-900">
+          Join VitalBloom Blog
+        </h2>
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
+          Get practical wellness guides, printable checklists, and future member
+          tools from VitalBloom Blog. This is the first step toward saved guides,
+          topic preferences, and weekly wellness routines on our own site.
+        </p>
+        <Link
+          href="/join"
+          className="mt-4 inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+        >
+          Join the Updates List
+        </Link>
+      </section>
+
       <section aria-labelledby="category-grid" className="space-y-5">
         <h2 id="category-grid" className="text-2xl font-semibold text-zinc-900">
           Explore Categories
