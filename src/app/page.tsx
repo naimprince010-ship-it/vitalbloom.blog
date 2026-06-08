@@ -34,11 +34,11 @@ export default async function Home() {
           {siteConfig.brandName}
         </p>
         <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-          VitalBloom Blog
+          VitalBloom Blog Official Website
         </h1>
         <p className="max-w-3xl text-base leading-7 text-zinc-600 sm:text-lg">
           Evidence-informed wellness, nutrition, fitness, sleep, stress, and
-          mindful living guides from VitalBloom.blog.
+          mindful living guides from the official VitalBloom.blog publication.
         </p>
       </header>
 

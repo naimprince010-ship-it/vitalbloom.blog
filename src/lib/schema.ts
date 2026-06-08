@@ -19,10 +19,18 @@ export const organizationSchema = () => ({
   "@id": `${siteConfig.url}/#organization`,
   name: siteConfig.name,
   alternateName: [siteConfig.brandName, "VitalBloom.blog"],
+  legalName: "VitalBloom Blog",
   url: siteConfig.url,
   logo: absoluteUrl(siteConfig.defaultOgImage),
   description:
-    "VitalBloom Blog is an educational wellness publication at VitalBloom.blog covering nutrition, fitness, sleep, stress, mindfulness, lifestyle, and healthy living.",
+    "VitalBloom Blog is the official educational wellness publication at VitalBloom.blog covering nutrition, fitness, sleep, stress, mindfulness, lifestyle, and healthy living. VitalBloom Blog is not a supplement store, tea shop, skincare store, telemedicine service, or medical clinic.",
+  keywords:
+    "VitalBloom, VitalBloom Blog, VitalBloom.blog, wellness blog, healthy living guides",
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "officialWebsite",
+    value: siteConfig.url
+  },
   contactPoint: {
     "@type": "ContactPoint",
     email: siteConfig.contactEmail,

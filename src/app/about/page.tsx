@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About VitalBloom Blog",
   description:
-    "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards.",
+    "Learn about VitalBloom Blog, the official wellness publication at VitalBloom.blog, including our publishing mission, editorial process, and reader-first standards.",
   alternates: {
     canonical: `${siteConfig.url}/about`
   },
   openGraph: {
-    title: `About ${siteConfig.name}`,
+    title: "About VitalBloom Blog",
     description:
-      "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards.",
+      "Learn about VitalBloom Blog, the official wellness publication at VitalBloom.blog, including our publishing mission, editorial process, and reader-first standards.",
     url: `${siteConfig.url}/about`
   },
   twitter: {
-    title: `About ${siteConfig.name}`,
+    title: "About VitalBloom Blog",
     description:
-      "Learn about VitalBloom's evidence-informed wellness publishing mission, editorial process, and reader-first standards."
+      "Learn about VitalBloom Blog, the official wellness publication at VitalBloom.blog, including our publishing mission, editorial process, and reader-first standards."
   }
 };
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-zinc-900">
-            About {siteConfig.name}
+            About VitalBloom Blog
           </h1>
         </header>
 

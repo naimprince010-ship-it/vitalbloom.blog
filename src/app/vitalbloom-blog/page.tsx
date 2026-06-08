@@ -1,40 +1,71 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { breadcrumbSchema } from "@/lib/schema";
+
+const pageUrl = `${siteConfig.url}/vitalbloom-blog`;
 
 export const metadata: Metadata = {
-  title: "VitalBloom Blog",
+  title: "VitalBloom Blog Official Website",
   description:
     "VitalBloom Blog is the official wellness publication at VitalBloom.blog, offering free evidence-informed guides rather than selling supplements, teas, skincare, or medical services.",
   alternates: {
-    canonical: `${siteConfig.url}/vitalbloom-blog`
+    canonical: pageUrl
   },
   openGraph: {
-    title: "VitalBloom Blog",
+    title: "VitalBloom Blog Official Website",
     description:
       "Learn what VitalBloom Blog is, what we publish, and how to find the official VitalBloom.blog wellness publication.",
-    url: `${siteConfig.url}/vitalbloom-blog`
+    url: pageUrl
   },
   twitter: {
-    title: "VitalBloom Blog",
+    title: "VitalBloom Blog Official Website",
     description:
       "Learn what VitalBloom Blog is, what we publish, and how to find the official VitalBloom.blog wellness publication."
   }
 };
 
+const brandPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${pageUrl}#aboutpage`,
+  name: "VitalBloom Blog Official Website",
+  description:
+    "VitalBloom Blog is the official wellness publication at VitalBloom.blog. It publishes free educational wellness guides and does not sell supplements, teas, skincare, or medical services.",
+  url: pageUrl,
+  isPartOf: {
+    "@id": `${siteConfig.url}/#website`
+  },
+  about: {
+    "@id": `${siteConfig.url}/#organization`
+  },
+  mainEntity: {
+    "@id": `${siteConfig.url}/#organization`
+  },
+  inLanguage: "en"
+};
+
+const brandBreadcrumbSchema = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "VitalBloom Blog Official Website", url: pageUrl }
+]);
+
 export default function VitalBloomBlogPage() {
   return (
     <main className="flex flex-1 justify-center py-10 sm:py-12">
+      <JsonLd data={[brandPageSchema, brandBreadcrumbSchema]} />
       <article className="w-full max-w-3xl rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
         <header className="border-b border-zinc-200 pb-5">
           <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
             Official Site
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-zinc-900">
-            VitalBloom Blog
+            VitalBloom Blog Official Website
           </h1>
           <p className="mt-3 text-sm leading-6 text-zinc-600">
-            VitalBloom Blog is the wellness publication at VitalBloom.blog.
+            VitalBloom Blog is the official wellness publication at
+            VitalBloom.blog.
           </p>
         </header>
 
@@ -47,6 +78,11 @@ export default function VitalBloomBlogPage() {
               VitalBloom Blog publishes free educational wellness guides for
               everyday readers. We cover nutrition, fitness, sleep, stress,
               mindfulness, lifestyle routines, and balanced healthy living.
+            </p>
+            <p className="mt-2">
+              If you searched for VitalBloom, this is the official
+              VitalBloom.blog website and brand page for the VitalBloom Blog
+              wellness publication.
             </p>
             <p className="mt-2">
               The official web address for this publication is{" "}
