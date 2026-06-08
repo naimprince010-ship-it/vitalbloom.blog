@@ -216,6 +216,12 @@ export default async function Home() {
           >
             View the 7-Day Reset
           </Link>
+          <Link
+            href="/7-day-wellness-reset-checklist"
+            className="inline-flex rounded-md border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          >
+            View the Checklist
+          </Link>
         </div>
       </section>
 

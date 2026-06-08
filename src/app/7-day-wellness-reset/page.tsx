@@ -114,6 +114,12 @@ export default function SevenDayWellnessResetPage() {
           >
             Join for Reset Updates
           </a>
+          <Link
+            href="/7-day-wellness-reset-checklist"
+            className="ml-0 mt-3 inline-flex rounded-md border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 sm:ml-3"
+          >
+            View the Checklist
+          </Link>
         </section>
 
         <section className="mt-8 space-y-4">

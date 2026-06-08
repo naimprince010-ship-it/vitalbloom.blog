@@ -14,6 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "",
     "/join",
     "/7-day-wellness-reset",
+    "/7-day-wellness-reset-checklist",
     "/vitalbloom-blog",
     "/about",
     "/why-trust-vitalbloom",

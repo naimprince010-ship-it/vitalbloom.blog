@@ -98,6 +98,12 @@ export default function JoinPage() {
             >
               View the Reset
             </Link>
+            <Link
+              href="/7-day-wellness-reset-checklist"
+              className="inline-flex rounded-md border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              View the Checklist
+            </Link>
           </div>
         </section>
 
@@ -109,6 +115,7 @@ export default function JoinPage() {
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
               <li>Weekly wellness guide updates</li>
               <li>7-Day Wellness Reset updates</li>
+              <li>Printable-style 7-Day Wellness Reset Checklist</li>
               <li>Printable checklists and trackers</li>
               <li>Sleep, stress, nutrition, and fitness routines</li>
               <li>Early access to future member tools</li>
