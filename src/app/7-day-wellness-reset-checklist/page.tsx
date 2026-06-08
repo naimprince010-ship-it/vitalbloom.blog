@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import InteractiveChecklist from "@/components/InteractiveChecklist";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
@@ -123,34 +124,10 @@ export default function SevenDayWellnessResetChecklistPage() {
           </div>
         </section>
 
-        <section className="mt-8 space-y-4">
-          <h2 className="text-2xl font-semibold text-zinc-900">
-            Weekly Checklist
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {checklistSections.map((section) => (
-              <section
-                key={section.title}
-                className="rounded-lg border border-zinc-200 bg-zinc-50 p-5"
-              >
-                <h3 className="text-lg font-semibold text-zinc-900">
-                  {section.title}
-                </h3>
-                <ul className="mt-3 space-y-3 text-sm leading-6 text-zinc-700">
-                  {section.items.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span
-                        aria-hidden="true"
-                        className="mt-1 h-4 w-4 shrink-0 rounded border border-zinc-300 bg-white"
-                      />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-        </section>
+        <InteractiveChecklist
+          sections={checklistSections}
+          storageKey="vitalbloom-7-day-wellness-reset-checklist"
+        />
 
         <section className="mt-8 rounded-lg border border-zinc-200 bg-white p-5">
           <h2 className="text-lg font-semibold text-zinc-900">
