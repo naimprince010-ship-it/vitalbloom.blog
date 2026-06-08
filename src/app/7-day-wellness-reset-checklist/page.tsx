@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import InteractiveChecklist from "@/components/InteractiveChecklist";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { breadcrumbSchema } from "@/lib/schema";
 
 const checklistSections = [
   {
@@ -61,18 +63,64 @@ const joinMailto = `mailto:${siteConfig.contactEmail}?subject=${encodeURICompone
   joinSubject
 )}&body=${encodeURIComponent(joinBody)}`;
 
+const pageUrl = `${siteConfig.url}/7-day-wellness-reset-checklist`;
+
+const checklistPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  name: "7-Day Wellness Reset Checklist",
+  description:
+    "A practical one-week wellness checklist for sleep, stress, nutrition, movement, and mindfulness habits.",
+  url: pageUrl,
+  isPartOf: {
+    "@id": `${siteConfig.url}/#website`
+  },
+  publisher: {
+    "@id": `${siteConfig.url}/#organization`
+  },
+  inLanguage: "en"
+};
+
+const checklistHowToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": `${pageUrl}#howto`,
+  name: "How to Use the 7-Day Wellness Reset Checklist",
+  description:
+    "Use the checklist to track small sleep, stress, nutrition, movement, and mindful reset habits for one week.",
+  totalTime: "P7D",
+  supply: [
+    {
+      "@type": "HowToSupply",
+      name: "7-Day Wellness Reset Checklist"
+    }
+  ],
+  step: checklistSections.map((section, index) => ({
+    "@type": "HowToStep",
+    position: index + 1,
+    name: section.title,
+    text: section.items.join(" ")
+  }))
+};
+
+const checklistBreadcrumbSchema = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "7-Day Wellness Reset Checklist", url: pageUrl }
+]);
+
 export const metadata: Metadata = {
   title: "7-Day Wellness Reset Checklist",
   description:
     "Use the VitalBloom Blog 7-Day Wellness Reset Checklist to track simple sleep, stress, nutrition, movement, and mindfulness habits for one week.",
   alternates: {
-    canonical: `${siteConfig.url}/7-day-wellness-reset-checklist`
+    canonical: pageUrl
   },
   openGraph: {
     title: "7-Day Wellness Reset Checklist | VitalBloom Blog",
     description:
       "A practical one-week wellness checklist for sleep, stress, nutrition, movement, and mindful reset habits.",
-    url: `${siteConfig.url}/7-day-wellness-reset-checklist`
+    url: pageUrl
   },
   twitter: {
     title: "7-Day Wellness Reset Checklist | VitalBloom Blog",
@@ -84,6 +132,13 @@ export const metadata: Metadata = {
 export default function SevenDayWellnessResetChecklistPage() {
   return (
     <main className="flex flex-1 justify-center py-10 sm:py-12">
+      <JsonLd
+        data={[
+          checklistPageSchema,
+          checklistHowToSchema,
+          checklistBreadcrumbSchema
+        ]}
+      />
       <article className="w-full max-w-4xl rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
         <header className="border-b border-zinc-200 pb-5">
           <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
