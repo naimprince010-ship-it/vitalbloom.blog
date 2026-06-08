@@ -23,7 +23,9 @@ export default async function Home() {
     heroPost?.slug,
     ...pillarGuides.map((post) => post.slug)
   ].filter(Boolean));
-  const latestPosts = posts.filter((post) => !featuredSlugs.has(post.slug));
+  const latestPosts = posts
+    .filter((post) => !featuredSlugs.has(post.slug))
+    .slice(0, 8);
 
   return (
     <main className="flex flex-1 flex-col gap-12 py-10 sm:py-12">
@@ -288,6 +290,14 @@ export default async function Home() {
               </div>
             </article>
           ))}
+        </div>
+        <div className="pt-2">
+          <Link
+            href="/category/wellness"
+            className="text-sm font-semibold text-green-700 underline underline-offset-4 hover:text-green-800"
+          >
+            Browse more wellness guides
+          </Link>
         </div>
       </section>
     </main>
