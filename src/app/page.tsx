@@ -54,7 +54,7 @@ export default async function Home() {
               imageUrl={heroPost.featuredImage}
               alt={heroPost.title}
               className="aspect-[16/7] w-full object-cover"
-              priority
+              preload
               sizes="(min-width: 1280px) 1152px, (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
             />
             <div className="p-5 sm:p-6">

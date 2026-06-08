@@ -197,7 +197,7 @@ export default async function PostPage({ params }: PostPageProps) {
           imageUrl={post.featuredImage}
           alt={post.title}
           className="mt-6 aspect-[16/9] w-full rounded-lg object-cover"
-          priority
+          preload
           sizes="(min-width: 1280px) 1088px, (min-width: 768px) calc(100vw - 96px), calc(100vw - 40px)"
         />
 

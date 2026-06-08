@@ -4,7 +4,7 @@ type PostImageProps = {
   alt: string;
   className?: string;
   imageUrl: string;
-  priority?: boolean;
+  preload?: boolean;
   sizes?: string;
 };
 
@@ -12,7 +12,7 @@ export default function PostImage({
   alt,
   className = "",
   imageUrl,
-  priority = false,
+  preload = false,
   sizes = "(min-width: 1024px) 768px, (min-width: 640px) 90vw, 100vw"
 }: PostImageProps) {
   if (!imageUrl) {
@@ -26,7 +26,7 @@ export default function PostImage({
       width={1600}
       height={900}
       className={className}
-      priority={priority}
+      preload={preload}
       sizes={sizes}
     />
   );

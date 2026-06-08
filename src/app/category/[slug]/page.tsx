@@ -266,7 +266,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   imageUrl={post.featuredImage}
                   alt={post.title}
                   className="aspect-[16/9] w-full object-cover"
-                  priority={index === 0}
+                  preload={index === 0}
                   sizes="(min-width: 640px) 50vw, calc(100vw - 32px)"
                 />
                 <div className="p-5">
