@@ -53,6 +53,7 @@ export default async function Home() {
               alt={heroPost.title}
               className="aspect-[16/7] w-full object-cover"
               priority
+              sizes="(min-width: 1280px) 1152px, (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
             />
             <div className="p-5 sm:p-6">
               <p className="mb-2 text-sm font-medium text-zinc-500">
@@ -101,7 +102,7 @@ export default async function Home() {
                   imageUrl={post.featuredImage}
                   alt={post.title}
                   className="aspect-[16/9] w-full object-cover"
-                  priority={index === 0}
+                  sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, calc(100vw - 32px)"
                 />
               <div className="p-5">
                 <p className="mb-2 text-sm font-medium text-zinc-500">
@@ -257,6 +258,7 @@ export default async function Home() {
                 imageUrl={post.featuredImage}
                 alt={post.title}
                 className="aspect-[16/9] h-full w-full object-cover"
+                sizes="(min-width: 640px) 220px, calc(100vw - 32px)"
               />
               <div className="p-5">
                 <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">

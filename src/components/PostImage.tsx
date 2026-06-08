@@ -5,13 +5,15 @@ type PostImageProps = {
   className?: string;
   imageUrl: string;
   priority?: boolean;
+  sizes?: string;
 };
 
 export default function PostImage({
   alt,
   className = "",
   imageUrl,
-  priority = false
+  priority = false,
+  sizes = "(min-width: 1024px) 768px, (min-width: 640px) 90vw, 100vw"
 }: PostImageProps) {
   if (!imageUrl) {
     return null;
@@ -25,8 +27,7 @@ export default function PostImage({
       height={900}
       className={className}
       priority={priority}
-      sizes="(min-width: 1024px) 768px, (min-width: 640px) 90vw, 100vw"
-      unoptimized
+      sizes={sizes}
     />
   );
 }

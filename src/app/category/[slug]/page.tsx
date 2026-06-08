@@ -267,6 +267,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   alt={post.title}
                   className="aspect-[16/9] w-full object-cover"
                   priority={index === 0}
+                  sizes="(min-width: 640px) 50vw, calc(100vw - 32px)"
                 />
                 <div className="p-5">
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">
@@ -357,6 +358,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   imageUrl={post.featuredImage}
                   alt={post.title}
                   className="aspect-[16/9] h-full w-full object-cover"
+                  sizes="(min-width: 640px) 220px, calc(100vw - 32px)"
                 />
                 <div className="p-5">
                   <div className="mb-2 flex items-center gap-3 text-sm text-zinc-500">

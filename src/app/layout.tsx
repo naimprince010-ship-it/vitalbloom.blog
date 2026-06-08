@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -8,17 +7,8 @@ import { seoDefaults, siteConfig } from "@/config/site";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || "G-FNMQBBBZL3";
+const googleAdsClientId = "ca-pub-6080637634246399";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -61,25 +51,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <head>
-        <script
-          async
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6080637634246399"
-        />
-      </head>
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full bg-zinc-50 text-zinc-900">
+        <Script
+          id="google-adsense"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsClientId}`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
         {googleAnalyticsId ? (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
-            <Script id="google-analytics" strategy="afterInteractive">
+            <Script id="google-analytics" strategy="lazyOnload">
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}

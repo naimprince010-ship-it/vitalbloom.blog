@@ -198,6 +198,7 @@ export default async function PostPage({ params }: PostPageProps) {
           alt={post.title}
           className="mt-6 aspect-[16/9] w-full rounded-lg object-cover"
           priority
+          sizes="(min-width: 1280px) 1088px, (min-width: 768px) calc(100vw - 96px), calc(100vw - 40px)"
         />
 
         <aside className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
@@ -386,6 +387,7 @@ export default async function PostPage({ params }: PostPageProps) {
                   imageUrl={relatedPost.featuredImage}
                   alt={relatedPost.title}
                   className="aspect-[16/9] w-full object-cover"
+                  sizes="(min-width: 640px) 50vw, calc(100vw - 32px)"
                 />
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-zinc-900">
