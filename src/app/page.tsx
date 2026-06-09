@@ -95,7 +95,7 @@ export default async function Home() {
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {pillarGuides.map((post, index) => (
+            {pillarGuides.map((post) => (
               <article
                 key={post.id}
                 className="overflow-hidden rounded-lg border border-zinc-200 bg-white"

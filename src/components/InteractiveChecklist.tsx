@@ -27,21 +27,24 @@ export default function InteractiveChecklist({
       ),
     [sections]
   );
-  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>(() => {
+    if (typeof window === "undefined") {
+      return {};
+    }
 
-  useEffect(() => {
     const savedItems = window.localStorage.getItem(storageKey);
 
     if (!savedItems) {
-      return;
+      return {};
     }
 
     try {
-      setCheckedItems(JSON.parse(savedItems) as Record<string, boolean>);
+      return JSON.parse(savedItems) as Record<string, boolean>;
     } catch {
       window.localStorage.removeItem(storageKey);
+      return {};
     }
-  }, [storageKey]);
+  });
 
   useEffect(() => {
     window.localStorage.setItem(storageKey, JSON.stringify(checkedItems));

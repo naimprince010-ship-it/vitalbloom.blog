@@ -6,7 +6,8 @@ import PostImage from "@/components/PostImage";
 import {
   canonicalSlugOverrides,
   getCanonicalUrlForSlug,
-  noindexDuplicateSlugs
+  noindexDuplicateSlugs,
+  searchFocusedPostSeo
 } from "@/config/content-quality";
 import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
@@ -70,8 +71,18 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
     };
   }
 
-  const seoTitle = post.title;
-  const seoDescription = post.seo.metaDescription || post.excerpt;
+  const searchFocusedSeo = searchFocusedPostSeo[post.slug];
+  const cmsSeoTitle =
+    post.seo.metaTitle && post.seo.metaTitle !== post.title
+      ? post.seo.metaTitle
+      : undefined;
+  const cmsSeoDescription =
+    post.seo.metaDescription && post.seo.metaDescription !== post.excerpt
+      ? post.seo.metaDescription
+      : undefined;
+  const seoTitle = cmsSeoTitle || searchFocusedSeo?.title || post.title;
+  const seoDescription =
+    cmsSeoDescription || searchFocusedSeo?.description || post.excerpt;
   const seoImage = post.seo.ogImage || siteConfig.defaultOgImage;
   const canonicalUrl = post.seo.canonicalUrl || getCanonicalUrlForSlug(post.slug);
   const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
