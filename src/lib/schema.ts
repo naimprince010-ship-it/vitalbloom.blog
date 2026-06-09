@@ -151,3 +151,20 @@ export const collectionPageSchema = (category: Category, posts: Post[]) => ({
     }))
   }
 });
+
+export const faqPageSchema = (
+  slug: string,
+  faqs: Array<{ question: string; answer: string }>
+) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": `${siteConfig.url}/${slug}#faq`,
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer
+    }
+  }))
+});

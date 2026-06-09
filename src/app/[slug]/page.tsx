@@ -7,13 +7,14 @@ import {
   canonicalSlugOverrides,
   getCanonicalUrlForSlug,
   noindexDuplicateSlugs,
+  searchOpportunityBlocks,
   searchFocusedPostSeo
 } from "@/config/content-quality";
 import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
 import { prepareArticleHtml } from "@/lib/article-html";
 import { siteConfig } from "@/config/site";
-import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 type PostPageProps = {
   params: Promise<{
@@ -151,6 +152,7 @@ export default async function PostPage({ params }: PostPageProps) {
   );
   const showCrisisSupportBox = needsCrisisSupportBox(post.content);
   const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
+  const searchOpportunityBlock = searchOpportunityBlocks[post.slug];
   const breadcrumbs = [
     { name: "Home", url: "/" },
     ...(category
@@ -161,7 +163,15 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <main className="flex flex-1 flex-col gap-10 py-10 sm:py-12">
-      <JsonLd data={[articleSchema(post, author, category), breadcrumbSchema(breadcrumbs)]} />
+      <JsonLd
+        data={[
+          articleSchema(post, author, category),
+          breadcrumbSchema(breadcrumbs),
+          ...(searchOpportunityBlock
+            ? [faqPageSchema(post.slug, searchOpportunityBlock.faqs)]
+            : [])
+        ]}
+      />
       <aside
         aria-label="Advertising placeholder top banner"
         className="ad-slot"
@@ -270,6 +280,52 @@ export default async function PostPage({ params }: PostPageProps) {
           className="article-content mt-6 max-w-none"
           dangerouslySetInnerHTML={{ __html: articleHtml }}
         />
+
+        {searchOpportunityBlock ? (
+          <section
+            aria-labelledby="search-opportunity-guide"
+            className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-5"
+          >
+            <p className="text-sm font-medium uppercase tracking-[0.12em] text-emerald-800">
+              {searchOpportunityBlock.eyebrow}
+            </p>
+            <h2
+              id="search-opportunity-guide"
+              className="mt-2 text-2xl font-semibold text-zinc-900"
+            >
+              {searchOpportunityBlock.title}
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-700">
+              {searchOpportunityBlock.summary}
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              {searchOpportunityBlock.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-md border border-emerald-100 bg-white p-4 text-sm leading-6 text-zinc-700 transition hover:border-emerald-200 hover:text-zinc-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                >
+                  <span className="block font-semibold text-zinc-900">
+                    {link.label}
+                  </span>
+                  <span className="mt-1 block">{link.description}</span>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              {searchOpportunityBlock.faqs.map((faq) => (
+                <div key={faq.question}>
+                  <h3 className="text-base font-semibold text-zinc-900">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-1 text-sm leading-6 text-zinc-700">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         {(post.sources.length > 0 ||
           post.editorialReview.factCheckedBy ||
