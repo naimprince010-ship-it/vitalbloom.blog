@@ -34,11 +34,12 @@ export default async function Home() {
           {siteConfig.brandName}
         </p>
         <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-          VitalBloom Blog Official Website
+          Evidence-Informed Wellness Guides for Everyday Living
         </h1>
         <p className="max-w-3xl text-base leading-7 text-zinc-600 sm:text-lg">
-          Evidence-informed wellness, nutrition, fitness, sleep, stress, and
-          mindful living guides from the official VitalBloom.blog publication.
+          Practical nutrition, fitness, sleep, stress, and mindful living
+          resources for building healthier routines without overcomplicating
+          daily life.
         </p>
       </header>
 
@@ -58,9 +59,21 @@ export default async function Home() {
               sizes="(min-width: 1280px) 1152px, (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
             />
             <div className="p-5 sm:p-6">
-              <p className="mb-2 text-sm font-medium text-zinc-500">
-                {heroPost.readingTime} min read
-              </p>
+              <div className="mb-2 flex flex-wrap items-center gap-3 text-sm font-medium text-zinc-500">
+                <span>{heroPost.readingTime} min read</span>
+                <span aria-hidden="true">|</span>
+                <time dateTime={heroPost.publishedAt}>
+                  Published {formatCardDate(heroPost.publishedAt)}
+                </time>
+                {heroPost.updatedAt ? (
+                  <>
+                    <span aria-hidden="true">|</span>
+                    <time dateTime={heroPost.updatedAt}>
+                      Updated {formatCardDate(heroPost.updatedAt)}
+                    </time>
+                  </>
+                ) : null}
+              </div>
               <h3 className="text-2xl font-semibold tracking-tight text-zinc-900">
                 <Link
                   href={`/${heroPost.slug}`}
@@ -135,12 +148,9 @@ export default async function Home() {
           Practical Wellness Guidance With Clear Editorial Standards
         </h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
-          VitalBloom Blog is an independent wellness publication at
-          VitalBloom.blog. We publish evidence-informed guides for everyday
-          habits, sleep, stress, movement, nutrition, and mindful living.
-          Articles are checked for source alignment, practical context, and
-          reader safety; professional medical review is shown only when it is
-          actually claimed.
+          Our articles are built for everyday habit change: clear steps,
+          source alignment, practical context, and reader safety checks.
+          Professional medical review is shown only when it is actually claimed.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
@@ -166,10 +176,9 @@ export default async function Home() {
           Official VitalBloom Blog
         </h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
-          VitalBloom Blog is the wellness publication at VitalBloom.blog. We
-          publish free educational guides and checklists; we are not a supplement
-          store, tea shop, skincare store, telemedicine service, or medical
-          clinic.
+          This site publishes free educational guides and checklists. It is not
+          a supplement store, tea shop, skincare store, telemedicine service, or
+          medical clinic.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
