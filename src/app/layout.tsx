@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     canonical: seoDefaults.canonical
   },
   robots: seoDefaults.robots,
+  verification: {
+    other: {
+      "p:domain_verify": "6bb9caf14c125e9e354bf5cfe03659b0"
+    }
+  },
   openGraph: {
     type: "website",
     url: siteConfig.url,
