@@ -92,7 +92,12 @@ export const articleSchema = (
   author: {
     "@type": isEditorialOrganizationName(author?.name) ? "Organization" : "Person",
     name: author?.name || "VitalBloom Editorial Team",
-    url: siteConfig.url
+    description:
+      author?.bio ||
+      "VitalBloom's editorial team creates evidence-informed wellness guides with source alignment, practical examples, and careful health communication.",
+    url: isEditorialOrganizationName(author?.name)
+      ? `${siteConfig.url}/about`
+      : siteConfig.url
   },
   publisher: {
     "@id": `${siteConfig.url}/#organization`

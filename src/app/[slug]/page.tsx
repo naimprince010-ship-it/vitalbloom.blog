@@ -57,6 +57,26 @@ const needsCrisisSupportBox = (content: string): boolean => {
   ].some((phrase) => normalizedContent.includes(phrase));
 };
 
+const isEditorialAuthorName = (name: string | undefined): boolean => {
+  return !name || /editorial|team|desk/i.test(name);
+};
+
+const getAuthorFocusAreas = (
+  author: Awaited<ReturnType<typeof getAuthorById>>,
+  categoryName: string | undefined
+): string[] => {
+  if (author?.expertise?.length) {
+    return author.expertise;
+  }
+
+  return [
+    categoryName || "Wellness education",
+    "Source alignment",
+    "Practical habit guidance",
+    "Reader safety"
+  ];
+};
+
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -145,6 +165,9 @@ export default async function PostPage({ params }: PostPageProps) {
     post.editorialReview.factCheckedBy ||
     author?.name ||
     "VitalBloom Editorial Team";
+  const authorName = author?.name || "VitalBloom Editorial Team";
+  const isEditorialAuthor = isEditorialAuthorName(authorName);
+  const authorFocusAreas = getAuthorFocusAreas(author, category?.name);
   const articleHtml = prepareArticleHtml(
     post.content,
     post.slug,
@@ -402,15 +425,91 @@ export default async function PostPage({ params }: PostPageProps) {
       </article>
 
       {author ? (
-        <section aria-labelledby="author-details" className="rounded-lg border border-zinc-200 bg-white p-5">
-          <h2 id="author-details" className="text-lg font-semibold text-zinc-900">
-            About the Author
-          </h2>
-          <p className="mt-2 text-sm leading-6 text-zinc-600">{author.bio}</p>
-          <p className="mt-2 text-sm leading-6 text-zinc-600">
-            Author names and review labels are shown for transparency. Clinical
-            credentials are not implied unless they are explicitly listed.
-          </p>
+        <section
+          aria-labelledby="author-details"
+          className="rounded-lg border border-zinc-200 bg-white p-5 sm:p-6"
+        >
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
+                Author &amp; Editorial Standards
+              </p>
+              <h2 id="author-details" className="mt-2 text-xl font-semibold text-zinc-900">
+                {isEditorialAuthor
+                  ? "Written and maintained by the VitalBloom Editorial Team"
+                  : `Written by ${authorName}`}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-zinc-600">{author.bio}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {authorFocusAreas.map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-md bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-700"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-700">
+              <h3 className="font-semibold text-zinc-900">How this article is checked</h3>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Reviewed for clear language, practical usefulness, and source alignment.</li>
+                <li>
+                  Health wording is kept cautious and general unless a qualified
+                  reviewer is named.
+                </li>
+                <li>
+                  Reader safety notes are added when a topic involves urgent or
+                  personal health concerns.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-5 grid gap-4 border-t border-zinc-200 pt-5 text-sm leading-6 text-zinc-600 sm:grid-cols-3">
+            <div>
+              <h3 className="font-semibold text-zinc-900">Review boundary</h3>
+              <p className="mt-1">
+                Clinical, medical, therapy, dietitian, or trainer credentials are
+                not implied unless they are explicitly shown on the page.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-zinc-900">Corrections</h3>
+              <p className="mt-1">
+                See something outdated or unclear? Email{" "}
+                <a
+                  href={`mailto:${siteConfig.contactEmail}`}
+                  className="font-medium text-green-700 underline underline-offset-4 hover:text-green-800"
+                >
+                  {siteConfig.contactEmail}
+                </a>
+                .
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-zinc-900">Policy links</h3>
+              <p className="mt-1">
+                Read our{" "}
+                <Link
+                  href="/editorial-policy"
+                  className="font-medium text-green-700 underline underline-offset-4 hover:text-green-800"
+                >
+                  Editorial Policy
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/why-trust-vitalbloom"
+                  className="font-medium text-green-700 underline underline-offset-4 hover:text-green-800"
+                >
+                  Why Trust VitalBloom
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
         </section>
       ) : null}
 
