@@ -110,6 +110,14 @@ body {
   min-height: 1px;
 }
 
+.hamburger-summary {
+  list-style: none;
+}
+
+.hamburger-summary::-webkit-details-marker {
+  display: none;
+}
+
 @media (min-width: 640px) {
   .article-content {
     font-size: 1.0625rem;
