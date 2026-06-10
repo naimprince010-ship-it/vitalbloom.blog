@@ -12,7 +12,7 @@ import {
 } from "@/config/content-quality";
 import { categoryPillarGuideSlugs } from "@/config/pillar-guides";
 import { getAuthorById, getCategoryById, getPostBySlug, getRelatedPosts } from "@/lib/api";
-import { prepareArticleHtml } from "@/lib/article-html";
+import { extractArticleHeadings, prepareArticleHtml } from "@/lib/article-html";
 import { siteConfig } from "@/config/site";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
@@ -55,6 +55,17 @@ const needsCrisisSupportBox = (content: string): boolean => {
     "immediate danger",
     "crisis support"
   ].some((phrase) => normalizedContent.includes(phrase));
+};
+
+const hasInlineCrisisSupport = (content: string): boolean => {
+  const normalizedContent = content.toLowerCase();
+
+  return (
+    normalizedContent.includes("988 suicide") ||
+    normalizedContent.includes("crisis text line") ||
+    normalizedContent.includes("findahelpline") ||
+    normalizedContent.includes("if stress feels unsafe")
+  );
 };
 
 const isEditorialAuthorName = (name: string | undefined): boolean => {
@@ -173,7 +184,12 @@ export default async function PostPage({ params }: PostPageProps) {
     post.slug,
     canonicalSlugOverrides
   );
-  const showCrisisSupportBox = needsCrisisSupportBox(post.content);
+  const articleHeadings = extractArticleHeadings(articleHtml).filter(
+    (heading) => heading.level === 2
+  );
+  const showTableOfContents = articleHeadings.length >= 4;
+  const showCrisisSupportBox =
+    needsCrisisSupportBox(post.content) && !hasInlineCrisisSupport(post.content);
   const isDuplicateSupportPage = noindexDuplicateSlugs.has(post.slug);
   const searchOpportunityBlock = searchOpportunityBlocks[post.slug];
   const breadcrumbs = [
@@ -299,8 +315,34 @@ export default async function PostPage({ params }: PostPageProps) {
           </aside>
         ) : null}
 
+        {showTableOfContents ? (
+          <nav
+            aria-labelledby="article-table-of-contents"
+            className="mt-6 max-w-3xl rounded-lg border border-zinc-200 bg-zinc-50 p-4"
+          >
+            <h2
+              id="article-table-of-contents"
+              className="text-sm font-semibold uppercase tracking-[0.12em] text-zinc-600"
+            >
+              In This Guide
+            </h2>
+            <ol className="mt-3 grid gap-2 text-sm leading-6 sm:grid-cols-2">
+              {articleHeadings.slice(0, 10).map((heading) => (
+                <li key={heading.id}>
+                  <a
+                    href={`#${heading.id}`}
+                    className="font-medium text-green-700 underline underline-offset-4 hover:text-green-800"
+                  >
+                    {heading.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        ) : null}
+
         <section
-          className="article-content mt-6 max-w-none"
+          className="article-content mt-6"
           dangerouslySetInnerHTML={{ __html: articleHtml }}
         />
 

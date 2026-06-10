@@ -20,6 +20,58 @@ const escapeAttribute = (value: string): string => {
     .replace(/>/g, "&gt;");
 };
 
+export type ArticleHeading = {
+  id: string;
+  level: 2 | 3;
+  text: string;
+};
+
+const slugifyHeading = (value: string): string => {
+  return value
+    .toLowerCase()
+    .replace(/&amp;/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+};
+
+export const addHeadingIds = (html: string): string => {
+  const seen = new Map<string, number>();
+
+  return html.replace(/<h([23])\b([^>]*)>([\s\S]*?)<\/h\1>/gi, (match, level, attributes, content) => {
+    if (/\sid=/i.test(attributes)) {
+      return match;
+    }
+
+    const text = stripHtml(content);
+    const baseId = slugifyHeading(text) || `section-${level}`;
+    const seenCount = seen.get(baseId) || 0;
+    seen.set(baseId, seenCount + 1);
+    const id = seenCount === 0 ? baseId : `${baseId}-${seenCount + 1}`;
+
+    return `<h${level}${attributes} id="${escapeAttribute(id)}">${content}</h${level}>`;
+  });
+};
+
+export const extractArticleHeadings = (html: string): ArticleHeading[] => {
+  return [...html.matchAll(/<h([23])\b([^>]*)>([\s\S]*?)<\/h\1>/gi)]
+    .map((match): ArticleHeading | null => {
+      const idMatch = match[2].match(/\sid=(["'])(.*?)\1/i);
+      const text = stripHtml(match[3]);
+
+      if (!idMatch || !text) {
+        return null;
+      }
+
+      return {
+        id: idMatch[2],
+        level: match[1] === "2" ? 2 : 3,
+        text
+      };
+    })
+    .filter((heading): heading is ArticleHeading => Boolean(heading));
+};
+
 export const reduceRepeatedInternalLinks = (html: string): string => {
   const seenByHref = new Map<string, number>();
   let totalInternalLinks = 0;
@@ -96,9 +148,11 @@ export const prepareArticleHtml = (
   currentSlug: string,
   duplicateCanonicalSlugs: Record<string, string>
 ): string => {
-  return addTableCellLabels(
-    reduceRepeatedInternalLinks(
-      addInternalLinkNofollowForDuplicates(html, currentSlug, duplicateCanonicalSlugs)
+  return addHeadingIds(
+    addTableCellLabels(
+      reduceRepeatedInternalLinks(
+        addInternalLinkNofollowForDuplicates(html, currentSlug, duplicateCanonicalSlugs)
+      )
     )
   );
 };
