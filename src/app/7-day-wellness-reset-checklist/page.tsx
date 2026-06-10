@@ -3,7 +3,7 @@ import InteractiveChecklist from "@/components/InteractiveChecklist";
 import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 const checklistSections = [
   {
@@ -109,8 +109,26 @@ const checklistBreadcrumbSchema = breadcrumbSchema([
   { name: "7-Day Wellness Reset Checklist", url: pageUrl }
 ]);
 
+const checklistFaqs = [
+  {
+    question: "What is a 7-day wellness reset?",
+    answer:
+      "A 7-day wellness reset is a short, practical way to restart simple habits around sleep, hydration, meals, movement, and stress support."
+  },
+  {
+    question: "Should I restart if I miss a day?",
+    answer:
+      "No. Continue with the next small step instead of restarting the whole week, because consistency grows from recovery, not perfection."
+  },
+  {
+    question: "Is this checklist medical advice?",
+    answer:
+      "No. The checklist is general wellness education and does not replace care from a qualified medical, nutrition, mental health, or fitness professional."
+  }
+];
+
 export const metadata: Metadata = {
-  title: "7-Day Wellness Reset Checklist",
+  title: "7-Day Wellness Reset Checklist for Simple Habits",
   description:
     "Use the VitalBloom Blog 7-Day Wellness Reset Checklist to track simple sleep, stress, nutrition, movement, and mindfulness habits for one week.",
   alternates: {
@@ -136,7 +154,8 @@ export default function SevenDayWellnessResetChecklistPage() {
         data={[
           checklistPageSchema,
           checklistHowToSchema,
-          checklistBreadcrumbSchema
+          checklistBreadcrumbSchema,
+          faqPageSchema("7-day-wellness-reset-checklist", checklistFaqs)
         ]}
       />
       <article className="w-full max-w-4xl rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
@@ -220,6 +239,24 @@ export default function SevenDayWellnessResetChecklistPage() {
           >
             Balanced Plate Guide
           </Link>
+        </section>
+
+        <section className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50/60 p-5">
+          <h2 className="text-lg font-semibold text-zinc-900">
+            Quick Questions
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {checklistFaqs.map((faq) => (
+              <div key={faq.question}>
+                <h3 className="text-sm font-semibold text-zinc-900">
+                  {faq.question}
+                </h3>
+                <p className="mt-1 text-sm leading-6 text-zinc-700">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="mt-8 border-t border-zinc-200 pt-5 text-sm leading-7 text-zinc-600">
