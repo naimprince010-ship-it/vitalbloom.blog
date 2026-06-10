@@ -21,6 +21,7 @@ export const organizationSchema = () => ({
   alternateName: [siteConfig.brandName, "VitalBloom.blog"],
   legalName: "VitalBloom Blog",
   url: siteConfig.url,
+  sameAs: siteConfig.socialProfiles.map((profile) => profile.href),
   logo: absoluteUrl(siteConfig.defaultOgImage),
   description:
     "VitalBloom Blog is the official educational wellness publication at VitalBloom.blog covering nutrition, fitness, sleep, stress, mindfulness, lifestyle, and healthy living. VitalBloom Blog is not a supplement store, tea shop, skincare store, telemedicine service, or medical clinic.",

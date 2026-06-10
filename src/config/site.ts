@@ -7,7 +7,13 @@ export const siteConfig = {
   url: "https://www.vitalbloom.blog",
   locale: "en_US",
   contactEmail: "hello@vitalbloom.blog",
-  defaultOgImage: "/og-default.png"
+  defaultOgImage: "/og-default.png",
+  socialProfiles: [
+    {
+      label: "Pinterest",
+      href: "https://www.pinterest.com/vitalbloomblog/"
+    }
+  ]
 } as const;
 
 export const seoDefaults = {

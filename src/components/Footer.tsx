@@ -4,7 +4,7 @@ import { footerNavigation, siteConfig } from "@/config/site";
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-zinc-200 py-10">
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
         <section aria-labelledby="footer-brand" className="space-y-3">
           <h2 id="footer-brand" className="text-base font-semibold text-zinc-900">
             {siteConfig.brandName}
@@ -52,6 +52,26 @@ export default function Footer() {
                 <Link href={item.href} className="text-sm text-zinc-600 hover:text-zinc-900">
                   {item.label}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="footer-profiles" className="space-y-3">
+          <h2 id="footer-profiles" className="text-sm font-semibold uppercase tracking-wide text-zinc-700">
+            Profiles
+          </h2>
+          <ul className="space-y-2">
+            {siteConfig.socialProfiles.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="text-sm text-zinc-600 hover:text-zinc-900"
+                  rel="me noreferrer"
+                  target="_blank"
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>

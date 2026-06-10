@@ -60,6 +60,26 @@ export const searchFocusedPostSeo: Record<string, SearchFocusedSeo> = {
     description:
       "Easy healthy breakfast ideas with balanced protein, fiber, and flexible meal prep options for busy mornings."
   },
+  "balanced-plate-guide": {
+    title: "Balanced Plate Guide: Simple Healthy Meal Formula",
+    description:
+      "Use the balanced plate guide to build simple meals with protein, produce, fiber-rich carbohydrates, and healthy fats."
+  },
+  "better-sleep-routine-guide": {
+    title: "Better Sleep Routine Guide for Calmer Evenings",
+    description:
+      "Build a better sleep routine with evening habits, screen boundaries, caffeine timing, and realistic wind-down steps."
+  },
+  "stress-management-guide": {
+    title: "Stress Management Guide: Practical Relief Tools",
+    description:
+      "Learn practical stress management tools including breathing, grounding, journaling, burnout prevention, and safety support."
+  },
+  "7-day-wellness-reset-checklist": {
+    title: "7-Day Wellness Reset Checklist for Simple Habits",
+    description:
+      "Use this 7-day wellness reset checklist to organize simple sleep, nutrition, movement, hydration, and stress habits."
+  },
   "beginner-home-workout-guide": {
     title: "Beginner Home Workout Guide: Simple At-Home Fitness",
     description:
@@ -184,6 +204,158 @@ export const searchOpportunityBlocks: Record<string, SearchOpportunityBlock> = {
         question: "What is a quick healthy breakfast for busy mornings?",
         answer:
           "Quick options include overnight oats, yogurt with fruit and seeds, whole-grain toast with eggs, or a smoothie paired with a protein source."
+      }
+    ]
+  },
+  "balanced-plate-guide": {
+    eyebrow: "Meal Planning Search Guide",
+    title: "Use the Balanced Plate Method Without Overthinking Meals",
+    summary:
+      "The balanced plate method is most useful when it stays flexible: choose a protein, add colorful produce, include a fiber-rich carbohydrate, and finish with a small amount of fat or flavor.",
+    links: [
+      {
+        label: "High-Fiber Breakfast Ideas",
+        href: "/high-fiber-breakfast-ideas",
+        description:
+          "Apply the balanced plate idea to morning meals that feel filling and steady."
+      },
+      {
+        label: "Easy Balanced Dinner Formula",
+        href: "/easy-balanced-dinner-formula",
+        description:
+          "Turn the same plate structure into simple dinners for busy nights."
+      },
+      {
+        label: "Simple Grocery List for Healthy Eating",
+        href: "/simple-grocery-list-for-healthy-eating",
+        description:
+          "Stock flexible staples so balanced meals are easier to repeat."
+      }
+    ],
+    faqs: [
+      {
+        question: "What are the parts of a balanced plate?",
+        answer:
+          "A balanced plate usually includes protein, vegetables or fruit, fiber-rich carbohydrates, and a small amount of healthy fat or flavor."
+      },
+      {
+        question: "Do I need to measure every meal?",
+        answer:
+          "No. The balanced plate method is a visual guide, so it can work without strict measuring or calorie tracking."
+      }
+    ]
+  },
+  "better-sleep-routine-guide": {
+    eyebrow: "Sleep Search Guide",
+    title: "Make a Better Sleep Routine Easier to Repeat",
+    summary:
+      "A better sleep routine works best when it starts before bedtime: reduce bright screens, keep caffeine timing realistic, choose a short wind-down cue, and keep wake time steady when possible.",
+    links: [
+      {
+        label: "Sleep Hygiene Checklist",
+        href: "/sleep-hygiene-checklist-printable",
+        description:
+          "Use a practical checklist to review light, temperature, caffeine, and bedtime habits."
+      },
+      {
+        label: "Phone-Free Bedtime Routine",
+        href: "/phone-free-bedtime-routine",
+        description:
+          "Build a realistic screen boundary when late scrolling keeps pushing sleep later."
+      },
+      {
+        label: "How to Reset After a Bad Night of Sleep",
+        href: "/how-to-reset-after-a-bad-night-sleep",
+        description:
+          "Recover the next day without overcorrecting or making the next night harder."
+      }
+    ],
+    faqs: [
+      {
+        question: "How long should a sleep routine take?",
+        answer:
+          "A useful sleep routine can be short. Even 15 to 30 minutes of repeatable wind-down cues may help your body transition toward rest."
+      },
+      {
+        question: "What is the first sleep habit to fix?",
+        answer:
+          "Start with a consistent wake time or a simple evening screen boundary, because both can shape the rest of the routine."
+      }
+    ]
+  },
+  "stress-management-guide": {
+    eyebrow: "Stress Search Guide",
+    title: "Choose Stress Tools Based on What You Feel",
+    summary:
+      "Stress management is easier when the tool matches the moment: slow breathing for racing thoughts, grounding for overwhelm, movement for restless energy, and journaling for repeated worry loops.",
+    links: [
+      {
+        label: "Grounding Techniques for Stress",
+        href: "/grounding-techniques-for-stress",
+        description:
+          "Use sensory grounding when stress feels intense or hard to organize."
+      },
+      {
+        label: "Work Stress Reset Routine",
+        href: "/work-stress-reset-routine",
+        description:
+          "Try a short reset for overloaded workdays and transition moments."
+      },
+      {
+        label: "Stress Journaling Prompts",
+        href: "/stress-journaling-prompts",
+        description:
+          "Separate facts, feelings, worries, and next actions with structured prompts."
+      }
+    ],
+    faqs: [
+      {
+        question: "What is a quick way to manage stress?",
+        answer:
+          "A quick stress reset can start with slower exhales, naming what is in your control, or taking a brief walk to discharge restless energy."
+      },
+      {
+        question: "When should stress get professional support?",
+        answer:
+          "Consider professional support when stress disrupts sleep, work, relationships, safety, or daily functioning, or when symptoms feel unmanageable."
+      }
+    ]
+  },
+  "7-day-wellness-reset-checklist": {
+    eyebrow: "Wellness Reset Search Guide",
+    title: "Use the 7-Day Reset as a Simple Weekly Starting Point",
+    summary:
+      "A short reset works best when it focuses on a few repeatable basics: hydration, sleep cues, easy meals, light movement, and one stress-support habit per day.",
+    links: [
+      {
+        label: "How to Build a Simple Wellness Plan",
+        href: "/how-to-build-a-simple-wellness-plan",
+        description:
+          "Turn the checklist into a longer-term plan that fits your week."
+      },
+      {
+        label: "Daily Wellness Checklist",
+        href: "/daily-wellness-checklist",
+        description:
+          "Use a daily version when you want a repeatable habit tracker."
+      },
+      {
+        label: "Simple Hydration Guide",
+        href: "/simple-hydration-guide",
+        description:
+          "Make the hydration part of the reset easier and more realistic."
+      }
+    ],
+    faqs: [
+      {
+        question: "What is a 7-day wellness reset?",
+        answer:
+          "A 7-day wellness reset is a short, practical way to restart simple habits around sleep, hydration, meals, movement, and stress support."
+      },
+      {
+        question: "Should I restart if I miss a day?",
+        answer:
+          "No. Continue with the next small step instead of restarting the whole week, because consistency grows from recovery, not perfection."
       }
     ]
   }
